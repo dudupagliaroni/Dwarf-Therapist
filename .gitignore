@@ -1,5 +1,201 @@
+# ============================================================================
+# Dwarf Therapist - Master .gitignore
+# Covers both C++/Qt5 original and Python implementation
+# ============================================================================
+
+# ============================================================================
+# C++/Qt5 BUILD SYSTEM
+# ============================================================================
+
+# CMake
 CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+*.cmake
+
+# Build directories
 build*/
+out/
+debug/
+release/
+x64/
+Win32/
+
+# IDE files
 .clangd
 compile_commands.json
-/venv/Lib/site-packages
+.vs/
+*.vcxproj.user
+*.sln.docstates
+
+# Qt5 specific
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qm
+
+# ============================================================================
+# PYTHON IMPLEMENTATION
+# ============================================================================
+
+# Python runtime
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments (at root level)
+/venv/
+/env/
+/ENV/
+/.venv/
+/.env/
+venv/Lib/site-packages
+
+# Python logs and data
+python_implementation/logs/*.log
+python_implementation/data/*.json
+!python_implementation/data/sample_*.json
+
+# ============================================================================
+# DWARF FORTRESS GAME DATA
+# ============================================================================
+
+# Game saves and data
+saves/
+*.dat
+*.sav
+world*.sav
+
+# Memory dumps
+*.dmp
+*.bin
+memory_dumps/
+df_memory_*.bin
+
+# ============================================================================
+# DEVELOPMENT TOOLS
+# ============================================================================
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing and coverage
+.tox/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+temp/
+tmp/
+
+# ============================================================================
+# OPERATING SYSTEM
+# ============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ============================================================================
+# DOCUMENTATION & ASSETS
+# ============================================================================
+
+# Generated documentation
+docs/_build/
+docs/build/
+doxygen_output/
+
+# Image caches
+*.png
+*.jpg
+*.jpeg
+!docs/images/
+!resources/img/
+
+# ============================================================================
+# LOGS & MONITORING
+# ============================================================================
+
+# Application logs
+*.log
+log/
+logs/
+debug.log
+error.log
+
+# Performance monitoring
+*.prof
+performance.log
+benchmark_*.json
+
+# ============================================================================
+# SECURITY & CONFIGURATION
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.development
+
+# API keys
+secrets.json
+api_keys.txt
+*.key
+*.pem
+
+# Local configuration overrides
+config_local.*
+settings_local.*
