@@ -1,4 +1,8 @@
-# Python
+# ============================================================================
+# Dwarf Therapist Python Implementation - .gitignore
+# ============================================================================
+
+# Python Runtime
 __pycache__/
 *.py[cod]
 *$py.class
@@ -16,44 +20,198 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
 
-# Virtual environments
+# Virtual Environments
 venv/
 env/
 ENV/
 .venv/
 .env/
+.virtualenv/
+python_venv/
 
-# IDEs
+# IDEs & Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.spyderproject
+.spyproject
+.ropeproject
 
-# Logs
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# Logs & Debug
 *.log
 logs/*.log
+!logs/README.md
+debug.log
+error.log
+dwarf_therapist.log
 
-# Data files (except samples)
+# Data Files (Keep structure, ignore large datasets)
 data/*.json
+data/*.csv
+data/*.xlsx
 !data/sample_*.json
+!data/README.md
+data/cache/
+data/temp/
+data/backup/
 
-# OS
-.DS_Store
-Thumbs.db
-*.tmp
-*.temp
-
-# Analysis outputs
+# Analysis Outputs
 analysis/output/
+analysis/cache/
+analysis/temp/
 *.pkl
 *.pickle
+*.joblib
+
+# Memory dumps & Binary data
+*.dmp
+*.bin
+*.hex
+memory_dumps/
+
+# Screenshots & Images (if any)
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+!docs/images/
+!resources/images/
+
+# ============================================================================
+# SYSTEM & OS
+# ============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ============================================================================
+# DWARF FORTRESS SPECIFIC
+# ============================================================================
+
+# Dwarf Fortress saves (if copying game data)
+saves/
+*.dat
+*.bak
+world*.sav
+
+# Memory layout caches
+memory_layouts_cache/
+*.layout_cache
+
+# Process dumps
+process_*.dmp
+df_memory_*.bin
+
+# ============================================================================
+# DEVELOPMENT & TESTING
+# ============================================================================
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+htmlcov/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Profiling
+.prof
+*.pstats
 
 # Temporary files
 temp/
 tmp/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.backup
+
+# Configuration overrides
+config_local.py
+settings_local.py
+local_config.json
+
+# Build artifacts
+*.spec
+build.log
+
+# Documentation builds
+docs/_build/
+docs/build/
+
+# ============================================================================
+# SECURITY
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# API keys & secrets
+secrets.json
+api_keys.txt
+*.key
+*.pem
+
+# ============================================================================
+# PERFORMANCE & MONITORING
+# ============================================================================
+
+# Performance logs
+performance.log
+benchmark_*.json
+profiling_*.txt
+
+# Memory usage logs
+memory_usage_*.csv
+resource_monitor.log
