@@ -220,6 +220,11 @@ class MemoryReader:
         data = self.read_memory(address, 2)
         return struct.unpack('<H', data)[0] if len(data) == 2 else 0
         
+    def read_int16_signed(self, address: int) -> int:
+        """Read signed 16-bit integer from memory"""
+        data = self.read_memory(address, 2)
+        return struct.unpack('<h', data)[0] if len(data) == 2 else 0
+        
     def read_int8(self, address: int) -> int:
         """Read 8-bit integer from memory"""
         data = self.read_memory(address, 1)
@@ -617,8 +622,8 @@ class CompleteDFInstance:
             dwarf.caste = self.memory_reader.read_int16(address + offsets.get('caste', 0))
             dwarf.sex = self.memory_reader.read_int8(address + offsets.get('sex', 0))
             dwarf.profession = self.memory_reader.read_int8(address + offsets.get('profession', 0))
-            dwarf.mood = self.memory_reader.read_int32(address + offsets.get('mood', 0))
-            dwarf.temp_mood = self.memory_reader.read_int32(address + offsets.get('temp_mood', 0))
+            dwarf.mood = self.memory_reader.read_int16_signed(address + offsets.get('mood', 0))
+            dwarf.temp_mood = self.memory_reader.read_int16_signed(address + offsets.get('temp_mood', 0))
             
             # 2. FLAGS E STATUS
             dwarf.flags1 = self.memory_reader.read_int32(address + offsets.get('flags1', 0))
