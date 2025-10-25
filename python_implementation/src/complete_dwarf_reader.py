@@ -215,6 +215,16 @@ class MemoryReader:
         data = self.read_memory(address, 4)
         return struct.unpack('<I', data)[0] if len(data) == 4 else 0
         
+    def read_int16(self, address: int) -> int:
+        """Read 16-bit integer from memory"""
+        data = self.read_memory(address, 2)
+        return struct.unpack('<H', data)[0] if len(data) == 2 else 0
+        
+    def read_int8(self, address: int) -> int:
+        """Read 8-bit integer from memory"""
+        data = self.read_memory(address, 1)
+        return struct.unpack('<B', data)[0] if len(data) == 1 else 0
+        
     def read_int64(self, address: int) -> int:
         """Read 64-bit integer from memory"""
         data = self.read_memory(address, 8)
@@ -604,9 +614,9 @@ class CompleteDFInstance:
             # 1. DADOS BÁSICOS
             dwarf.id = self.memory_reader.read_int32(address + offsets.get('id', 0))
             dwarf.race = self.memory_reader.read_int32(address + offsets.get('race', 0))
-            dwarf.caste = self.memory_reader.read_int32(address + offsets.get('caste', 0))
-            dwarf.sex = self.memory_reader.read_int32(address + offsets.get('sex', 0))
-            dwarf.profession = self.memory_reader.read_int32(address + offsets.get('profession', 0))
+            dwarf.caste = self.memory_reader.read_int16(address + offsets.get('caste', 0))
+            dwarf.sex = self.memory_reader.read_int8(address + offsets.get('sex', 0))
+            dwarf.profession = self.memory_reader.read_int8(address + offsets.get('profession', 0))
             dwarf.mood = self.memory_reader.read_int32(address + offsets.get('mood', 0))
             dwarf.temp_mood = self.memory_reader.read_int32(address + offsets.get('temp_mood', 0))
             
@@ -716,9 +726,13 @@ class CompleteDFInstance:
             
             skills = []
             for i, skill_addr in enumerate(skill_pointers[:50]):  # Limite de 50 skills
-                # Cada skill tem: ID, level, experience (estrutura típica de 12 bytes)
-                skill_id = self.memory_reader.read_int32(skill_addr)
-                skill_level = self.memory_reader.read_int32(skill_addr + 4)
+                # Estrutura de skill conforme código C++:
+                # offset 0x00: skill_id (short/16 bits)
+                # offset 0x04: rating/level (short/16 bits)  
+                # offset 0x08: experience (int/32 bits)
+                # offset 0x10: rust (int/32 bits)
+                skill_id = self.memory_reader.read_int16(skill_addr)
+                skill_level = self.memory_reader.read_int16(skill_addr + 4)
                 skill_exp = self.memory_reader.read_int32(skill_addr + 8)
                 
                 skill = Skill(
@@ -892,9 +906,18 @@ class CompleteDFInstance:
             logger.debug(f"Erro ao ler personalidade: {e}")
             return None
             
-    def export_complete_json(self, filename: str = "complete_dwarves_data.json") -> bool:
-        """Exporta TODOS os dados para JSON"""
+    def export_complete_json(self, filename: str = None, decode_data: bool = True) -> bool:
+        """Exporta TODOS os dados para JSON com decodificação opcional"""
         try:
+            # Se não especificado, criar nome com timestamp na pasta exports
+            if filename is None:
+                from datetime import datetime
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                # Caminho relativo à pasta raiz do projeto
+                exports_dir = Path(__file__).parent.parent.parent / "exports"
+                exports_dir.mkdir(exist_ok=True)
+                filename = exports_dir / f"complete_dwarves_data_{timestamp}.json"
+            
             logger.info(f"Exportando dados completos para {filename}")
             
             # Calcular estatísticas
@@ -910,6 +933,7 @@ class CompleteDFInstance:
                     'base_address': f"0x{self.base_addr:x}",
                     'pointer_size': self.pointer_size,
                     'layout_info': self.layout.info if self.layout else {},
+                    'decoded': decode_data,
                     'statistics': {
                         'total_skills_read': total_skills,
                         'total_wounds_read': total_wounds,
@@ -921,6 +945,33 @@ class CompleteDFInstance:
                 },
                 'dwarves': [dwarf.to_dict() for dwarf in self.dwarves]
             }
+            
+            # Aplicar decodificação se solicitado
+            if decode_data:
+                logger.info("Aplicando decodificação aos dados...")
+                try:
+                    # Importar decodificador
+                    tools_path = Path(__file__).parent.parent / "tools"
+                    sys.path.insert(0, str(tools_path))
+                    from complete_decoder import DwarfDataDecoder
+                    
+                    decoder = DwarfDataDecoder()
+                    decoded_dwarves = []
+                    
+                    for i, dwarf_dict in enumerate(data['dwarves']):
+                        if i % 50 == 0:
+                            logger.info(f"Decodificando dwarf {i+1}/{len(data['dwarves'])}")
+                        decoded_dwarf = decoder.decode_dwarf(dwarf_dict)
+                        decoded_dwarves.append(decoded_dwarf)
+                    
+                    data['dwarves'] = decoded_dwarves
+                    data['metadata']['decoder_version'] = '1.0'
+                    logger.info("Decodificação aplicada com sucesso")
+                    
+                except Exception as e:
+                    logger.warning(f"Erro na decodificação, salvando dados brutos: {e}")
+                    data['metadata']['decoded'] = False
+                    data['metadata']['decode_error'] = str(e)
             
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
@@ -997,7 +1048,7 @@ def main():
         # Exportar tudo
         print(f"\nExportando dados completos...")
         if df.export_complete_json():
-            print("SUCESSO: Dados exportados para 'complete_dwarves_data.json'")
+            print("SUCESSO: Dados exportados para a pasta 'exports/' com timestamp e decodificação")
         else:
             print("ERRO: Falha ao exportar")
             
