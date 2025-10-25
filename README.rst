@@ -28,6 +28,18 @@ Dwarf-Therapist requires a C++ compiler (with C++14 support), cmake (3.1.0 or ne
 
 Detailed building instructions can be found in `BUILDING.md`_.
 
+Python Implementation
+===================
+A complete Python implementation is available in the ``python_implementation/`` folder. This implementation provides:
+
+- Direct memory reading from Dwarf Fortress process
+- Complete dwarf data extraction (243 dwarves with 14,355 data points)  
+- Statistical analysis and insights generation
+- Skill and profession decodification tools
+- Professional project structure with documentation
+
+See ``python_implementation/README.md`` for installation and usage instructions.
+
 Linux
 =====
 In addition to the AppImage provided on the `releases`_ page, packages for specific distributions can be found at:
