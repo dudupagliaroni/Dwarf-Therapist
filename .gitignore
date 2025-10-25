@@ -200,3 +200,4 @@ api_keys.txt
 config_local.*
 settings_local.*
 complete_dwarves_data.json
+/exports
