@@ -199,3 +199,4 @@ api_keys.txt
 # Local configuration overrides
 config_local.*
 settings_local.*
+complete_dwarves_data.json
