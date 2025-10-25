@@ -631,7 +631,7 @@ class CompleteDFInstance:
             dwarf.flags3 = self.memory_reader.read_int32(address + offsets.get('flags3', 0))
             
             # 3. DADOS FÍSICOS
-            dwarf.body_size = self.memory_reader.read_int32(address + offsets.get('body_size', 0))
+            dwarf.body_size = self.memory_reader.read_int32(address + offsets.get('size_info', 0))
             dwarf.blood_level = self.memory_reader.read_int32(address + offsets.get('blood', 0))
             
             # 4. IDS E REFERÊNCIAS
