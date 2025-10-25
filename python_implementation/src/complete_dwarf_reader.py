@@ -391,6 +391,19 @@ class CompleteDFInstance:
             except (psutil.NoSuchProcess, psutil.AccessDenied):
                 continue
         
+        logger.warning("Processo do Dwarf Fortress nao encontrado!")
+        return False
+    
+    @staticmethod
+    def is_df_running() -> bool:
+        """Verifica se o Dwarf Fortress esta rodando"""
+        for proc in psutil.process_iter(['name']):
+            try:
+                proc_name = proc.info['name'].lower()
+                if 'dwarf fortress' in proc_name or proc_name == 'dwarffortress.exe':
+                    return True
+            except (psutil.NoSuchProcess, psutil.AccessDenied):
+                continue
         return False
         
     def connect(self) -> bool:
@@ -851,63 +864,71 @@ class CompleteDFInstance:
 
 def main():
     """Execução principal com dados COMPLETOS"""
-    print("🧠 DWARF THERAPIST PYTHON - VERSÃO COMPLETA")
+    print("DWARF THERAPIST PYTHON - VERSÃO COMPLETA")
     print("=" * 60)
     print("Lendo TODOS os dados possíveis da memória do DF!")
+    
+    # Verificar se o Dwarf Fortress está rodando
+    if not CompleteDFInstance.is_df_running():
+        print("ERRO: Dwarf Fortress não está em execução!")
+        print("Por favor, inicie o Dwarf Fortress com um save carregado antes de executar este script.")
+        return
+    
+    print("OK: Dwarf Fortress detectado em execução")
     
     df = CompleteDFInstance()
     
     try:
         # Conectar
         if not df.connect():
-            print("❌ Falha ao conectar")
+            print("ERRO: Falha ao conectar")
             return
-        print("✅ Conectado ao DF")
+        print("SUCESSO: Conectado ao DF")
         
         # Carregar layout
         if not df.load_memory_layout():
-            print("❌ Falha ao carregar layout")
+            print("ERRO: Falha ao carregar layout")
             return
-        print("✅ Layout carregado")
+        print("SUCESSO: Layout carregado")
         
         # Ler dados COMPLETOS
-        print("\n📖 Lendo dados COMPLETOS dos dwarves...")
+        print("\nLendo dados COMPLETOS dos dwarves...")
         dwarves = df.read_complete_dwarves()
         
         if not dwarves:
-            print("❌ Nenhum dwarf encontrado")
+            print("ERRO: Nenhum dwarf encontrado")
             return
             
         # Estatísticas detalhadas
-        print(f"\n📊 DADOS CARREGADOS:")
-        print(f"   👥 Dwarves: {len(dwarves)}")
-        print(f"   🎯 Com skills: {len([d for d in dwarves if d.skills])}")
-        print(f"   🏥 Com ferimentos: {len([d for d in dwarves if d.wounds])}")
-        print(f"   ⚔️  Com equipamentos: {len([d for d in dwarves if d.equipment])}")
-        print(f"   🧠 Com personalidade: {len([d for d in dwarves if d.personality])}")
+        print(f"\nDADOS CARREGADOS:")
+        print(f"   Dwarves: {len(dwarves)}")
+        print(f"   Com skills: {len([d for d in dwarves if d.skills])}")
+        print(f"   Com ferimentos: {len([d for d in dwarves if d.wounds])}")
+        print(f"   Com equipamentos: {len([d for d in dwarves if d.equipment])}")
+        print(f"   Com personalidade: {len([d for d in dwarves if d.personality])}")
         
         # Primeiro dwarf como exemplo
         if dwarves:
             first = dwarves[0]
-            print(f"\n🔍 EXEMPLO - {first.name}:")
-            print(f"   📋 ID: {first.id}, Idade: {first.age}")
-            print(f"   🎯 Skills: {len(first.skills)}")
-            print(f"   💪 Atributos físicos: {len(first.physical_attributes)}")
-            print(f"   🧠 Atributos mentais: {len(first.mental_attributes)}")
-            print(f"   🔧 Labors: {len(first.labors)}")
-            print(f"   🏥 Ferimentos: {len(first.wounds)}")
-            print(f"   ⚔️  Equipamentos: {len(first.equipment)}")
+            print(f"\nEXEMPLO - {first.name}:")
+            print(f"   ID: {first.id}, Idade: {first.age}")
+            print(f"   Skills: {len(first.skills)}")
+            print(f"   Atributos físicos: {len(first.physical_attributes)}")
+            print(f"   Atributos mentais: {len(first.mental_attributes)}")
+            print(f"   Labors: {len(first.labors)}")
+            print(f"   Ferimentos: {len(first.wounds)}")
+            print(f"   Equipamentos: {len(first.equipment)}")
             
         # Exportar tudo
-        print(f"\n💾 Exportando dados completos...")
+        print(f"\nExportando dados completos...")
         if df.export_complete_json():
-            print("✅ Dados exportados para 'complete_dwarves_data.json'")
+            print("SUCESSO: Dados exportados para 'complete_dwarves_data.json'")
         else:
-            print("❌ Falha ao exportar")
+            print("ERRO: Falha ao exportar")
             
     except Exception as e:
         logger.error(f"Erro: {e}")
-        print(f"❌ Erro: {e}")
+        print(f"ERRO: {e}")
     finally:
         df.disconnect()
 
