@@ -1,0 +1,13 @@
+🎯 STATUS DAS FLAGS CONHECIDAS:
+
+  DEAD     (bit  1) 
+  IN_MOOD  (bit  2) 
+  HAD_MOOD (bit  3)    
+  MIGRANT  (bit  7)
+  INCOMING (bit 10)
+  CAGED    (bit 25)
+  TAME     (bit 26)
+  KILLED   (bit 39)
+  BUTCHER  (bit 49)
+  GHOST    (bit 76)
+  GELD     (bit 93)
