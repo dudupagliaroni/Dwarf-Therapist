@@ -294,8 +294,19 @@ class MemoryLayout:
     
     def __init__(self, layout_file: Path):
         logger.info(f"Carregando layout de memória: {layout_file}")
+        
+        if not layout_file.exists():
+            raise FileNotFoundError(f"Arquivo de layout não existe: {layout_file}")
+            
         self.config = configparser.ConfigParser()
-        self.config.read(layout_file)
+        
+        try:
+            self.config.read(layout_file, encoding='utf-8')
+            logger.info(f"Arquivo de layout lido. Seções encontradas: {list(self.config.sections())}")
+        except Exception as e:
+            logger.error(f"Erro ao ler arquivo de layout: {e}")
+            raise
+            
         self.offsets = {}
         self.addresses = {}
         self.info = {}
@@ -306,23 +317,57 @@ class MemoryLayout:
         """Load all relevant sections from memory layout"""
         if 'info' in self.config:
             self.info = dict(self.config['info'])
+            logger.info(f"Info carregado: {self.info}")
             
         if 'addresses' in self.config:
             self.addresses = {k: int(v, 16) for k, v in self.config['addresses'].items()}
+            logger.info(f"Endereços carregados: {len(self.addresses)} itens")
+            logger.debug(f"Endereços principais: creature_vector=0x{self.addresses.get('creature_vector', 0):x}")
             
-        # Carregar todas as seções de offsets
+        # Carregar todas as seções de offsets - usando nomes corretos do arquivo
         offset_sections = [
-            'dwarf_offsets', 'soul_details', 'unit_wound_offsets',
+            'offsets', 'dwarf_offsets', 'soul_details', 'unit_wound_offsets',
             'race_offsets', 'caste_offsets', 'hist_figure_offsets',
-            'item_offsets', 'syndrome_offsets', 'emotion_offsets'
+            'item_offsets', 'syndrome_offsets', 'emotion_offsets',
+            'need_offsets', 'job_details', 'squad_offsets', 'activity_offsets'
         ]
         
         for section in offset_sections:
             if section in self.config:
-                key = section.replace('_offsets', '').replace('_details', '')
+                # Mapear nomes de seções para chaves mais simples
+                key_map = {
+                    'offsets': 'general',
+                    'dwarf_offsets': 'dwarf', 
+                    'soul_details': 'soul',
+                    'unit_wound_offsets': 'unit_wound',
+                    'race_offsets': 'race',
+                    'caste_offsets': 'caste',
+                    'hist_figure_offsets': 'hist_figure',
+                    'item_offsets': 'item',
+                    'syndrome_offsets': 'syndrome',
+                    'emotion_offsets': 'emotion',
+                    'need_offsets': 'need',
+                    'job_details': 'job',
+                    'squad_offsets': 'squad',
+                    'activity_offsets': 'activity'
+                }
+                
+                key = key_map.get(section, section.replace('_offsets', '').replace('_details', ''))
                 self.offsets[key] = {k: int(v, 16) for k, v in self.config[section].items()}
+                logger.info(f"Seção {section} carregada como '{key}': {len(self.offsets[key])} offsets")
+            else:
+                logger.warning(f"Seção {section} não encontrada no layout")
+                
+        logger.info(f"Total de seções de offset carregadas: {len(self.offsets)}")
+        logger.info(f"Seções disponíveis: {list(self.offsets.keys())}")
                 
     def get_address(self, key: str) -> int:
+        """Get global address for a key"""
+        return self.addresses.get(key, 0)
+        
+    def get_offset(self, section: str, key: str) -> int:
+        """Get offset for a specific section and key"""
+        return self.offsets.get(section, {}).get(key, 0)
         """Get global address for a key"""
         return self.addresses.get(key, 0)
         
@@ -470,18 +515,31 @@ class CompleteDFInstance:
     def load_memory_layout(self, layout_file: Path = None) -> bool:
         """Load memory layout for current DF version"""
         if layout_file is None:
-            layouts_dir = Path(__file__).parent / "share" / "memory_layouts" / "windows"
+            # Corrigir o caminho para os layouts de memória
+            layouts_dir = Path(__file__).parent.parent.parent / "share" / "memory_layouts" / "windows"
+            logger.info(f"Procurando layouts em: {layouts_dir}")
+            
+            if not layouts_dir.exists():
+                logger.error(f"Diretório de layouts não existe: {layouts_dir}")
+                return False
+                
             layout_files = list(layouts_dir.glob("*.ini"))
             if not layout_files:
+                logger.error(f"Nenhum arquivo de layout encontrado em: {layouts_dir}")
                 return False
-            layout_file = sorted(layout_files)[-1]
+                
+            # Usar o layout mais recente (ordenar por nome - versões mais recentes vêm por último)
+            layout_file = sorted(layout_files, key=lambda x: x.name)[-1]
+            logger.info(f"Usando layout: {layout_file.name}")
             
         try:
             self.layout = MemoryLayout(layout_file)
             self.status = DFStatus.LAYOUT_OK
+            logger.info("Layout carregado com sucesso")
             return True
         except Exception as e:
             logger.error(f"Erro ao carregar layout: {e}")
+            logger.error(f"Traceback: {traceback.format_exc()}")
             return False
             
     def read_complete_dwarves(self) -> List[CompletelyDwarfData]:
@@ -489,32 +547,49 @@ class CompleteDFInstance:
         logger.info("=== LENDO DADOS COMPLETOS DOS DWARVES ===")
         
         if self.status < DFStatus.LAYOUT_OK:
+            logger.error(f"Status inadequado para leitura: {self.status}")
             return []
             
         try:
             creature_vector_addr = self.layout.get_address('creature_vector')
             if not creature_vector_addr:
+                logger.error("Endereço creature_vector não encontrado no layout")
+                logger.error(f"Endereços disponíveis: {list(self.layout.addresses.keys())}")
                 return []
                 
+            logger.info(f"creature_vector base: 0x{creature_vector_addr:x}")
             creature_vector_addr += self.base_addr
+            logger.info(f"creature_vector final: 0x{creature_vector_addr:x}")
+            
             creature_pointers = self.memory_reader.read_vector(creature_vector_addr, self.pointer_size)
             
             logger.info(f"Encontradas {len(creature_pointers)} criaturas")
             
+            if not creature_pointers:
+                logger.warning("Nenhuma criatura encontrada no vetor")
+                return []
+            
             complete_dwarves = []
             for i, creature_addr in enumerate(creature_pointers[:500]):  # Limite para performance
-                logger.debug(f"Processando criatura {i+1}/{len(creature_pointers)}")
+                logger.debug(f"Processando criatura {i+1}/{len(creature_pointers)} em 0x{creature_addr:x}")
                 dwarf = self._read_complete_dwarf(creature_addr)
                 if dwarf and dwarf.name:
                     complete_dwarves.append(dwarf)
+                    logger.debug(f"Dwarf carregado: {dwarf.name} (ID: {dwarf.id})")
                     
             self.dwarves = complete_dwarves
-            self.status = DFStatus.GAME_LOADED
-            logger.info(f"=== CARREGADOS {len(complete_dwarves)} DWARVES COMPLETOS ===")
+            
+            if complete_dwarves:
+                self.status = DFStatus.GAME_LOADED
+                logger.info(f"=== CARREGADOS {len(complete_dwarves)} DWARVES COMPLETOS ===")
+            else:
+                logger.warning("Nenhum dwarf válido foi carregado")
+                
             return complete_dwarves
             
         except Exception as e:
             logger.error(f"Erro ao ler dwarves completos: {e}")
+            logger.error(f"Traceback: {traceback.format_exc()}")
             return []
             
     def _read_complete_dwarf(self, address: int) -> Optional[CompletelyDwarfData]:
