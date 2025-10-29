@@ -1,0 +1,18 @@
+{
+  "analysis_type": "position_tracking",
+  "description": "Rastreamento de mudanças de posição dos anões",
+  "tracking_results": {
+    "change_frequency_by_offset": {},
+    "coordinate_ranges_by_offset": {},
+    "most_active_offsets": [],
+    "position_correlations": {},
+    "summary": {
+      "total_changes_detected": 0,
+      "unique_offsets_changed": 0,
+      "most_likely_position_offset": null,
+      "recommendation": "Nenhuma mudança detectada. Mova alguns anões no jogo e tente novamente."
+    }
+  },
+  "position_history": {},
+  "detected_changes": []
+}

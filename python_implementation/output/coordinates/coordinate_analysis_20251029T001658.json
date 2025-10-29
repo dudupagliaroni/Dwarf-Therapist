@@ -1,0 +1,836 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-29T00:16:58.365542",
+    "description": "Análise de offsets relacionados a coordenadas e posicionamento"
+  },
+  "coordinate_offsets": {
+    "addresses": [
+      {
+        "name": "cur_year_tick",
+        "hex_value": "0x0240423c",
+        "meaning": "Tick atual dentro do ano (granularidade temporal)",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "current_year",
+        "hex_value": "0x02404244",
+        "meaning": "Ano atual no calendário interno do jogo",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "dwarf_civ_index",
+        "hex_value": "0x023fd280",
+        "meaning": "Índice da civilização dos anões",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "dwarf_race_index",
+        "hex_value": "0x023fd28c",
+        "meaning": "Índice da raça dos anões na tabela de raças",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "fortress_entity",
+        "hex_value": "0x02403bd0",
+        "meaning": "Ponteiro para a entidade que representa sua fortaleza",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "itemdef_toy_vector",
+        "hex_value": "0x0229d9f8",
+        "meaning": "Vetor contendo coleção de itemdef toy",
+        "data_type": "std::vector<>",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "all_syndromes_vector",
+        "hex_value": "0x022aa3f0",
+        "meaning": "Todas as síndromes definidas (doenças, etc.)",
+        "data_type": "std::vector<>",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "world_site_type",
+        "hex_value": "0x0080",
+        "meaning": "Campo de dados para world site type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "gview",
+        "hex_value": "0x029fbac0",
+        "meaning": "Visualização gráfica principal do jogo",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "external_flag",
+        "hex_value": "0x021824c4",
+        "meaning": "Flag para comunicação com ferramentas externas",
+        "data_type": "bool",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "viewscreen_setupdwarfgame_vtable",
+        "hex_value": "0x01f21580",
+        "meaning": "VTable da tela de setup inicial",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "word_offsets": [
+      {
+        "name": "word_type",
+        "hex_value": "0x005c",
+        "meaning": "Campo de dados para word type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "general_ref_offsets": [
+      {
+        "name": "ref_type",
+        "hex_value": "0x0010",
+        "meaning": "Campo de dados para ref type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "race_offsets": [
+      {
+        "name": "baby_name_singular",
+        "hex_value": "0x0080",
+        "meaning": "Campo de dados para baby name singular",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "baby_name_plural",
+        "hex_value": "0x00a0",
+        "meaning": "Campo de dados para baby name plural",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "caste_offsets": [
+      {
+        "name": "caste_phys_att_ranges",
+        "hex_value": "0x1210",
+        "meaning": "Campo de dados para caste phys att ranges",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "baby_age",
+        "hex_value": "0x04c0",
+        "meaning": "Campo de dados para baby age",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "adult_size",
+        "hex_value": "0x04d8",
+        "meaning": "Tamanho em bytes de adult",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "body_info",
+        "hex_value": "0x06c0",
+        "meaning": "Campo de dados para body info",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "extracts",
+        "hex_value": "0x39e0",
+        "meaning": "Campo de dados para extracts",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "hist_entity_offsets": [
+      {
+        "name": "positions",
+        "hex_value": "0x10c0",
+        "meaning": "Posições disponíveis no esquadrão",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "assign_position_id",
+        "hex_value": "0x000c",
+        "meaning": "Identificador único para assign position",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "position_id",
+        "hex_value": "0x0020",
+        "meaning": "Identificador único para position",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "position_name",
+        "hex_value": "0x0098",
+        "meaning": "Campo de dados para position name",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "position_female_name",
+        "hex_value": "0x00d8",
+        "meaning": "Campo de dados para position female name",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "position_male_name",
+        "hex_value": "0x0118",
+        "meaning": "Campo de dados para position male name",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "hist_figure_offsets": [
+      {
+        "name": "fake_birth_year",
+        "hex_value": "0x0094",
+        "meaning": "Campo de dados para fake birth year",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "hist_event_offsets": [
+      {
+        "name": "event_year",
+        "hex_value": "0x0008",
+        "meaning": "Campo de dados para event year",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "item_offsets": [
+      {
+        "name": "stack_size",
+        "hex_value": "0x0078",
+        "meaning": "Quantidade de itens na pilha",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "mat_type",
+        "hex_value": "0x00ac",
+        "meaning": "Campo de dados para mat type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "mat_index",
+        "hex_value": "0x00b0",
+        "meaning": "Campo de dados para mat index",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "quality",
+        "hex_value": "0x00b6",
+        "meaning": "Qualidade do item (obra-prima, superior, etc.)",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "item_subtype_offsets": [
+      {
+        "name": "sub_type",
+        "hex_value": "0x0028",
+        "meaning": "Campo de dados para sub type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "item_filter_offsets": [
+      {
+        "name": "item_subtype",
+        "hex_value": "0x0002",
+        "meaning": "Campo de dados para item subtype",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "mat_type",
+        "hex_value": "0x0006",
+        "meaning": "Campo de dados para mat type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "mat_index",
+        "hex_value": "0x0008",
+        "meaning": "Campo de dados para mat index",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "weapon_subtype_offsets": [
+      {
+        "name": "single_size",
+        "hex_value": "0x00f8",
+        "meaning": "Tamanho em bytes de single",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "multi_size",
+        "hex_value": "0x00fc",
+        "meaning": "Tamanho em bytes de multi",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "armor_subtype_offsets": [
+      {
+        "name": "layer",
+        "hex_value": "0x0010",
+        "meaning": "Camada corporal afetada (pele, músculo, osso)",
+        "data_type": "uint16",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "material_offsets": [
+      {
+        "name": "prefix",
+        "hex_value": "0x0520",
+        "meaning": "Campo de dados para prefix",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "health_offsets": [
+      {
+        "name": "body_part_flags",
+        "hex_value": "0x0048",
+        "meaning": "Flags de estado das partes corporais",
+        "data_type": "bool",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "layers_vector",
+        "hex_value": "0x0058",
+        "meaning": "Camadas corporais (pele, gordura, músculo, osso)",
+        "data_type": "std::vector<>",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "layer_tissue",
+        "hex_value": "0x0020",
+        "meaning": "Tipo de tecido da camada",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "layer_global_id",
+        "hex_value": "0x0068",
+        "meaning": "ID global da camada no sistema",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "dwarf_offsets": [
+      {
+        "name": "sex",
+        "hex_value": "0x012e",
+        "meaning": "Gênero da criatura (0=fêmea, 1=macho, -1=desconhecido)",
+        "data_type": "int16",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "animal_type",
+        "hex_value": "0x0138",
+        "meaning": "Campo de dados para animal type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "squad_position",
+        "hex_value": "0x01dc",
+        "meaning": "Posição/rank dentro do esquadrão",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "birth_year",
+        "hex_value": "0x0374",
+        "meaning": "Ano de nascimento no calendário do jogo",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "physical_attrs",
+        "hex_value": "0x05e4",
+        "meaning": "Vetor de atributos físicos (força, agilidade, resistência, etc.)",
+        "data_type": "vector<attribute_struct>",
+        "size": "unknown",
+        "possible_values": [
+          "1: Strength",
+          "2: Agility",
+          "3: Toughness",
+          "4: Endurance",
+          "5: Disease Resistance",
+          "6: Recuperation",
+          "7: Analytical Ability",
+          "8: Creativity",
+          "9: Empathy",
+          "10: Focus",
+          "11: Intuition",
+          "12: Kinesthetic Sense",
+          "13: Linguistic Ability",
+          "14: Memory",
+          "15: Musicality",
+          "16: Patience",
+          "17: Social Awareness",
+          "18: Spatial Sense",
+          "19: Willpower"
+        ]
+      },
+      {
+        "name": "body_size",
+        "hex_value": "0x06c8",
+        "meaning": "Tamanho físico atual do corpo (afeta capacidade de carga)",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "size_info",
+        "hex_value": "0x068c",
+        "meaning": "Informações detalhadas sobre tamanho e crescimento",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "size_base",
+        "hex_value": "0x0690",
+        "meaning": "Tamanho base natural da criatura",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "active_syndrome_vector",
+        "hex_value": "0x0c80",
+        "meaning": "Vetor de síndromes ativas (doenças, maldições)",
+        "data_type": "std::vector<>",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "syn_sick_flag",
+        "hex_value": "0x004c",
+        "meaning": "Flag indicando se está doente por síndrome",
+        "data_type": "bool",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "body_component_info",
+        "hex_value": "0x04d0",
+        "meaning": "Informações sobre componentes corporais",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "layer_status_vector",
+        "hex_value": "0x0048",
+        "meaning": "Estado das camadas corporais (pele, músculos, etc.)",
+        "data_type": "std::vector<>",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "inventory",
+        "hex_value": "0x03f0",
+        "meaning": "Vetor de itens carregados pela unidade",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "inventory_item_mode",
+        "hex_value": "0x0008",
+        "meaning": "Modo de carregamento de item no inventário",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "inventory_item_bodypart",
+        "hex_value": "0x000a",
+        "meaning": "Parte do corpo onde item está equipado",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "syndrome_offsets": [
+      {
+        "name": "cie_phys",
+        "hex_value": "0x00b0",
+        "meaning": "Campo de dados para cie phys",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "syn_classes_vector",
+        "hex_value": "0x00c8",
+        "meaning": "Vetor contendo coleção de syn classes",
+        "data_type": "std::vector<>",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "unit_wound_offsets": [
+      {
+        "name": "layer",
+        "hex_value": "0x0006",
+        "meaning": "Camada corporal afetada (pele, músculo, osso)",
+        "data_type": "uint16",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "max_pen",
+        "hex_value": "0x009a",
+        "meaning": "Campo de dados para max pen",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "soul_details": [
+      {
+        "name": "personality",
+        "hex_value": "0x0248",
+        "meaning": "Campo de dados para personality",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "goal_realized",
+        "hex_value": "0x0028",
+        "meaning": "Campo de dados para goal realized",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "need_offsets": [
+      {
+        "name": "deity_id",
+        "hex_value": "0x0004",
+        "meaning": "Identificador único para deity",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "emotion_offsets": [
+      {
+        "name": "emotion_type",
+        "hex_value": "0x0000",
+        "meaning": "Tipo específico da emoção (felicidade, raiva, etc.)",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "year",
+        "hex_value": "0x0020",
+        "meaning": "Ano em que a emoção foi gerada",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "year_tick",
+        "hex_value": "0x0024",
+        "meaning": "Tick específico quando a emoção foi gerada",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "job_details": [
+      {
+        "name": "mat_type",
+        "hex_value": "0x0030",
+        "meaning": "Campo de dados para mat type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "mat_index",
+        "hex_value": "0x0034",
+        "meaning": "Campo de dados para mat index",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "mat_category",
+        "hex_value": "0x0048",
+        "meaning": "Campo de dados para mat category",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "squad_offsets": [
+      {
+        "name": "sched_size",
+        "hex_value": "0x0058",
+        "meaning": "Tamanho em bytes de sched",
+        "data_type": "uint32",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "carry_food",
+        "hex_value": "0x01c0",
+        "meaning": "Campo de dados para carry food",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "carry_water",
+        "hex_value": "0x01c2",
+        "meaning": "Campo de dados para carry water",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "ammunition_qty",
+        "hex_value": "0x000c",
+        "meaning": "Campo de dados para ammunition qty",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "uniform_spec_item_subtype",
+        "hex_value": "0x0006",
+        "meaning": "Campo de dados para uniform spec item subtype",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "uniform_spec_mat_type",
+        "hex_value": "0x000a",
+        "meaning": "Campo de dados para uniform spec mat type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "uniform_spec_mat_index",
+        "hex_value": "0x000c",
+        "meaning": "Campo de dados para uniform spec mat index",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "uniform_spec_item_type",
+        "hex_value": "0x0004",
+        "meaning": "Campo de dados para uniform spec item type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "activity_offsets": [
+      {
+        "name": "activity_type",
+        "hex_value": "0x0004",
+        "meaning": "Campo de dados para activity type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "pray_deity",
+        "hex_value": "0x00b0",
+        "meaning": "Campo de dados para pray deity",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "pray_sphere",
+        "hex_value": "0x00b4",
+        "meaning": "Campo de dados para pray sphere",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "knowledge_category",
+        "hex_value": "0x00c0",
+        "meaning": "Campo de dados para knowledge category",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      },
+      {
+        "name": "perf_type",
+        "hex_value": "0x00b0",
+        "meaning": "Campo de dados para perf type",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ],
+    "viewscreen_offsets": [
+      {
+        "name": "view",
+        "hex_value": "0x0008",
+        "meaning": "Campo de dados para view",
+        "data_type": "unknown",
+        "size": "unknown",
+        "possible_values": []
+      }
+    ]
+  },
+  "potential_coordinates": [
+    {
+      "section": "hist_entity_offsets",
+      "name": "positions",
+      "hex_value": "0x10c0",
+      "meaning": "Posições disponíveis no esquadrão",
+      "data_type": "unknown"
+    },
+    {
+      "section": "hist_entity_offsets",
+      "name": "assign_position_id",
+      "hex_value": "0x000c",
+      "meaning": "Identificador único para assign position",
+      "data_type": "uint32"
+    },
+    {
+      "section": "hist_entity_offsets",
+      "name": "position_id",
+      "hex_value": "0x0020",
+      "meaning": "Identificador único para position",
+      "data_type": "uint32"
+    },
+    {
+      "section": "hist_entity_offsets",
+      "name": "position_name",
+      "hex_value": "0x0098",
+      "meaning": "Campo de dados para position name",
+      "data_type": "unknown"
+    },
+    {
+      "section": "hist_entity_offsets",
+      "name": "position_female_name",
+      "hex_value": "0x00d8",
+      "meaning": "Campo de dados para position female name",
+      "data_type": "unknown"
+    },
+    {
+      "section": "hist_entity_offsets",
+      "name": "position_male_name",
+      "hex_value": "0x0118",
+      "meaning": "Campo de dados para position male name",
+      "data_type": "unknown"
+    },
+    {
+      "section": "dwarf_offsets",
+      "name": "squad_position",
+      "hex_value": "0x01dc",
+      "meaning": "Posição/rank dentro do esquadrão",
+      "data_type": "uint32"
+    },
+    {
+      "section": "dwarf_offsets",
+      "name": "mood",
+      "hex_value": "0x0348",
+      "meaning": "Estado de humor/temperamento atual (normal, fey, possessed, etc.)",
+      "data_type": "int32"
+    },
+    {
+      "section": "viewscreen_offsets",
+      "name": "view",
+      "hex_value": "0x0008",
+      "meaning": "Campo de dados para view",
+      "data_type": "unknown"
+    }
+  ],
+  "statistics": {
+    "sections_with_coordinates": 25,
+    "total_coordinate_offsets": 86,
+    "potential_coordinate_offsets": 9
+  }
+}

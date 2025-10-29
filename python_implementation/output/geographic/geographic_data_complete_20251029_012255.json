@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "extraction_time": "2025-10-29T01:22:55.651688",
+    "df_pid": 17476,
+    "base_address": "0x7ff7096a0000"
+  },
+  "world_structure": {
+    "description": "Descrição não encontrada",
+    "address": "0x7ff84baf3de8",
+    "basic_info": {
+      "world_index": {
+        "value": 0,
+        "offset": "0x0",
+        "description": "Índice do mundo"
+      },
+      "world_name_id": {
+        "value": 0,
+        "offset": "0x4",
+        "description": "ID do nome do mundo"
+      },
+      "world_seed": {
+        "value": 0,
+        "offset": "0x8",
+        "description": "Seed de geração do mundo"
+      },
+      "world_size_x": {
+        "value": 0,
+        "offset": "0x10",
+        "description": "Tamanho X do mundo"
+      },
+      "world_size_y": {
+        "value": 0,
+        "offset": "0x14",
+        "description": "Tamanho Y do mundo"
+      },
+      "world_age": {
+        "value": 0,
+        "offset": "0x18",
+        "description": "Idade do mundo em anos"
+      },
+      "regions_vector": {
+        "value": 0,
+        "offset": "0x300",
+        "description": "Vetor de regiões"
+      }
+    }
+  },
+  "active_sites": {
+    "description": "Descrição não encontrada",
+    "vector_address": "0x7ff7096e83b0",
+    "sites": []
+  },
+  "regions": {
+    "description": "Regiões geográficas do mundo",
+    "regions_vector": {
+      "address": "0x7ff84baf40e8",
+      "count": 0
+    },
+    "region_count": 0,
+    "sample_regions": []
+  },
+  "coordinates": {
+    "description": "Sistemas de coordenadas e elevação",
+    "coordinate_arrays": {},
+    "elevation_maps": {},
+    "world_dimensions": {
+      "width": 0,
+      "height": 0,
+      "description": "Dimensões do mapa mundial em regiões"
+    }
+  },
+  "geology": {
+    "description": "Dados geológicos e materiais do mundo",
+    "material_layers": {
+      "layer_0": {
+        "offset": "0x1000",
+        "materials": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "description": "Camada geológica 0"
+      },
+      "layer_1": {
+        "offset": "0x2000",
+        "materials": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "description": "Camada geológica 1"
+      },
+      "layer_2": {
+        "offset": "0x3000",
+        "materials": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "description": "Camada geológica 2"
+      },
+      "layer_3": {
+        "offset": "0x4000",
+        "materials": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "description": "Camada geológica 3"
+      },
+      "layer_4": {
+        "offset": "0x5000",
+        "materials": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "description": "Camada geológica 4"
+      }
+    },
+    "mineral_veins": {},
+    "stone_types": {}
+  },
+  "climate": {
+    "description": "Dados climáticos e meteorológicos",
+    "temperature_map": "Mapeado através das regiões",
+    "rainfall_map": "Mapeado através das regiões",
+    "wind_patterns": "Não implementado"
+  },
+  "hydrology": {
+    "description": "Sistemas de água: rios, lagos, aquíferos",
+    "river_systems": "Mapeado através das regiões",
+    "water_table": "Drainage mapeado por região",
+    "underground_water": "Não implementado"
+  },
+  "raw_geographic_offsets": {
+    "description": "Todos os offsets relacionados a geografia com suas descrições"
+  }
+}

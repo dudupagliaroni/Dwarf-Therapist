@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-29T00:10:51.120920",
+    "description": "Análise completa de tipos de thoughts do Dwarf Therapist",
+    "source_file": "C:\\Users\\Eduardo\\Documents\\projetinhos\\Dwarf-Therapist\\resources\\game_data.ini"
+  },
+  "statistics": {
+    "total_thoughts": 280,
+    "total_subthought_groups": 13,
+    "thoughts_with_subthoughts": 21,
+    "thoughts_by_category": {
+      "Other": 175,
+      "Death/Violence": 7,
+      "Social": 7,
+      "Work/Skills": 7,
+      "Military": 5,
+      "Supernatural": 4,
+      "Clothing": 7,
+      "Weather/Environment": 6,
+      "Sleep/Rest": 14,
+      "Food/Drink": 10,
+      "Health/Injuries": 5,
+      "Nobility/Politics": 15,
+      "Arts/Performance": 6,
+      "Learning/Knowledge": 12
+    },
+    "max_thought_id": 280,
+    "min_thought_id": 1
+  },
+  "thoughts": {
+    "1": {
+      "id": 1,
+      "title": "Conflict",
+      "thought": "\"while in conflict\"",
+      "subthoughts_type": null
+    },
+    "2": {
+      "id": 2,
+      "title": "Trauma",
+      "thought": "\"after experiencing trauma\"",
+      "subthoughts_type": null
+    },
+    "3": {
+      "id": 3,
+      "title": "Death (Witnessed)",
+      "thought": "\"after witnessing death\"",
+      "subthoughts_type": null
+    },
+    "4": {
+      "id": 4,
+      "title": "Death (Unexpected)",
+      "thought": "\"at the unexpected death of somebody\"",
+      "subthoughts_type": null
+    },
+    "5": {
+      "id": 5,
+      "title": "Death",
+      "thought": "\"at somebody's death\"",
+      "subthoughts_type": null
+    },
+    "6": {
+      "id": 6,
+      "title": "Killed",
+      "thought": "\"while killing somebody\"",
+      "subthoughts_type": null
+    },
+    "7": {
+      "id": 7,
+      "title": "Love Separated",
+      "thought": "\"at being separated from a loved one\"",
+      "subthoughts_type": null
+    },
+    "8": {
+      "id": 8,
+      "title": "Love Reunited",
+      "thought": "\"after being reunited with a loved one\"",
+      "subthoughts_type": null
+    },
+    "9": {
+      "id": 9,
+      "title": "Conflict Joined",
+      "thought": "\"joining an existing conflict\"",
+      "subthoughts_type": null
+    },
+    "10": {
+      "id": 10,
+      "title": "Crafted Masterwork",
+      "thought": "\"after producing a masterwork\"",
+      "subthoughts_type": null
+    },
+    "11": {
+      "id": 11,
+      "title": "Crafted Artifact",
+      "thought": "\"after creating an artifact\"",
+      "subthoughts_type": null
+    },
+    "12": {
+      "id": 12,
+      "title": "Mastered Skill",
+      "thought": "\"upon becoming a master [skill]\"",
+      "subthoughts_type": null
+    },
+    "13": {
+      "id": 13,
+      "title": "New Romance",
+      "thought": "\"as they were caught up in a new romance\"",
+      "subthoughts_type": null
+    },
+    "14": {
+      "id": 14,
+      "title": "Birth",
+      "thought": "\"after becoming a parent\"",
+      "subthoughts_type": null
+    },
+    "15": {
+      "id": 15,
+      "title": "Conflict Proximity",
+      "thought": "\"being near to a conflict\"",
+      "subthoughts_type": null
+    },
+    "16": {
+      "id": 16,
+      "title": "Cancelled Agreement",
+      "thought": "\"after an agreement was cancelled\"",
+      "subthoughts_type": null
+    },
+    "17": {
+      "id": 17,
+      "title": "Traveling",
+      "thought": "\"upon joining a traveling group\"",
+      "subthoughts_type": null
+    },
+    "18": {
+      "id": 18,
+      "title": "Site Controlled",
+      "thought": "\"after a site was controlled\"",
+      "subthoughts_type": null
+    },
+    "19": {
+      "id": 19,
+      "title": "Cancelled Tribute",
+      "thought": "\"after a tribute cancellation\"",
+      "subthoughts_type": null
+    },
+    "20": {
+      "id": 20,
+      "title": "Incident",
+      "thought": "\"after an incident\"",
+      "subthoughts_type": null
+    },
+    "21": {
+      "id": 21,
+      "title": "Heard Rumor",
+      "thought": "\"after hearing a rumor\"",
+      "subthoughts_type": null
+    },
+    "22": {
+      "id": 22,
+      "title": "Military Removed",
+      "thought": "\"after being removed from a military group\"",
+      "subthoughts_type": null
+    },
+    "23": {
+      "id": 23,
+      "title": "Stranger (Weapon)",
+      "thought": "\"when a stranger advanced with a weapon\"",
+      "subthoughts_type": null
+    },
+    "24": {
+      "id": 24,
+      "title": "Stranger (Sneaking)",
+      "thought": "\"after seeing a stranger sneaking around\"",
+      "subthoughts_type": null
+    },
+    "25": {
+      "id": 25,
+      "title": "Vampire",
+      "thought": "\"after witnessing a night creature drinking blood\"",
+      "subthoughts_type": null
+    },
+    "26": {
+      "id": 26,
+      "title": "Complained",
+      "thought": "\"\"",
+      "subthoughts_type": 0
+    },
+    "27": {
+      "id": 27,
+      "title": "Complaint Received",
+      "thought": "\"\"",
+      "subthoughts_type": 1
+    },
+    "28": {
+      "id": 28,
+      "title": "Admired Building",
+      "thought": "\"seeing a [building]\"",
+      "subthoughts_type": null
+    },
+    "29": {
+      "id": 29,
+      "title": "Admired Own Building",
+      "thought": "\"seeing their own [building]\"",
+      "subthoughts_type": null
+    },
+    "30": {
+      "id": 30,
+      "title": "Admired Arranged Building",
+      "thought": "\"seeing a tastefully arranged [building]\"",
+      "subthoughts_type": null
+    },
+    "31": {
+      "id": 31,
+      "title": "Admired Own Arranged Building",
+      "thought": "\"seeing their own tastefully arranged [building]\"",
+      "subthoughts_type": null
+    },
+    "32": {
+      "id": 32,
+      "title": "Death (Pet)",
+      "thought": "\"after losing a pet\"",
+      "subthoughts_type": null
+    },
+    "33": {
+      "id": 33,
+      "title": "Tantrum (Thrown)",
+      "thought": "\"after throwing something\"",
+      "subthoughts_type": null
+    },
+    "34": {
+      "id": 34,
+      "title": "Jail (Released)",
+      "thought": "\"after being released from confinement\"",
+      "subthoughts_type": null
+    },
+    "35": {
+      "id": 35,
+      "title": "Miscarriage",
+      "thought": "\"after a miscarriage\"",
+      "subthoughts_type": null
+    },
+    "36": {
+      "id": 36,
+      "title": "Miscarriage (Spouse)",
+      "thought": "\"after their spouse's miscarriage\"",
+      "subthoughts_type": null
+    },
+    "37": {
+      "id": 37,
+      "title": "Clothing (Old)",
+      "thought": "\"to be wearing old clothing\"",
+      "subthoughts_type": null
+    },
+    "38": {
+      "id": 38,
+      "title": "Clothing (Tattered)",
+      "thought": "\"to be wearing tattered clothing\"",
+      "subthoughts_type": null
+    },
+    "39": {
+      "id": 39,
+      "title": "Clothing (Rotted)",
+      "thought": "\"to have clothes rot off of their body\"",
+      "subthoughts_type": null
+    },
+    "40": {
+      "id": 40,
+      "title": "Ghost (Nightmare)",
+      "thought": "\"after being tormented in nightmares by [dead somebody]\"",
+      "subthoughts_type": 5
+    },
+    "41": {
+      "id": 41,
+      "title": "Ghost (Haunt)",
+      "thought": "\"after being haunted/tormented/possessed by [dead somebody]\"",
+      "subthoughts_type": 5
+    },
+    "42": {
+      "id": 42,
+      "title": "Spar",
+      "thought": "\"after a sparring session\"",
+      "subthoughts_type": null
+    },
+    "43": {
+      "id": 43,
+      "title": "Complaint (Unable)",
+      "thought": "\"after being unable to [meet]\"",
+      "subthoughts_type": 3
+    },
+    "44": {
+      "id": 44,
+      "title": "Military (Patrol)",
+      "thought": "\"during long patrol duty\"",
+      "subthoughts_type": null
+    },
+    "45": {
+      "id": 45,
+      "title": "Sun (Nausea)",
+      "thought": "\"after being nauseated by the sun\"",
+      "subthoughts_type": null
+    },
+    "46": {
+      "id": 46,
+      "title": "Sun (Irritated)",
+      "thought": "\"at being out in the sunshine again\"",
+      "subthoughts_type": null
+    },
+    "47": {
+      "id": 47,
+      "title": "Drowsy",
+      "thought": "\"when drowsy\"",
+      "subthoughts_type": null
+    },
+    "48": {
+      "id": 48,
+      "title": "Very Drowsy",
+      "thought": "\"when utterly sleep-deprived\"",
+      "subthoughts_type": null
+    },
+    "49": {
+      "id": 49,
+      "title": "Thirst",
+      "thought": "\"when thirsty\"",
+      "subthoughts_type": null
+    },
+    "50": {
+      "id": 50,
+      "title": "Dehydration",
+      "thought": "\"when dehydrated\"",
+      "subthoughts_type": null
+    },
+    "51": {
+      "id": 51,
+      "title": "Hunger",
+      "thought": "\"when hungry\"",
+      "subthoughts_type": null
+    },
+    "52": {
+      "id": 52,
+      "title": "Starvation",
+      "thought": "\"when starving\"",
+      "subthoughts_type": null
+    },
+    "53": {
+      "id": 53,
+      "title": "Injuries (Major)",
+      "thought": "\"after suffering a major injury\"",
+      "subthoughts_type": null
+    },
+    "54": {
+      "id": 54,
+      "title": "Injuries (Minor)",
+      "thought": "\"after suffering a minor injury\"",
+      "subthoughts_type": null
+    },
+    "55": {
+      "id": 55,
+      "title": "Sleep (Noise)",
+      "thought": "\"after \"",
+      "subthoughts_type": 4
+    },
+    "56": {
+      "id": 56,
+      "title": "Injuries (Rest)",
+      "thought": "\"after being able to rest and recuperate\"",
+      "subthoughts_type": null
+    },
+    "57": {
+      "id": 57,
+      "title": "Weather (Freakish)",
+      "thought": "\"when caught in freakish weather\"",
+      "subthoughts_type": null
+    },
+    "58": {
+      "id": 58,
+      "title": "Weather (Rain)",
+      "thought": "\"when caught in the rain\"",
+      "subthoughts_type": null
+    },
+    "59": {
+      "id": 59,
+      "title": "Weather (Snow Storm)",
+      "thought": "\"when caught in a snow storm\"",
+      "subthoughts_type": null
+    },
+    "60": {
+      "id": 60,
+      "title": "Miasma",
+      "thought": "\"after retching on a miasma\"",
+      "subthoughts_type": null
+    },
+    "61": {
+      "id": 61,
+      "title": "Smoke",
+      "thought": "\"after choking on smoke underground\"",
+      "subthoughts_type": null
+    },
+    "62": {
+      "id": 62,
+      "title": "Waterfall",
+      "thought": "\"being near to a waterfall\"",
+      "subthoughts_type": null
+    },
+    "63": {
+      "id": 63,
+      "title": "Dust",
+      "thought": "\"after choking on dust underground\"",
+      "subthoughts_type": null
+    },
+    "64": {
+      "id": 64,
+      "title": "Demands",
+      "thought": "\"considering the state of demands\"",
+      "subthoughts_type": null
+    },
+    "65": {
+      "id": 65,
+      "title": "Punishment (Improper)",
+      "thought": "\"that a criminal could not be properly punished\"",
+      "subthoughts_type": null
+    },
+    "66": {
+      "id": 66,
+      "title": "Punishment (Reduced)",
+      "thought": "\"to have their punishment reduced\"",
+      "subthoughts_type": null
+    },
+    "67": {
+      "id": 67,
+      "title": "Leader (Elected)",
+      "thought": "\"to be elected\"",
+      "subthoughts_type": null
+    },
+    "68": {
+      "id": 68,
+      "title": "Leader (Re-elected)",
+      "thought": "\"to be re-elected\"",
+      "subthoughts_type": null
+    },
+    "69": {
+      "id": 69,
+      "title": "Request Approved",
+      "thought": "\"having a request approved\"",
+      "subthoughts_type": null
+    },
+    "70": {
+      "id": 70,
+      "title": "Request Ignored",
+      "thought": "\"having a request ignored\"",
+      "subthoughts_type": null
+    },
+    "71": {
+      "id": 71,
+      "title": "Punishment (None)",
+      "thought": "\"that nobody could be punished for a failure\"",
+      "subthoughts_type": null
+    },
+    "72": {
+      "id": 72,
+      "title": "Punishment (Delayed)",
+      "thought": "\"to have their punishment delayed\"",
+      "subthoughts_type": null
+    },
+    "73": {
+      "id": 73,
+      "title": "Punishment (Delayed)",
+      "thought": "\"after the delayed punishment of a criminal\"",
+      "subthoughts_type": null
+    },
+    "74": {
+      "id": 74,
+      "title": "Prison Equipment",
+      "thought": "\"considering the scarcity of cages and chains\"",
+      "subthoughts_type": null
+    },
+    "75": {
+      "id": 75,
+      "title": "Mandate (Ignored)",
+      "thought": "\"having a mandate ignored\"",
+      "subthoughts_type": null
+    },
+    "76": {
+      "id": 76,
+      "title": "Mandate (Missed)",
+      "thought": "\"having a mandate deadline missed\"",
+      "subthoughts_type": null
+    },
+    "77": {
+      "id": 77,
+      "title": "Work (Lack)",
+      "thought": "\"after the lack of work last season\"",
+      "subthoughts_type": null
+    },
+    "78": {
+      "id": 78,
+      "title": "Tantrum (Smashed)",
+      "thought": "\"after smashing up a building\"",
+      "subthoughts_type": null
+    },
+    "79": {
+      "id": 79,
+      "title": "Tantrum (Toppled)",
+      "thought": "\"after toppling something over\"",
+      "subthoughts_type": null
+    },
+    "80": {
+      "id": 80,
+      "title": "Nobility (Promotion)",
+      "thought": "\"after receiving a higher rank of nobility\"",
+      "subthoughts_type": null
+    },
+    "81": {
+      "id": 81,
+      "title": "Nobility",
+      "thought": "\"after entering the nobility\"",
+      "subthoughts_type": null
+    },
+    "82": {
+      "id": 82,
+      "title": "Cave-in",
+      "thought": "\"after being knocked out during a cave-in\"",
+      "subthoughts_type": null
+    },
+    "83": {
+      "id": 83,
+      "title": "Mandate (Met)",
+      "thought": "\"to have a mandate deadline met\"",
+      "subthoughts_type": null
+    },
+    "84": {
+      "id": 84,
+      "title": "Clothing (No Pants)",
+      "thought": "\"to have no pants\"",
+      "subthoughts_type": null
+    },
+    "85": {
+      "id": 85,
+      "title": "Clothing (No Shirt)",
+      "thought": "\"to have no shirt\"",
+      "subthoughts_type": null
+    },
+    "86": {
+      "id": 86,
+      "title": "Clothing (No Shoes)",
+      "thought": "\"to have no shoes\"",
+      "subthoughts_type": null
+    },
+    "87": {
+      "id": 87,
+      "title": "Ate Pet",
+      "thought": "\"after being forced to eat a treasured pet to survive\"",
+      "subthoughts_type": null
+    },
+    "88": {
+      "id": 88,
+      "title": "Ate Liked Creature",
+      "thought": "\"after being forced to eat a beloved creature to survive\"",
+      "subthoughts_type": null
+    },
+    "89": {
+      "id": 89,
+      "title": "Ate Vermin",
+      "thought": "\"after being forced to eat vermin to survive\"",
+      "subthoughts_type": null
+    },
+    "90": {
+      "id": 90,
+      "title": "Tantrum (Fight)",
+      "thought": "\"after starting a fist fight\"",
+      "subthoughts_type": null
+    },
+    "91": {
+      "id": 91,
+      "title": "Punishment (Administered Beating)",
+      "thought": "\"after punishing somebody with a beating\"",
+      "subthoughts_type": null
+    },
+    "92": {
+      "id": 92,
+      "title": "Punished",
+      "thought": "\"after being beaten\"",
+      "subthoughts_type": null
+    },
+    "93": {
+      "id": 93,
+      "title": "Punishment (Administered Hammering)",
+      "thought": "\"after beating somebody with a hammer\"",
+      "subthoughts_type": null
+    },
+    "94": {
+      "id": 94,
+      "title": "Punished (Hammerer)",
+      "thought": "\"after being beaten with a hammer\"",
+      "subthoughts_type": null
+    },
+    "95": {
+      "id": 95,
+      "title": "Punishment (Missing Hammer)",
+      "thought": "\"after being unable to find a hammer\"",
+      "subthoughts_type": null
+    },
+    "96": {
+      "id": 96,
+      "title": "Meal (Weary)",
+      "thought": "\"eating the same old food\"",
+      "subthoughts_type": null
+    },
+    "97": {
+      "id": 97,
+      "title": "Meal (Rotten)",
+      "thought": "\"after eating rotten food\"",
+      "subthoughts_type": null
+    },
+    "98": {
+      "id": 98,
+      "title": "Meal",
+      "thought": "\"after eating a [quality meal]\"",
+      "subthoughts_type": 6
+    },
+    "99": {
+      "id": 99,
+      "title": "Drink",
+      "thought": "\"after having a [quality drink] drink\"",
+      "subthoughts_type": 7
+    },
+    "100": {
+      "id": 100,
+      "title": "Insufficient Chests",
+      "thought": "\"not having enough chests\"",
+      "subthoughts_type": null
+    },
+    "101": {
+      "id": 101,
+      "title": "Insufficient Cabinets",
+      "thought": "\"not having enough cabinets\"",
+      "subthoughts_type": null
+    },
+    "102": {
+      "id": 102,
+      "title": "Insufficient Weapon Racks",
+      "thought": "\"not having enough weapon racks\"",
+      "subthoughts_type": null
+    },
+    "103": {
+      "id": 103,
+      "title": "Insufficient Armor Stands",
+      "thought": "\"not having enough armor stands\"",
+      "subthoughts_type": null
+    },
+    "104": {
+      "id": 104,
+      "title": "Room (Pretension)",
+      "thought": "\"by a lesser's pretentious room arrangements\"",
+      "subthoughts_type": null
+    },
+    "105": {
+      "id": 105,
+      "title": "Insufficient Tables",
+      "thought": "\"at the lack of dining tables\"",
+      "subthoughts_type": null
+    },
+    "106": {
+      "id": 106,
+      "title": "Crowded Tables",
+      "thought": "\"eating at a crowded table\"",
+      "subthoughts_type": null
+    },
+    "107": {
+      "id": 107,
+      "title": "Dining Room",
+      "thought": "\"dining in a [quality] dining room\"",
+      "subthoughts_type": 8
+    },
+    "108": {
+      "id": 108,
+      "title": "Dining (None)",
+      "thought": "\"being without a proper dining room\"",
+      "subthoughts_type": null
+    },
+    "109": {
+      "id": 109,
+      "title": "Insufficient Chairs",
+      "thought": "\"at the lack of chairs\"",
+      "subthoughts_type": null
+    },
+    "110": {
+      "id": 110,
+      "title": "Training (Bond)",
+      "thought": "\"after forming a bond with an animal training partner\"",
+      "subthoughts_type": null
+    },
+    "111": {
+      "id": 111,
+      "title": "Rescued",
+      "thought": "\"after being rescued\"",
+      "subthoughts_type": null
+    },
+    "112": {
+      "id": 112,
+      "title": "Rescued Other",
+      "thought": "\"after bringing somebody to rest in bed\"",
+      "subthoughts_type": null
+    },
+    "113": {
+      "id": 113,
+      "title": "Work (Satisfied)",
+      "thought": "\"at work\"",
+      "subthoughts_type": null
+    },
+    "114": {
+      "id": 114,
+      "title": "Tax (Lost Property)",
+      "thought": "\"after losing property to the tax collector's escorts\"",
+      "subthoughts_type": null
+    },
+    "115": {
+      "id": 115,
+      "title": "Taxed",
+      "thought": "\"after being taxed\"",
+      "subthoughts_type": null
+    },
+    "116": {
+      "id": 116,
+      "title": "LackProtection",
+      "thought": "\"not having adequate protection\"",
+      "subthoughts_type": null
+    },
+    "117": {
+      "id": 117,
+      "title": "Tax (Inaccessible)",
+      "thought": "\"after being unable to reach a room for tax collection\"",
+      "subthoughts_type": null
+    },
+    "118": {
+      "id": 118,
+      "title": "Tax (Misinformed)",
+      "thought": "\"after being misinformed about a room for tax collection\"",
+      "subthoughts_type": null
+    },
+    "119": {
+      "id": 119,
+      "title": "Nobility (Sycophant)",
+      "thought": "\"having pleased a noble\"",
+      "subthoughts_type": null
+    },
+    "120": {
+      "id": 120,
+      "title": "Tax (Smooth)",
+      "thought": "\"that the tax collection went smoothly\"",
+      "subthoughts_type": null
+    },
+    "121": {
+      "id": 121,
+      "title": "Nobility (Disappointed)",
+      "thought": "\"having disappointed a noble\"",
+      "subthoughts_type": null
+    },
+    "122": {
+      "id": 122,
+      "title": "Tax (Rough)",
+      "thought": "\"that the tax collection didn't go smoothly\"",
+      "subthoughts_type": null
+    },
+    "123": {
+      "id": 123,
+      "title": "Social (Friend)",
+      "thought": "\"after making a friend\"",
+      "subthoughts_type": null
+    },
+    "124": {
+      "id": 124,
+      "title": "Social (Grudge)",
+      "thought": "\"after forming a grudge\"",
+      "subthoughts_type": null
+    },
+    "125": {
+      "id": 125,
+      "title": "Vermin (Annoyed)",
+      "thought": "\"after being accosted by vermin\"",
+      "subthoughts_type": null
+    },
+    "126": {
+      "id": 126,
+      "title": "Vermin (Proximity)",
+      "thought": "\"after being near vermin\"",
+      "subthoughts_type": null
+    },
+    "127": {
+      "id": 127,
+      "title": "Vermin (Pestered)",
+      "thought": "\"after being pestered by vermin\"",
+      "subthoughts_type": null
+    },
+    "128": {
+      "id": 128,
+      "title": "Acquisition",
+      "thought": "\"after a satisfying acquisition\"",
+      "subthoughts_type": null
+    },
+    "129": {
+      "id": 129,
+      "title": "Pet (Adopted)",
+      "thought": "\"after adopting a new pet\"",
+      "subthoughts_type": null
+    },
+    "130": {
+      "id": 130,
+      "title": "Punished (Jailed)",
+      "thought": "\"after being confined\"",
+      "subthoughts_type": null
+    },
+    "131": {
+      "id": 131,
+      "title": "Bath",
+      "thought": "\"after a bath\"",
+      "subthoughts_type": null
+    },
+    "132": {
+      "id": 132,
+      "title": "Bath (Soapy)",
+      "thought": "\"after a soapy bath\"",
+      "subthoughts_type": null
+    },
+    "133": {
+      "id": 133,
+      "title": "Killed (Sparring)",
+      "thought": "\"after killing somebody by accident while sparring\"",
+      "subthoughts_type": null
+    },
+    "134": {
+      "id": 134,
+      "title": "Attacked",
+      "thought": "\"after being attacked\"",
+      "subthoughts_type": null
+    },
+    "135": {
+      "id": 135,
+      "title": "Attacked (Undead)",
+      "thought": "\"after being attacked by the dead\"",
+      "subthoughts_type": null
+    },
+    "136": {
+      "id": 136,
+      "title": "Drink (Weary)",
+      "thought": "\"drinking the same old booze\"",
+      "subthoughts_type": null
+    },
+    "137": {
+      "id": 137,
+      "title": "Drank Blood",
+      "thought": "\"while forced to drink bloody water\"",
+      "subthoughts_type": null
+    },
+    "138": {
+      "id": 138,
+      "title": "Drank Slime",
+      "thought": "\"while forced to drink slime\"",
+      "subthoughts_type": null
+    },
+    "139": {
+      "id": 139,
+      "title": "Drank Vomit",
+      "thought": "\"while forced to drink vomit\"",
+      "subthoughts_type": null
+    },
+    "140": {
+      "id": 140,
+      "title": "Drank Goo",
+      "thought": "\"while forced to drink gooey water\"",
+      "subthoughts_type": null
+    },
+    "141": {
+      "id": 141,
+      "title": "Drank Ichor",
+      "thought": "\"while forced to drink ichorous water\"",
+      "subthoughts_type": null
+    },
+    "142": {
+      "id": 142,
+      "title": "Drank Pus",
+      "thought": "\"while forced to drink purulent water\"",
+      "subthoughts_type": null
+    },
+    "143": {
+      "id": 143,
+      "title": "Drank Nasty Water",
+      "thought": "\"drinking nasty water\"",
+      "subthoughts_type": null
+    },
+    "144": {
+      "id": 144,
+      "title": "Drank Spoiled",
+      "thought": "\"after drinking something spoiled\"",
+      "subthoughts_type": null
+    },
+    "145": {
+      "id": 145,
+      "title": "Insufficient Wells",
+      "thought": "\"after drinking water without a well\"",
+      "subthoughts_type": null
+    },
+    "146": {
+      "id": 146,
+      "title": "Caged (Proximity)",
+      "thought": "\"after being near a caged animal\"",
+      "subthoughts_type": null
+    },
+    "147": {
+      "id": 147,
+      "title": "Caged (Proximity)",
+      "thought": "\"after being near a caged animal\"",
+      "subthoughts_type": null
+    },
+    "148": {
+      "id": 148,
+      "title": "Insufficient Bedrooms",
+      "thought": "\"after sleeping without a proper room\"",
+      "subthoughts_type": null
+    },
+    "149": {
+      "id": 149,
+      "title": "Bedroom",
+      "thought": "\"after sleeping in a [quality] bedroom\"",
+      "subthoughts_type": 9
+    },
+    "150": {
+      "id": 150,
+      "title": "Sleep (Floor)",
+      "thought": "\"after sleeping on the floor\"",
+      "subthoughts_type": null
+    },
+    "151": {
+      "id": 151,
+      "title": "Sleep (Mud)",
+      "thought": "\"after sleeping in the mud\"",
+      "subthoughts_type": null
+    },
+    "152": {
+      "id": 152,
+      "title": "Sleep (Grass)",
+      "thought": "\"after sleeping in the grass\"",
+      "subthoughts_type": null
+    },
+    "153": {
+      "id": 153,
+      "title": "Sleep (Rough Floor)",
+      "thought": "\"after sleeping on a rough cave floor\"",
+      "subthoughts_type": null
+    },
+    "154": {
+      "id": 154,
+      "title": "Sleep (Rocks)",
+      "thought": "\"after sleeping on rocks\"",
+      "subthoughts_type": null
+    },
+    "155": {
+      "id": 155,
+      "title": "Sleep (Ice)",
+      "thought": "\"after sleeping on ice\"",
+      "subthoughts_type": null
+    },
+    "156": {
+      "id": 156,
+      "title": "Sleep (Dirt)",
+      "thought": "\"after sleeping in the dirt\"",
+      "subthoughts_type": null
+    },
+    "157": {
+      "id": 157,
+      "title": "Sleep (Driftwood)",
+      "thought": "\"after sleeping on a pile of driftwood\"",
+      "subthoughts_type": null
+    },
+    "158": {
+      "id": 158,
+      "title": "Art Defacement",
+      "thought": "\"after suffering the travesty of art defacement\"",
+      "subthoughts_type": null
+    },
+    "159": {
+      "id": 159,
+      "title": "Evicted",
+      "thought": "\"after being evicted\"",
+      "subthoughts_type": null
+    },
+    "160": {
+      "id": 160,
+      "title": "Birth",
+      "thought": "\"after giving birth to a baby\"",
+      "subthoughts_type": null
+    },
+    "161": {
+      "id": 161,
+      "title": "Birth (Spouse)",
+      "thought": "\"after becoming a parent of a baby\"",
+      "subthoughts_type": null
+    },
+    "162": {
+      "id": 162,
+      "title": "Injuries (Water)",
+      "thought": "\"after receiving water\"",
+      "subthoughts_type": null
+    },
+    "163": {
+      "id": 163,
+      "title": "Injuries (Gave Water)",
+      "thought": "\"after giving somebody water\"",
+      "subthoughts_type": null
+    },
+    "164": {
+      "id": 164,
+      "title": "Injuries (Food)",
+      "thought": "\"after receiving food\"",
+      "subthoughts_type": null
+    },
+    "165": {
+      "id": 165,
+      "title": "Injuries (Gave Food)",
+      "thought": "\"after giving somebody food\"",
+      "subthoughts_type": null
+    },
+    "166": {
+      "id": 166,
+      "title": "Social (Talked)",
+      "thought": "\"talking/visiting with [relation]\"",
+      "subthoughts_type": 2
+    },
+    "167": {
+      "id": 167,
+      "title": "Office",
+      "thought": "\"conducting a meeting in a [setting] recently\"",
+      "subthoughts_type": 10
+    },
+    "168": {
+      "id": 168,
+      "title": "Meeting (Bedroom)",
+      "thought": "\"conducting an official meeting in a bedroom\"",
+      "subthoughts_type": null
+    },
+    "169": {
+      "id": 169,
+      "title": "Meeting (Dining)",
+      "thought": "\"conducting an official meeting in a dining room\"",
+      "subthoughts_type": null
+    },
+    "170": {
+      "id": 170,
+      "title": "Insufficient Rooms",
+      "thought": "\"not having any rooms\"",
+      "subthoughts_type": null
+    },
+    "171": {
+      "id": 171,
+      "title": "Tomb",
+      "thought": "\"having a [quality] tomb after gaining another year\"",
+      "subthoughts_type": 9
+    },
+    "172": {
+      "id": 172,
+      "title": "Insufficient Tombs",
+      "thought": "\"about not having a [quality] tomb after gaining another year\"",
+      "subthoughts_type": null
+    },
+    "173": {
+      "id": 173,
+      "title": "Nobility (Talked)",
+      "thought": "\"after talking to a pillar of society\"",
+      "subthoughts_type": null
+    },
+    "174": {
+      "id": 174,
+      "title": "Pet (Interacted)",
+      "thought": "\"after interacting with a pet\"",
+      "subthoughts_type": null
+    },
+    "175": {
+      "id": 175,
+      "title": "Conviction (Corpse)",
+      "thought": "\"after a long-dead corpse was convicted of a crime\"",
+      "subthoughts_type": null
+    },
+    "176": {
+      "id": 176,
+      "title": "Conviction (Animal)",
+      "thought": "\"after an animal was convicted of a crime\"",
+      "subthoughts_type": null
+    },
+    "177": {
+      "id": 177,
+      "title": "Conviction (Victim)",
+      "thought": "\"after the bizarre conviction against all reason of the victim of a crime\"",
+      "subthoughts_type": null
+    },
+    "178": {
+      "id": 178,
+      "title": "Conviction (Justice)",
+      "thought": "\"upon receiving justice through a criminal's conviction\"",
+      "subthoughts_type": null
+    },
+    "179": {
+      "id": 179,
+      "title": "Conviction (Justice)",
+      "thought": "\"when a family member received justice through a criminal's conviction\"",
+      "subthoughts_type": null
+    },
+    "180": {
+      "id": 180,
+      "title": "Decay",
+      "thought": "\"after being forced to endure the decay of [relation]\"",
+      "subthoughts_type": 2
+    },
+    "181": {
+      "id": 181,
+      "title": "Unfulfilled",
+      "thought": "\"after [reason] for too long\"",
+      "subthoughts_type": 12
+    },
+    "182": {
+      "id": 182,
+      "title": "Commune (Deity)",
+      "thought": "\"after communing with a deity\"",
+      "subthoughts_type": null
+    },
+    "183": {
+      "id": 183,
+      "title": "Drink (No Mug)",
+      "thought": "\"after having a drink without using a goblet, cup or mug\"",
+      "subthoughts_type": null
+    },
+    "184": {
+      "id": 184,
+      "title": "Research (Breakthrough)",
+      "thought": "\"after making a breakthrough concerning [research]\"",
+      "subthoughts_type": null
+    },
+    "185": {
+      "id": 185,
+      "title": "Research (Advancement)",
+      "thought": "\"after being unable to advance the study of [research]\"",
+      "subthoughts_type": null
+    },
+    "186": {
+      "id": 186,
+      "title": "Research (Ponder)",
+      "thought": "\"after pondering [research]\"",
+      "subthoughts_type": null
+    },
+    "187": {
+      "id": 187,
+      "title": "Research (Discuss)",
+      "thought": "\"after discussing [research]\"",
+      "subthoughts_type": null
+    },
+    "188": {
+      "id": 188,
+      "title": "Syndrome",
+      "thought": "\"due to [syndrome]\"",
+      "subthoughts_type": null
+    },
+    "189": {
+      "id": 189,
+      "title": "Performing",
+      "thought": "\"while performing\"",
+      "subthoughts_type": null
+    },
+    "190": {
+      "id": 190,
+      "title": "Performance (Watch)",
+      "thought": "\"after watching a performance\"",
+      "subthoughts_type": null
+    },
+    "191": {
+      "id": 191,
+      "title": "Troupe (Removed)",
+      "thought": "\"after being removed from a performance troupe\"",
+      "subthoughts_type": null
+    },
+    "192": {
+      "id": 192,
+      "title": "Learning (Topic)",
+      "thought": "\"after learning about [topic]\"",
+      "subthoughts_type": null
+    },
+    "193": {
+      "id": 193,
+      "title": "Learning (Skill)",
+      "thought": "\"after learning about [skill]\"",
+      "subthoughts_type": null
+    },
+    "194": {
+      "id": 194,
+      "title": "Learning (Book)",
+      "thought": "\"after learning [book]\"",
+      "subthoughts_type": null
+    },
+    "195": {
+      "id": 195,
+      "title": "Learning (Interaction)",
+      "thought": "\"after learning [interaction]\"",
+      "subthoughts_type": null
+    },
+    "196": {
+      "id": 196,
+      "title": "Learning (Poetry)",
+      "thought": "\"after learning [poetry]\"",
+      "subthoughts_type": null
+    },
+    "197": {
+      "id": 197,
+      "title": "Learning (Music)",
+      "thought": "\"after learning [music]\"",
+      "subthoughts_type": null
+    },
+    "198": {
+      "id": 198,
+      "title": "Learning (Dance)",
+      "thought": "\"after learning [dance]\"",
+      "subthoughts_type": null
+    },
+    "199": {
+      "id": 199,
+      "title": "Teaching (Topic)",
+      "thought": "\"after teaching [topic]\"",
+      "subthoughts_type": null
+    },
+    "200": {
+      "id": 200,
+      "title": "Teaching (Skill)",
+      "thought": "\"after teaching [skill]\"",
+      "subthoughts_type": null
+    },
+    "201": {
+      "id": 201,
+      "title": "Reading",
+      "thought": "\"after reading [book]\"",
+      "subthoughts_type": null
+    },
+    "202": {
+      "id": 202,
+      "title": "Writing",
+      "thought": "\"after writing [book]\"",
+      "subthoughts_type": null
+    },
+    "203": {
+      "id": 203,
+      "title": "Immigration (Residency)",
+      "thought": "\"after being granted residency\"",
+      "subthoughts_type": null
+    },
+    "204": {
+      "id": 204,
+      "title": "Immigration (Citizenship)",
+      "thought": "\"after being granted citizenship\"",
+      "subthoughts_type": null
+    },
+    "205": {
+      "id": 205,
+      "title": "Immigration (Residency Denied)",
+      "thought": "\"after being denied residency\"",
+      "subthoughts_type": null
+    },
+    "206": {
+      "id": 206,
+      "title": "Immigration (Citizenship Denied)",
+      "thought": "\"after being denied citizenship\"",
+      "subthoughts_type": null
+    },
+    "207": {
+      "id": 207,
+      "title": "Troupe (Left)",
+      "thought": "\"after leaving a performance troupe\"",
+      "subthoughts_type": null
+    },
+    "208": {
+      "id": 208,
+      "title": "Play (Make Believe)",
+      "thought": "\"after playing make believe\"",
+      "subthoughts_type": null
+    },
+    "209": {
+      "id": 209,
+      "title": "Play (Toy)",
+      "thought": "\"after playing with a toy\"",
+      "subthoughts_type": null
+    },
+    "210": {
+      "id": 210,
+      "title": "Dream About",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "211": {
+      "id": 211,
+      "title": "Dream",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "212": {
+      "id": 212,
+      "title": "Nightmare",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "213": {
+      "id": 213,
+      "title": "Argument",
+      "thought": "\"after getting into an argument\"",
+      "subthoughts_type": null
+    },
+    "214": {
+      "id": 214,
+      "title": "Military (Drills)",
+      "thought": "\"after combat drills\"",
+      "subthoughts_type": null
+    },
+    "215": {
+      "id": 215,
+      "title": "Military (Archery)",
+      "thought": "\"after practicing at the archery target\"",
+      "subthoughts_type": null
+    },
+    "216": {
+      "id": 216,
+      "title": "Improvement",
+      "thought": "\"upon improving [skill]\"",
+      "subthoughts_type": null
+    },
+    "217": {
+      "id": 217,
+      "title": "Clothing (Equipped)",
+      "thought": "\"after putting on a [quality item] item\"",
+      "subthoughts_type": 11
+    },
+    "218": {
+      "id": 218,
+      "title": "Realize Value",
+      "thought": "\"after realizing the [level] of [value]\"",
+      "subthoughts_type": null
+    },
+    "219": {
+      "id": 219,
+      "title": "Opinion Storyteller",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "220": {
+      "id": 220,
+      "title": "Opinion Recitation",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "221": {
+      "id": 221,
+      "title": "Opinion Instrument Simulation",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "222": {
+      "id": 222,
+      "title": "Opinion Instrument Player",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "223": {
+      "id": 223,
+      "title": "Opinion Singer",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "224": {
+      "id": 224,
+      "title": "Opinion Chanter",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "225": {
+      "id": 225,
+      "title": "Opinion Dancer",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "226": {
+      "id": 226,
+      "title": "Opinion Story",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "227": {
+      "id": 227,
+      "title": "Opinion Poetry",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "228": {
+      "id": 228,
+      "title": "Opinion Music",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "229": {
+      "id": 229,
+      "title": "Opinion Dance",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "230": {
+      "id": 230,
+      "title": "Defeated",
+      "thought": "\"after defeating somebody\"",
+      "subthoughts_type": null
+    },
+    "231": {
+      "id": 231,
+      "title": "Favorite Possession",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "232": {
+      "id": 232,
+      "title": "Preserve Body",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "233": {
+      "id": 233,
+      "title": "Murdered",
+      "thought": "\"after murdering somebody\"",
+      "subthoughts_type": null
+    },
+    "234": {
+      "id": 234,
+      "title": "Historical Event Collection",
+      "thought": "\"during a historical event\"",
+      "subthoughts_type": null
+    },
+    "235": {
+      "id": 235,
+      "title": "View Own Display",
+      "thought": "\"after viewing a piece in a personal museum\"",
+      "subthoughts_type": null
+    },
+    "236": {
+      "id": 236,
+      "title": "View Display",
+      "thought": "\"after viewing a piece on display\"",
+      "subthoughts_type": null
+    },
+    "237": {
+      "id": 237,
+      "title": "Acquire Artifact",
+      "thought": "\"after acquiring an artifact\"",
+      "subthoughts_type": null
+    },
+    "238": {
+      "id": 238,
+      "title": "Deny Sanctuary",
+      "thought": "\"after a child was turned away from sanctuary\"",
+      "subthoughts_type": null
+    },
+    "239": {
+      "id": 239,
+      "title": "Caught Sneaking",
+      "thought": "\"after being caught sneaking\"",
+      "subthoughts_type": null
+    },
+    "240": {
+      "id": 240,
+      "title": "Gave Artifact",
+      "thought": "\"after an artifact was given away\"",
+      "subthoughts_type": null
+    },
+    "241": {
+      "id": 241,
+      "title": "See Dead Body",
+      "thought": "\"after seeing a dead body\"",
+      "subthoughts_type": null
+    },
+    "242": {
+      "id": 242,
+      "title": "Expelled",
+      "thought": "\"after being expelled\"",
+      "subthoughts_type": null
+    },
+    "243": {
+      "id": 243,
+      "title": "Relative Expelled",
+      "thought": "\"after a relative was expelled\"",
+      "subthoughts_type": null
+    },
+    "244": {
+      "id": 244,
+      "title": "Prey On Blood",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "245": {
+      "id": 245,
+      "title": "Unnaturally Ageless",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "246": {
+      "id": 246,
+      "title": "Scholarly Lecture",
+      "thought": "\"after a scholarly lecture\"",
+      "subthoughts_type": null
+    },
+    "247": {
+      "id": 247,
+      "title": "Performance",
+      "thought": "\"after a performance\"",
+      "subthoughts_type": null
+    },
+    "248": {
+      "id": 248,
+      "title": "Accepted Bribe",
+      "thought": "\"after accepting bribes in exchange for leniency\"",
+      "subthoughts_type": null
+    },
+    "249": {
+      "id": 249,
+      "title": "Embezzled Funds",
+      "thought": "\"after embezzling funds\"",
+      "subthoughts_type": null
+    },
+    "250": {
+      "id": 250,
+      "title": "Cut Of Corrupt Funds",
+      "thought": "\"after receiving a cut of corruptly-obtained funds\"",
+      "subthoughts_type": null
+    },
+    "251": {
+      "id": 251,
+      "title": "Abducted",
+      "thought": "\"after abducting somebody\"",
+      "subthoughts_type": null
+    },
+    "252": {
+      "id": 252,
+      "title": "From Afar",
+      "thought": "\"from afar\"",
+      "subthoughts_type": null
+    },
+    "253": {
+      "id": 253,
+      "title": "Temple Petition Accepted",
+      "thought": "\"after the acceptance of a petition for a temple\"",
+      "subthoughts_type": null
+    },
+    "254": {
+      "id": 254,
+      "title": "Temple Establishment",
+      "thought": "\"after the establishment of a temple\"",
+      "subthoughts_type": null
+    },
+    "255": {
+      "id": 255,
+      "title": "Temple Petition Rejected",
+      "thought": "\"after the rejection of a petition for a temple\"",
+      "subthoughts_type": null
+    },
+    "256": {
+      "id": 256,
+      "title": "Temple Petition Ignored",
+      "thought": "\"after a petition for a temple was ignored\"",
+      "subthoughts_type": null
+    },
+    "257": {
+      "id": 257,
+      "title": "Temple Establishment Abandoned",
+      "thought": "\"after an agreement to construct a temple was abandoned\"",
+      "subthoughts_type": null
+    },
+    "258": {
+      "id": 258,
+      "title": "Unknown 257",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "259": {
+      "id": 259,
+      "title": "Guildhall Petition Accepted",
+      "thought": "\"after the acceptance of a petition for a guildhall\"",
+      "subthoughts_type": null
+    },
+    "260": {
+      "id": 260,
+      "title": "Guildhall Establishment",
+      "thought": "\"after the establishment of a guildhall\"",
+      "subthoughts_type": null
+    },
+    "261": {
+      "id": 261,
+      "title": "Guildhall Petition Rejected",
+      "thought": "\"after the rejection of a petition for a guildhall\"",
+      "subthoughts_type": null
+    },
+    "262": {
+      "id": 262,
+      "title": "Guildhall Petition Ignored",
+      "thought": "\"after a petition for a guildhall was ignored\"",
+      "subthoughts_type": null
+    },
+    "263": {
+      "id": 263,
+      "title": "Guildhall Establishment Abandoned",
+      "thought": "\"after an agreement to construct a guildhall was abandoned\"",
+      "subthoughts_type": null
+    },
+    "264": {
+      "id": 264,
+      "title": "Infiltration Mission",
+      "thought": "\"during an infiltration mission\"",
+      "subthoughts_type": null
+    },
+    "265": {
+      "id": 265,
+      "title": "Break Up",
+      "thought": "\"after a break up\"",
+      "subthoughts_type": null
+    },
+    "266": {
+      "id": 266,
+      "title": "Divorced",
+      "thought": "\"after getting divorced\"",
+      "subthoughts_type": null
+    },
+    "267": {
+      "id": 267,
+      "title": "Unknown 266",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "268": {
+      "id": 268,
+      "title": "Unknown 267",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "269": {
+      "id": 269,
+      "title": "Unknown 268",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "270": {
+      "id": 270,
+      "title": "Unknown 269",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "271": {
+      "id": 271,
+      "title": "Unknown 270",
+      "thought": "\"??\"",
+      "subthoughts_type": null
+    },
+    "272": {
+      "id": 272,
+      "title": "Intellectual discussion",
+      "thought": "\"having an intellectual discussion with [relation]\"",
+      "subthoughts_type": 2
+    },
+    "273": {
+      "id": 273,
+      "title": "Shared Own Insight",
+      "thought": "\"sharing a personal insight with [relation]\"",
+      "subthoughts_type": 2
+    },
+    "274": {
+      "id": 274,
+      "title": "Shared Other Insight",
+      "thought": "\"sharing [relation]'s personal insight\"",
+      "subthoughts_type": 2
+    },
+    "275": {
+      "id": 275,
+      "title": "Discussing Own Problems",
+      "thought": "\"discussing their problems with [relation]\"",
+      "subthoughts_type": 2
+    },
+    "276": {
+      "id": 276,
+      "title": "Discussing Other Problems",
+      "thought": "\"discussing [relation]'s problems\"",
+      "subthoughts_type": 2
+    },
+    "277": {
+      "id": 277,
+      "title": "Performing Rite Dedicated Temple",
+      "thought": "\"after performing the rites in a dedicated temple\"",
+      "subthoughts_type": null
+    },
+    "278": {
+      "id": 278,
+      "title": "Performing Rite Improperly Dedicated Temple",
+      "thought": "\"after incompletely performing the rites in an improperly dedicated temple\"",
+      "subthoughts_type": null
+    },
+    "279": {
+      "id": 279,
+      "title": "Performing Rite Undedicated Temple",
+      "thought": "\"after incompletely performing the rites in an undedicated temple\"",
+      "subthoughts_type": null
+    },
+    "280": {
+      "id": 280,
+      "title": "Commune Dedicated Temple",
+      "thought": "\"after communing with a deity in a dedicated temple\"",
+      "subthoughts_type": null
+    }
+  },
+  "subthoughts": {
+    "1": {
+      "id": 1,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"after complaining\""
+        },
+        "2": {
+          "id": 25,
+          "thought": "\"after bringing up job scarcity in a meeting\""
+        },
+        "3": {
+          "id": 26,
+          "thought": "\"after making suggestions about work allocation\""
+        },
+        "4": {
+          "id": 27,
+          "thought": "\"after requesting weapon production\""
+        },
+        "5": {
+          "id": 28,
+          "thought": "\"while yelling at somebody in charge\""
+        },
+        "6": {
+          "id": 29,
+          "thought": "\"while crying on somebody in charge\""
+        }
+      },
+      "group_id": 0
+    },
+    "2": {
+      "id": 2,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"while being yelled at\""
+        },
+        "2": {
+          "id": 28,
+          "thought": "\"while being yelled at by an unhappy citizen\""
+        },
+        "3": {
+          "id": 29,
+          "thought": "\"while being cried on by an unhappy citizen\""
+        }
+      },
+      "group_id": 1
+    },
+    "3": {
+      "id": 3,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"a creature\""
+        },
+        "2": {
+          "id": 0,
+          "thought": "\"a pet\""
+        },
+        "3": {
+          "id": 1,
+          "thought": "\"their spouse\""
+        },
+        "4": {
+          "id": 2,
+          "thought": "\"their mother\""
+        },
+        "5": {
+          "id": 3,
+          "thought": "\"their father\""
+        },
+        "6": {
+          "id": 9,
+          "thought": "\"their lover\""
+        },
+        "7": {
+          "id": 11,
+          "thought": "\"their sibling\""
+        },
+        "8": {
+          "id": 12,
+          "thought": "\"a child\""
+        },
+        "9": {
+          "id": 13,
+          "thought": "\"a friend\""
+        },
+        "10": {
+          "id": 14,
+          "thought": "\"somebody annoying\""
+        },
+        "11": {
+          "id": 15,
+          "thought": "\"someone they worship\""
+        },
+        "12": {
+          "id": 16,
+          "thought": "\"a longtime acquaintance\""
+        },
+        "13": {
+          "id": 17,
+          "thought": "\"a passing acquaintance\""
+        },
+        "14": {
+          "id": 18,
+          "thought": "\"an animal training partner\""
+        },
+        "15": {
+          "id": 23,
+          "thought": "\"someone on friendly terms\""
+        }
+      },
+      "group_id": 2
+    },
+    "4": {
+      "id": 4,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"meet with somebody\""
+        },
+        "2": {
+          "id": 25,
+          "thought": "\"find somebody to complain to about job scarcity\""
+        },
+        "3": {
+          "id": 26,
+          "thought": "\"make suggestions about work allocation\""
+        },
+        "4": {
+          "id": 27,
+          "thought": "\"request weapon production\""
+        },
+        "5": {
+          "id": 28,
+          "thought": "\"find somebody in charge to yell at\""
+        },
+        "6": {
+          "id": 29,
+          "thought": "\"find somebody in charge to cry on\""
+        }
+      },
+      "group_id": 3
+    },
+    "5": {
+      "id": 5,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"sleeping fitfully\""
+        },
+        "2": {
+          "id": 0,
+          "thought": "\"sleeping uneasily due to noise\""
+        },
+        "3": {
+          "id": 1,
+          "thought": "\"being disturbed during sleep by loud noises\""
+        },
+        "4": {
+          "id": 2,
+          "thought": "\"loud noises made it impossible to sleep\""
+        }
+      },
+      "group_id": 4
+    },
+    "6": {
+      "id": 6,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"a dead creature\""
+        },
+        "2": {
+          "id": 0,
+          "thought": "\"a dead pet\""
+        },
+        "3": {
+          "id": 1,
+          "thought": "\"their dead spouse\""
+        },
+        "4": {
+          "id": 2,
+          "thought": "\"their dead mother\""
+        },
+        "5": {
+          "id": 3,
+          "thought": "\"their dead father\""
+        },
+        "6": {
+          "id": 9,
+          "thought": "\"their dead lover\""
+        },
+        "7": {
+          "id": 11,
+          "thought": "\"their dead sibling\""
+        },
+        "8": {
+          "id": 12,
+          "thought": "\"a dead child\""
+        },
+        "9": {
+          "id": 13,
+          "thought": "\"a dead friend\""
+        },
+        "10": {
+          "id": 14,
+          "thought": "\"a dead annoying acquaintance\""
+        },
+        "11": {
+          "id": 18,
+          "thought": "\"a dead animal training partner\""
+        },
+        "12": {
+          "id": 22,
+          "thought": "\"a dead animal\""
+        }
+      },
+      "group_id": 5
+    },
+    "7": {
+      "id": 7,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"meal\""
+        },
+        "2": {
+          "id": 1,
+          "thought": "\"pretty decent meal\""
+        },
+        "3": {
+          "id": 2,
+          "thought": "\"fine dish\""
+        },
+        "4": {
+          "id": 3,
+          "thought": "\"wonderful dish\""
+        },
+        "5": {
+          "id": 4,
+          "thought": "\"truly decadent dish\""
+        },
+        "6": {
+          "id": 5,
+          "thought": "\"legendary meal\""
+        }
+      },
+      "group_id": 6
+    },
+    "8": {
+      "id": 8,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"\""
+        },
+        "2": {
+          "id": 1,
+          "thought": "\"pretty decent\""
+        },
+        "3": {
+          "id": 2,
+          "thought": "\"fine\""
+        },
+        "4": {
+          "id": 3,
+          "thought": "\"wonderful\""
+        },
+        "5": {
+          "id": 4,
+          "thought": "\"truly decadent\""
+        },
+        "6": {
+          "id": 5,
+          "thought": "\"legendary\""
+        }
+      },
+      "group_id": 7
+    },
+    "9": {
+      "id": 9,
+      "subthoughts": {
+        "1": {
+          "id": -5,
+          "thought": "\"horribly substandard\""
+        },
+        "2": {
+          "id": -4,
+          "thought": "\"horrible\""
+        },
+        "3": {
+          "id": -3,
+          "thought": "\"awful\""
+        },
+        "4": {
+          "id": -2,
+          "thought": "\"very poor\""
+        },
+        "5": {
+          "id": -1,
+          "thought": "\"poor\""
+        },
+        "6": {
+          "id": 1,
+          "thought": "\"good\""
+        },
+        "7": {
+          "id": 2,
+          "thought": "\"very good\""
+        },
+        "8": {
+          "id": 3,
+          "thought": "\"great\""
+        },
+        "9": {
+          "id": 4,
+          "thought": "\"fantastic\""
+        },
+        "10": {
+          "id": 5,
+          "thought": "\"legendary\""
+        }
+      },
+      "group_id": 8
+    },
+    "10": {
+      "id": 10,
+      "subthoughts": {
+        "1": {
+          "id": -5,
+          "thought": "\"horribly substandard\""
+        },
+        "2": {
+          "id": -4,
+          "thought": "\"horrible\""
+        },
+        "3": {
+          "id": -3,
+          "thought": "\"awful\""
+        },
+        "4": {
+          "id": -2,
+          "thought": "\"very poor\""
+        },
+        "5": {
+          "id": -1,
+          "thought": "\"poor\""
+        },
+        "6": {
+          "id": 1,
+          "thought": "\"good\""
+        },
+        "7": {
+          "id": 2,
+          "thought": "\"very good\""
+        },
+        "8": {
+          "id": 3,
+          "thought": "\"great\""
+        },
+        "9": {
+          "id": 4,
+          "thought": "\"fantastic\""
+        },
+        "10": {
+          "id": 5,
+          "thought": "\"palatial\""
+        }
+      },
+      "group_id": 9
+    },
+    "11": {
+      "id": 11,
+      "subthoughts": {
+        "1": {
+          "id": -5,
+          "thought": "\"horribly substandard setting\""
+        },
+        "2": {
+          "id": -4,
+          "thought": "\"horrible setting\""
+        },
+        "3": {
+          "id": -3,
+          "thought": "\"awful setting\""
+        },
+        "4": {
+          "id": -2,
+          "thought": "\"very poor setting\""
+        },
+        "5": {
+          "id": -1,
+          "thought": "\"poor setting\""
+        },
+        "6": {
+          "id": 1,
+          "thought": "\"good setting\""
+        },
+        "7": {
+          "id": 2,
+          "thought": "\"very good setting\""
+        },
+        "8": {
+          "id": 3,
+          "thought": "\"great setting\""
+        },
+        "9": {
+          "id": 4,
+          "thought": "\"fantastic setting\""
+        },
+        "10": {
+          "id": 5,
+          "thought": "\"setting worthy of legends\""
+        }
+      },
+      "group_id": 10
+    },
+    "12": {
+      "id": 12,
+      "subthoughts": {
+        "1": {
+          "id": -1,
+          "thought": "\"\""
+        },
+        "2": {
+          "id": 1,
+          "thought": "\"well-crafted\""
+        },
+        "3": {
+          "id": 2,
+          "thought": "\"finely-crafted\""
+        },
+        "4": {
+          "id": 3,
+          "thought": "\"superior\""
+        },
+        "5": {
+          "id": 4,
+          "thought": "\"exceptional\""
+        },
+        "6": {
+          "id": 5,
+          "thought": "\"truly splendid\""
+        }
+      },
+      "group_id": 11
+    },
+    "13": {
+      "id": 13,
+      "subthoughts": {
+        "1": {
+          "id": 0,
+          "thought": "\"being away from people\""
+        },
+        "2": {
+          "id": 1,
+          "thought": "\"kept from alcohol\""
+        },
+        "3": {
+          "id": 2,
+          "thought": "\"being unable to pray\""
+        },
+        "4": {
+          "id": 3,
+          "thought": "\"being unoccupied\""
+        },
+        "5": {
+          "id": 4,
+          "thought": "\"being uncreative\""
+        },
+        "6": {
+          "id": 5,
+          "thought": "\"leading unexciting life\""
+        },
+        "7": {
+          "id": 6,
+          "thought": "\"not learning anything\""
+        },
+        "8": {
+          "id": 7,
+          "thought": "\"being away from family\""
+        },
+        "9": {
+          "id": 8,
+          "thought": "\"being away from friends\""
+        },
+        "10": {
+          "id": 9,
+          "thought": "\"missing an eloquent speech\""
+        },
+        "11": {
+          "id": 10,
+          "thought": "\"being away from traditions\""
+        },
+        "12": {
+          "id": 11,
+          "thought": "\"a lack of introspection\""
+        },
+        "13": {
+          "id": 12,
+          "thought": "\"being unable to make merry\""
+        },
+        "14": {
+          "id": 13,
+          "thought": "\"being unable to practice a craft\""
+        },
+        "15": {
+          "id": 14,
+          "thought": "\"being unable to practice a martial art\""
+        },
+        "16": {
+          "id": 15,
+          "thought": "\"being unable to practice skill\""
+        },
+        "17": {
+          "id": 16,
+          "thought": "\"being unable to take it easy\""
+        },
+        "18": {
+          "id": 17,
+          "thought": "\"unable to make romance\""
+        },
+        "19": {
+          "id": 18,
+          "thought": "\"a lack of animals\""
+        },
+        "20": {
+          "id": 19,
+          "thought": "\"a lack of great beasts\""
+        },
+        "21": {
+          "id": 20,
+          "thought": "\"being unable to acquire something\""
+        },
+        "22": {
+          "id": 21,
+          "thought": "\"a lack of decent meals\""
+        },
+        "23": {
+          "id": 22,
+          "thought": "\"unable to fight\""
+        },
+        "24": {
+          "id": 23,
+          "thought": "\"a lack of trouble-making\""
+        },
+        "25": {
+          "id": 24,
+          "thought": "\"being unable to argue\""
+        },
+        "26": {
+          "id": 25,
+          "thought": "\"being unable to be extravagant\""
+        },
+        "27": {
+          "id": 26,
+          "thought": "\"being unable to wander\""
+        },
+        "28": {
+          "id": 27,
+          "thought": "\"being unable to help anybody\""
+        },
+        "29": {
+          "id": 28,
+          "thought": "\"a lack of abstract thinking\""
+        },
+        "30": {
+          "id": 29,
+          "thought": "\"being unable to admire art\""
+        }
+      },
+      "group_id": 12
+    }
+  }
+}

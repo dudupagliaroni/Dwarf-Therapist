@@ -1,0 +1,7075 @@
+{
+  "coordinate_grids": {
+    "elevation_maps": {
+      "arrays_found": [],
+      "grid_patterns": [],
+      "coordinate_ranges": {},
+      "statistics": {}
+    },
+    "climate_data": {
+      "arrays_found": [
+        {
+          "address": "0x1d8cb478914",
+          "offset_in_region": 2260,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478918",
+          "offset_in_region": 2264,
+          "coordinates": [
+            0,
+            6,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47891c",
+          "offset_in_region": 2268,
+          "coordinates": [
+            6,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478950",
+          "offset_in_region": 2320,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478954",
+          "offset_in_region": 2324,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478958",
+          "offset_in_region": 2328,
+          "coordinates": [
+            6,
+            7,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47895c",
+          "offset_in_region": 2332,
+          "coordinates": [
+            7,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47898c",
+          "offset_in_region": 2380,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478990",
+          "offset_in_region": 2384,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478994",
+          "offset_in_region": 2388,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478998",
+          "offset_in_region": 2392,
+          "coordinates": [
+            7,
+            39,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47899c",
+          "offset_in_region": 2396,
+          "coordinates": [
+            39,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4789c8",
+          "offset_in_region": 2440,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4789cc",
+          "offset_in_region": 2444,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4789d0",
+          "offset_in_region": 2448,
+          "coordinates": [
+            6,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4789d4",
+          "offset_in_region": 2452,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4789d8",
+          "offset_in_region": 2456,
+          "coordinates": [
+            40,
+            40,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4789dc",
+          "offset_in_region": 2460,
+          "coordinates": [
+            40,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a04",
+          "offset_in_region": 2500,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a08",
+          "offset_in_region": 2504,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a0c",
+          "offset_in_region": 2508,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a10",
+          "offset_in_region": 2512,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a14",
+          "offset_in_region": 2516,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a18",
+          "offset_in_region": 2520,
+          "coordinates": [
+            39,
+            40,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a1c",
+          "offset_in_region": 2524,
+          "coordinates": [
+            40,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a44",
+          "offset_in_region": 2564,
+          "coordinates": [
+            0,
+            0,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a48",
+          "offset_in_region": 2568,
+          "coordinates": [
+            0,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a4c",
+          "offset_in_region": 2572,
+          "coordinates": [
+            7,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a50",
+          "offset_in_region": 2576,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a54",
+          "offset_in_region": 2580,
+          "coordinates": [
+            39,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a58",
+          "offset_in_region": 2584,
+          "coordinates": [
+            40,
+            7,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a5c",
+          "offset_in_region": 2588,
+          "coordinates": [
+            7,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a7c",
+          "offset_in_region": 2620,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a80",
+          "offset_in_region": 2624,
+          "coordinates": [
+            0,
+            6,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a84",
+          "offset_in_region": 2628,
+          "coordinates": [
+            6,
+            6,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a88",
+          "offset_in_region": 2632,
+          "coordinates": [
+            6,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a8c",
+          "offset_in_region": 2636,
+          "coordinates": [
+            8,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a90",
+          "offset_in_region": 2640,
+          "coordinates": [
+            40,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a94",
+          "offset_in_region": 2644,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a98",
+          "offset_in_region": 2648,
+          "coordinates": [
+            39,
+            40,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478a9c",
+          "offset_in_region": 2652,
+          "coordinates": [
+            40,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478abc",
+          "offset_in_region": 2684,
+          "coordinates": [
+            0,
+            0,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ac0",
+          "offset_in_region": 2688,
+          "coordinates": [
+            0,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ac4",
+          "offset_in_region": 2692,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ac8",
+          "offset_in_region": 2696,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478acc",
+          "offset_in_region": 2700,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ad0",
+          "offset_in_region": 2704,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ad4",
+          "offset_in_region": 2708,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ad8",
+          "offset_in_region": 2712,
+          "coordinates": [
+            40,
+            40,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478adc",
+          "offset_in_region": 2716,
+          "coordinates": [
+            40,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478af0",
+          "offset_in_region": 2736,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478af4",
+          "offset_in_region": 2740,
+          "coordinates": [
+            0,
+            6,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478af8",
+          "offset_in_region": 2744,
+          "coordinates": [
+            6,
+            6,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478afc",
+          "offset_in_region": 2748,
+          "coordinates": [
+            6,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b00",
+          "offset_in_region": 2752,
+          "coordinates": [
+            6,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b04",
+          "offset_in_region": 2756,
+          "coordinates": [
+            7,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b08",
+          "offset_in_region": 2760,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b0c",
+          "offset_in_region": 2764,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b10",
+          "offset_in_region": 2768,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b14",
+          "offset_in_region": 2772,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b18",
+          "offset_in_region": 2776,
+          "coordinates": [
+            40,
+            39,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b1c",
+          "offset_in_region": 2780,
+          "coordinates": [
+            39,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b30",
+          "offset_in_region": 2800,
+          "coordinates": [
+            0,
+            0,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b34",
+          "offset_in_region": 2804,
+          "coordinates": [
+            0,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b38",
+          "offset_in_region": 2808,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b3c",
+          "offset_in_region": 2812,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b40",
+          "offset_in_region": 2816,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b44",
+          "offset_in_region": 2820,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b48",
+          "offset_in_region": 2824,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b4c",
+          "offset_in_region": 2828,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b50",
+          "offset_in_region": 2832,
+          "coordinates": [
+            40,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b54",
+          "offset_in_region": 2836,
+          "coordinates": [
+            8,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b58",
+          "offset_in_region": 2840,
+          "coordinates": [
+            40,
+            40,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b5c",
+          "offset_in_region": 2844,
+          "coordinates": [
+            40,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b6c",
+          "offset_in_region": 2860,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b70",
+          "offset_in_region": 2864,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b74",
+          "offset_in_region": 2868,
+          "coordinates": [
+            6,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b78",
+          "offset_in_region": 2872,
+          "coordinates": [
+            7,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b7c",
+          "offset_in_region": 2876,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b80",
+          "offset_in_region": 2880,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b84",
+          "offset_in_region": 2884,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b88",
+          "offset_in_region": 2888,
+          "coordinates": [
+            40,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b8c",
+          "offset_in_region": 2892,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b90",
+          "offset_in_region": 2896,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b94",
+          "offset_in_region": 2900,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b98",
+          "offset_in_region": 2904,
+          "coordinates": [
+            40,
+            5,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478b9c",
+          "offset_in_region": 2908,
+          "coordinates": [
+            5,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bac",
+          "offset_in_region": 2924,
+          "coordinates": [
+            0,
+            0,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bb0",
+          "offset_in_region": 2928,
+          "coordinates": [
+            0,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bb4",
+          "offset_in_region": 2932,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bb8",
+          "offset_in_region": 2936,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bbc",
+          "offset_in_region": 2940,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bc0",
+          "offset_in_region": 2944,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bc4",
+          "offset_in_region": 2948,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bc8",
+          "offset_in_region": 2952,
+          "coordinates": [
+            40,
+            5,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bcc",
+          "offset_in_region": 2956,
+          "coordinates": [
+            5,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bd0",
+          "offset_in_region": 2960,
+          "coordinates": [
+            8,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bd4",
+          "offset_in_region": 2964,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bd8",
+          "offset_in_region": 2968,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478bdc",
+          "offset_in_region": 2972,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478fe8",
+          "offset_in_region": 4008,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478fec",
+          "offset_in_region": 4012,
+          "coordinates": [
+            0,
+            6,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ff0",
+          "offset_in_region": 4016,
+          "coordinates": [
+            6,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ff4",
+          "offset_in_region": 4020,
+          "coordinates": [
+            8,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ff8",
+          "offset_in_region": 4024,
+          "coordinates": [
+            8,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb478ffc",
+          "offset_in_region": 4028,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479000",
+          "offset_in_region": 4032,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479004",
+          "offset_in_region": 4036,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479008",
+          "offset_in_region": 4040,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47900c",
+          "offset_in_region": 4044,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479010",
+          "offset_in_region": 4048,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479014",
+          "offset_in_region": 4052,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479018",
+          "offset_in_region": 4056,
+          "coordinates": [
+            40,
+            40,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47901c",
+          "offset_in_region": 4060,
+          "coordinates": [
+            40,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479020",
+          "offset_in_region": 4064,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479024",
+          "offset_in_region": 4068,
+          "coordinates": [
+            0,
+            6,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479028",
+          "offset_in_region": 4072,
+          "coordinates": [
+            6,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47902c",
+          "offset_in_region": 4076,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479030",
+          "offset_in_region": 4080,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479040",
+          "offset_in_region": 4096,
+          "coordinates": [
+            7,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479044",
+          "offset_in_region": 4100,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479048",
+          "offset_in_region": 4104,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47904c",
+          "offset_in_region": 4108,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479050",
+          "offset_in_region": 4112,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479054",
+          "offset_in_region": 4116,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479058",
+          "offset_in_region": 4120,
+          "coordinates": [
+            40,
+            40,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47905c",
+          "offset_in_region": 4124,
+          "coordinates": [
+            40,
+            0,
+            6
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479060",
+          "offset_in_region": 4128,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479064",
+          "offset_in_region": 4132,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479068",
+          "offset_in_region": 4136,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47906c",
+          "offset_in_region": 4140,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479070",
+          "offset_in_region": 4144,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479074",
+          "offset_in_region": 4148,
+          "coordinates": [
+            40,
+            8,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479078",
+          "offset_in_region": 4152,
+          "coordinates": [
+            8,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47907c",
+          "offset_in_region": 4156,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479080",
+          "offset_in_region": 4160,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479084",
+          "offset_in_region": 4164,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479088",
+          "offset_in_region": 4168,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47908c",
+          "offset_in_region": 4172,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479090",
+          "offset_in_region": 4176,
+          "coordinates": [
+            40,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479094",
+          "offset_in_region": 4180,
+          "coordinates": [
+            8,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479098",
+          "offset_in_region": 4184,
+          "coordinates": [
+            40,
+            39,
+            6
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47909c",
+          "offset_in_region": 4188,
+          "coordinates": [
+            39,
+            6,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790a0",
+          "offset_in_region": 4192,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790a4",
+          "offset_in_region": 4196,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790a8",
+          "offset_in_region": 4200,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790ac",
+          "offset_in_region": 4204,
+          "coordinates": [
+            40,
+            40,
+            37
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790b0",
+          "offset_in_region": 4208,
+          "coordinates": [
+            40,
+            37,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790b4",
+          "offset_in_region": 4212,
+          "coordinates": [
+            37,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790b8",
+          "offset_in_region": 4216,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790bc",
+          "offset_in_region": 4220,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790c0",
+          "offset_in_region": 4224,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790c4",
+          "offset_in_region": 4228,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790c8",
+          "offset_in_region": 4232,
+          "coordinates": [
+            40,
+            40,
+            35
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790cc",
+          "offset_in_region": 4236,
+          "coordinates": [
+            40,
+            35,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790d0",
+          "offset_in_region": 4240,
+          "coordinates": [
+            35,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790d4",
+          "offset_in_region": 4244,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790d8",
+          "offset_in_region": 4248,
+          "coordinates": [
+            40,
+            39,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790dc",
+          "offset_in_region": 4252,
+          "coordinates": [
+            39,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790e0",
+          "offset_in_region": 4256,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790e4",
+          "offset_in_region": 4260,
+          "coordinates": [
+            39,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790e8",
+          "offset_in_region": 4264,
+          "coordinates": [
+            40,
+            8,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790ec",
+          "offset_in_region": 4268,
+          "coordinates": [
+            8,
+            5,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790f0",
+          "offset_in_region": 4272,
+          "coordinates": [
+            5,
+            6,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790f4",
+          "offset_in_region": 4276,
+          "coordinates": [
+            6,
+            8,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790f8",
+          "offset_in_region": 4280,
+          "coordinates": [
+            8,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4790fc",
+          "offset_in_region": 4284,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479100",
+          "offset_in_region": 4288,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479104",
+          "offset_in_region": 4292,
+          "coordinates": [
+            40,
+            8,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479108",
+          "offset_in_region": 4296,
+          "coordinates": [
+            8,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47910c",
+          "offset_in_region": 4300,
+          "coordinates": [
+            39,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479110",
+          "offset_in_region": 4304,
+          "coordinates": [
+            40,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479114",
+          "offset_in_region": 4308,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479118",
+          "offset_in_region": 4312,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47911c",
+          "offset_in_region": 4316,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479120",
+          "offset_in_region": 4320,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479124",
+          "offset_in_region": 4324,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479128",
+          "offset_in_region": 4328,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47912c",
+          "offset_in_region": 4332,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479130",
+          "offset_in_region": 4336,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479134",
+          "offset_in_region": 4340,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479138",
+          "offset_in_region": 4344,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47913c",
+          "offset_in_region": 4348,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479140",
+          "offset_in_region": 4352,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479144",
+          "offset_in_region": 4356,
+          "coordinates": [
+            39,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479148",
+          "offset_in_region": 4360,
+          "coordinates": [
+            40,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47914c",
+          "offset_in_region": 4364,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479150",
+          "offset_in_region": 4368,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479154",
+          "offset_in_region": 4372,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479158",
+          "offset_in_region": 4376,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47915c",
+          "offset_in_region": 4380,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479160",
+          "offset_in_region": 4384,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479164",
+          "offset_in_region": 4388,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479168",
+          "offset_in_region": 4392,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47916c",
+          "offset_in_region": 4396,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479170",
+          "offset_in_region": 4400,
+          "coordinates": [
+            39,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479174",
+          "offset_in_region": 4404,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479178",
+          "offset_in_region": 4408,
+          "coordinates": [
+            7,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47917c",
+          "offset_in_region": 4412,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479180",
+          "offset_in_region": 4416,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479184",
+          "offset_in_region": 4420,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479188",
+          "offset_in_region": 4424,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47918c",
+          "offset_in_region": 4428,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479190",
+          "offset_in_region": 4432,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479194",
+          "offset_in_region": 4436,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479198",
+          "offset_in_region": 4440,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47919c",
+          "offset_in_region": 4444,
+          "coordinates": [
+            39,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791a0",
+          "offset_in_region": 4448,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791a4",
+          "offset_in_region": 4452,
+          "coordinates": [
+            7,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791a8",
+          "offset_in_region": 4456,
+          "coordinates": [
+            40,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791ac",
+          "offset_in_region": 4460,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791b0",
+          "offset_in_region": 4464,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791b4",
+          "offset_in_region": 4468,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791b8",
+          "offset_in_region": 4472,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791bc",
+          "offset_in_region": 4476,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791c0",
+          "offset_in_region": 4480,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791c4",
+          "offset_in_region": 4484,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791c8",
+          "offset_in_region": 4488,
+          "coordinates": [
+            39,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791cc",
+          "offset_in_region": 4492,
+          "coordinates": [
+            40,
+            8,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791d0",
+          "offset_in_region": 4496,
+          "coordinates": [
+            8,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791d4",
+          "offset_in_region": 4500,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791d8",
+          "offset_in_region": 4504,
+          "coordinates": [
+            40,
+            39,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791dc",
+          "offset_in_region": 4508,
+          "coordinates": [
+            39,
+            5,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791e0",
+          "offset_in_region": 4512,
+          "coordinates": [
+            5,
+            8,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791e4",
+          "offset_in_region": 4516,
+          "coordinates": [
+            8,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791e8",
+          "offset_in_region": 4520,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791ec",
+          "offset_in_region": 4524,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791f0",
+          "offset_in_region": 4528,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791f4",
+          "offset_in_region": 4532,
+          "coordinates": [
+            40,
+            8,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791f8",
+          "offset_in_region": 4536,
+          "coordinates": [
+            8,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4791fc",
+          "offset_in_region": 4540,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479200",
+          "offset_in_region": 4544,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479204",
+          "offset_in_region": 4548,
+          "coordinates": [
+            39,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479208",
+          "offset_in_region": 4552,
+          "coordinates": [
+            40,
+            5,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47920c",
+          "offset_in_region": 4556,
+          "coordinates": [
+            5,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479210",
+          "offset_in_region": 4560,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479214",
+          "offset_in_region": 4564,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479218",
+          "offset_in_region": 4568,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47921c",
+          "offset_in_region": 4572,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479220",
+          "offset_in_region": 4576,
+          "coordinates": [
+            39,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479224",
+          "offset_in_region": 4580,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479228",
+          "offset_in_region": 4584,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47922c",
+          "offset_in_region": 4588,
+          "coordinates": [
+            40,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479230",
+          "offset_in_region": 4592,
+          "coordinates": [
+            40,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479234",
+          "offset_in_region": 4596,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479238",
+          "offset_in_region": 4600,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47923c",
+          "offset_in_region": 4604,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479240",
+          "offset_in_region": 4608,
+          "coordinates": [
+            39,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479244",
+          "offset_in_region": 4612,
+          "coordinates": [
+            40,
+            5,
+            6
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479248",
+          "offset_in_region": 4616,
+          "coordinates": [
+            5,
+            6,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47924c",
+          "offset_in_region": 4620,
+          "coordinates": [
+            6,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479250",
+          "offset_in_region": 4624,
+          "coordinates": [
+            8,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479254",
+          "offset_in_region": 4628,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479258",
+          "offset_in_region": 4632,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47925c",
+          "offset_in_region": 4636,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479260",
+          "offset_in_region": 4640,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479264",
+          "offset_in_region": 4644,
+          "coordinates": [
+            39,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479268",
+          "offset_in_region": 4648,
+          "coordinates": [
+            40,
+            8,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47926c",
+          "offset_in_region": 4652,
+          "coordinates": [
+            8,
+            5,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479270",
+          "offset_in_region": 4656,
+          "coordinates": [
+            5,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479274",
+          "offset_in_region": 4660,
+          "coordinates": [
+            7,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479278",
+          "offset_in_region": 4664,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47927c",
+          "offset_in_region": 4668,
+          "coordinates": [
+            7,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479280",
+          "offset_in_region": 4672,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479284",
+          "offset_in_region": 4676,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479288",
+          "offset_in_region": 4680,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47928c",
+          "offset_in_region": 4684,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479290",
+          "offset_in_region": 4688,
+          "coordinates": [
+            39,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479294",
+          "offset_in_region": 4692,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479298",
+          "offset_in_region": 4696,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47929c",
+          "offset_in_region": 4700,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792a0",
+          "offset_in_region": 4704,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792a4",
+          "offset_in_region": 4708,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792a8",
+          "offset_in_region": 4712,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792ac",
+          "offset_in_region": 4716,
+          "coordinates": [
+            3,
+            0,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792b0",
+          "offset_in_region": 4720,
+          "coordinates": [
+            0,
+            8,
+            5
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792b4",
+          "offset_in_region": 4724,
+          "coordinates": [
+            8,
+            5,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792b8",
+          "offset_in_region": 4728,
+          "coordinates": [
+            5,
+            8,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792bc",
+          "offset_in_region": 4732,
+          "coordinates": [
+            8,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792c0",
+          "offset_in_region": 4736,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792c4",
+          "offset_in_region": 4740,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792c8",
+          "offset_in_region": 4744,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792cc",
+          "offset_in_region": 4748,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792d0",
+          "offset_in_region": 4752,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792d4",
+          "offset_in_region": 4756,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792d8",
+          "offset_in_region": 4760,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792dc",
+          "offset_in_region": 4764,
+          "coordinates": [
+            39,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792e0",
+          "offset_in_region": 4768,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792e4",
+          "offset_in_region": 4772,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792e8",
+          "offset_in_region": 4776,
+          "coordinates": [
+            3,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792ec",
+          "offset_in_region": 4780,
+          "coordinates": [
+            0,
+            6,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792f0",
+          "offset_in_region": 4784,
+          "coordinates": [
+            6,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792f4",
+          "offset_in_region": 4788,
+          "coordinates": [
+            6,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792f8",
+          "offset_in_region": 4792,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4792fc",
+          "offset_in_region": 4796,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479300",
+          "offset_in_region": 4800,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479304",
+          "offset_in_region": 4804,
+          "coordinates": [
+            40,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479308",
+          "offset_in_region": 4808,
+          "coordinates": [
+            8,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47930c",
+          "offset_in_region": 4812,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479310",
+          "offset_in_region": 4816,
+          "coordinates": [
+            39,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479314",
+          "offset_in_region": 4820,
+          "coordinates": [
+            40,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479318",
+          "offset_in_region": 4824,
+          "coordinates": [
+            8,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47931c",
+          "offset_in_region": 4828,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479320",
+          "offset_in_region": 4832,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479324",
+          "offset_in_region": 4836,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479328",
+          "offset_in_region": 4840,
+          "coordinates": [
+            0,
+            0,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47932c",
+          "offset_in_region": 4844,
+          "coordinates": [
+            0,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479330",
+          "offset_in_region": 4848,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479334",
+          "offset_in_region": 4852,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479338",
+          "offset_in_region": 4856,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47933c",
+          "offset_in_region": 4860,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479340",
+          "offset_in_region": 4864,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479344",
+          "offset_in_region": 4868,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479348",
+          "offset_in_region": 4872,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47934c",
+          "offset_in_region": 4876,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479350",
+          "offset_in_region": 4880,
+          "coordinates": [
+            40,
+            5,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479354",
+          "offset_in_region": 4884,
+          "coordinates": [
+            5,
+            8,
+            5
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479358",
+          "offset_in_region": 4888,
+          "coordinates": [
+            8,
+            5,
+            3
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47935c",
+          "offset_in_region": 4892,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479360",
+          "offset_in_region": 4896,
+          "coordinates": [
+            3,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479364",
+          "offset_in_region": 4900,
+          "coordinates": [
+            0,
+            6,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479368",
+          "offset_in_region": 4904,
+          "coordinates": [
+            6,
+            6,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47936c",
+          "offset_in_region": 4908,
+          "coordinates": [
+            6,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479370",
+          "offset_in_region": 4912,
+          "coordinates": [
+            8,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479374",
+          "offset_in_region": 4916,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479378",
+          "offset_in_region": 4920,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47937c",
+          "offset_in_region": 4924,
+          "coordinates": [
+            40,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479380",
+          "offset_in_region": 4928,
+          "coordinates": [
+            8,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479384",
+          "offset_in_region": 4932,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479388",
+          "offset_in_region": 4936,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47938c",
+          "offset_in_region": 4940,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479390",
+          "offset_in_region": 4944,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479394",
+          "offset_in_region": 4948,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47939c",
+          "offset_in_region": 4956,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793a0",
+          "offset_in_region": 4960,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793a4",
+          "offset_in_region": 4964,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793a8",
+          "offset_in_region": 4968,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793ac",
+          "offset_in_region": 4972,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793b0",
+          "offset_in_region": 4976,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793b4",
+          "offset_in_region": 4980,
+          "coordinates": [
+            40,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793b8",
+          "offset_in_region": 4984,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793bc",
+          "offset_in_region": 4988,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793c0",
+          "offset_in_region": 4992,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793c4",
+          "offset_in_region": 4996,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793c8",
+          "offset_in_region": 5000,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793cc",
+          "offset_in_region": 5004,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4793d0",
+          "offset_in_region": 5008,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797d8",
+          "offset_in_region": 6040,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797dc",
+          "offset_in_region": 6044,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797e0",
+          "offset_in_region": 6048,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797e4",
+          "offset_in_region": 6052,
+          "coordinates": [
+            40,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797e8",
+          "offset_in_region": 6056,
+          "coordinates": [
+            8,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797ec",
+          "offset_in_region": 6060,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797f0",
+          "offset_in_region": 6064,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797f4",
+          "offset_in_region": 6068,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797f8",
+          "offset_in_region": 6072,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4797fc",
+          "offset_in_region": 6076,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479800",
+          "offset_in_region": 6080,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479804",
+          "offset_in_region": 6084,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479808",
+          "offset_in_region": 6088,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47980c",
+          "offset_in_region": 6092,
+          "coordinates": [
+            40,
+            40,
+            37
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479810",
+          "offset_in_region": 6096,
+          "coordinates": [
+            40,
+            37,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479814",
+          "offset_in_region": 6100,
+          "coordinates": [
+            37,
+            3,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479818",
+          "offset_in_region": 6104,
+          "coordinates": [
+            3,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47981c",
+          "offset_in_region": 6108,
+          "coordinates": [
+            0,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479820",
+          "offset_in_region": 6112,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479824",
+          "offset_in_region": 6116,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479828",
+          "offset_in_region": 6120,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47982c",
+          "offset_in_region": 6124,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479830",
+          "offset_in_region": 6128,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479840",
+          "offset_in_region": 6144,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479844",
+          "offset_in_region": 6148,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479848",
+          "offset_in_region": 6152,
+          "coordinates": [
+            39,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47984c",
+          "offset_in_region": 6156,
+          "coordinates": [
+            40,
+            5,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479850",
+          "offset_in_region": 6160,
+          "coordinates": [
+            5,
+            5,
+            3
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479854",
+          "offset_in_region": 6164,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479858",
+          "offset_in_region": 6168,
+          "coordinates": [
+            3,
+            0,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47985c",
+          "offset_in_region": 6172,
+          "coordinates": [
+            0,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479860",
+          "offset_in_region": 6176,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479864",
+          "offset_in_region": 6180,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479868",
+          "offset_in_region": 6184,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47986c",
+          "offset_in_region": 6188,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479870",
+          "offset_in_region": 6192,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479874",
+          "offset_in_region": 6196,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479878",
+          "offset_in_region": 6200,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47987c",
+          "offset_in_region": 6204,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479880",
+          "offset_in_region": 6208,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479884",
+          "offset_in_region": 6212,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479888",
+          "offset_in_region": 6216,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47988c",
+          "offset_in_region": 6220,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479890",
+          "offset_in_region": 6224,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479898",
+          "offset_in_region": 6232,
+          "coordinates": [
+            0,
+            0,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47989c",
+          "offset_in_region": 6236,
+          "coordinates": [
+            0,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798a0",
+          "offset_in_region": 6240,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798a4",
+          "offset_in_region": 6244,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798a8",
+          "offset_in_region": 6248,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798ac",
+          "offset_in_region": 6252,
+          "coordinates": [
+            40,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798b0",
+          "offset_in_region": 6256,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798b4",
+          "offset_in_region": 6260,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798b8",
+          "offset_in_region": 6264,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798bc",
+          "offset_in_region": 6268,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798c0",
+          "offset_in_region": 6272,
+          "coordinates": [
+            40,
+            8,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798c4",
+          "offset_in_region": 6276,
+          "coordinates": [
+            8,
+            5,
+            3
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798c8",
+          "offset_in_region": 6280,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798cc",
+          "offset_in_region": 6284,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798d8",
+          "offset_in_region": 6296,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798dc",
+          "offset_in_region": 6300,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798e0",
+          "offset_in_region": 6304,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798e4",
+          "offset_in_region": 6308,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798e8",
+          "offset_in_region": 6312,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798ec",
+          "offset_in_region": 6316,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798f0",
+          "offset_in_region": 6320,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798f4",
+          "offset_in_region": 6324,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798f8",
+          "offset_in_region": 6328,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4798fc",
+          "offset_in_region": 6332,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479900",
+          "offset_in_region": 6336,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479904",
+          "offset_in_region": 6340,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479918",
+          "offset_in_region": 6360,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47991c",
+          "offset_in_region": 6364,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479920",
+          "offset_in_region": 6368,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479924",
+          "offset_in_region": 6372,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479928",
+          "offset_in_region": 6376,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47992c",
+          "offset_in_region": 6380,
+          "coordinates": [
+            39,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479930",
+          "offset_in_region": 6384,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479934",
+          "offset_in_region": 6388,
+          "coordinates": [
+            39,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479938",
+          "offset_in_region": 6392,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47993c",
+          "offset_in_region": 6396,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479940",
+          "offset_in_region": 6400,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479958",
+          "offset_in_region": 6424,
+          "coordinates": [
+            0,
+            0,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47995c",
+          "offset_in_region": 6428,
+          "coordinates": [
+            0,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479960",
+          "offset_in_region": 6432,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479964",
+          "offset_in_region": 6436,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479968",
+          "offset_in_region": 6440,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47996c",
+          "offset_in_region": 6444,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479970",
+          "offset_in_region": 6448,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479974",
+          "offset_in_region": 6452,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479978",
+          "offset_in_region": 6456,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47997c",
+          "offset_in_region": 6460,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479998",
+          "offset_in_region": 6488,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47999c",
+          "offset_in_region": 6492,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799a0",
+          "offset_in_region": 6496,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799a4",
+          "offset_in_region": 6500,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799a8",
+          "offset_in_region": 6504,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799ac",
+          "offset_in_region": 6508,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799b0",
+          "offset_in_region": 6512,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799b4",
+          "offset_in_region": 6516,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799b8",
+          "offset_in_region": 6520,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799d8",
+          "offset_in_region": 6552,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799dc",
+          "offset_in_region": 6556,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799e0",
+          "offset_in_region": 6560,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799e4",
+          "offset_in_region": 6564,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799e8",
+          "offset_in_region": 6568,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799ec",
+          "offset_in_region": 6572,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799f0",
+          "offset_in_region": 6576,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4799f4",
+          "offset_in_region": 6580,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a18",
+          "offset_in_region": 6616,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a1c",
+          "offset_in_region": 6620,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a20",
+          "offset_in_region": 6624,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a24",
+          "offset_in_region": 6628,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a28",
+          "offset_in_region": 6632,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a2c",
+          "offset_in_region": 6636,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a30",
+          "offset_in_region": 6640,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a58",
+          "offset_in_region": 6680,
+          "coordinates": [
+            0,
+            0,
+            37
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a5c",
+          "offset_in_region": 6684,
+          "coordinates": [
+            0,
+            37,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a60",
+          "offset_in_region": 6688,
+          "coordinates": [
+            37,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a64",
+          "offset_in_region": 6692,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a68",
+          "offset_in_region": 6696,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a6c",
+          "offset_in_region": 6700,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a98",
+          "offset_in_region": 6744,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479a9c",
+          "offset_in_region": 6748,
+          "coordinates": [
+            0,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479aa0",
+          "offset_in_region": 6752,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb479aa4",
+          "offset_in_region": 6756,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479aa8",
+          "offset_in_region": 6760,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479ad8",
+          "offset_in_region": 6808,
+          "coordinates": [
+            0,
+            0,
+            5
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479adc",
+          "offset_in_region": 6812,
+          "coordinates": [
+            0,
+            5,
+            3
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479ae0",
+          "offset_in_region": 6816,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479ae4",
+          "offset_in_region": 6820,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479b18",
+          "offset_in_region": 6872,
+          "coordinates": [
+            0,
+            0,
+            3
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479b1c",
+          "offset_in_region": 6876,
+          "coordinates": [
+            0,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb479b20",
+          "offset_in_region": 6880,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e114",
+          "offset_in_region": 24788,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e118",
+          "offset_in_region": 24792,
+          "coordinates": [
+            0,
+            6,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e11c",
+          "offset_in_region": 24796,
+          "coordinates": [
+            6,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e154",
+          "offset_in_region": 24852,
+          "coordinates": [
+            0,
+            0,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e158",
+          "offset_in_region": 24856,
+          "coordinates": [
+            0,
+            7,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e15c",
+          "offset_in_region": 24860,
+          "coordinates": [
+            7,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e194",
+          "offset_in_region": 24916,
+          "coordinates": [
+            0,
+            0,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e198",
+          "offset_in_region": 24920,
+          "coordinates": [
+            0,
+            39,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e19c",
+          "offset_in_region": 24924,
+          "coordinates": [
+            39,
+            0,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e1d4",
+          "offset_in_region": 24980,
+          "coordinates": [
+            0,
+            0,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e1d8",
+          "offset_in_region": 24984,
+          "coordinates": [
+            0,
+            8,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e1dc",
+          "offset_in_region": 24988,
+          "coordinates": [
+            8,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e7e4",
+          "offset_in_region": 26532,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e7e8",
+          "offset_in_region": 26536,
+          "coordinates": [
+            0,
+            6,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e7ec",
+          "offset_in_region": 26540,
+          "coordinates": [
+            6,
+            6,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e7f0",
+          "offset_in_region": 26544,
+          "coordinates": [
+            6,
+            8,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e7f4",
+          "offset_in_region": 26548,
+          "coordinates": [
+            8,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e7f8",
+          "offset_in_region": 26552,
+          "coordinates": [
+            7,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e7fc",
+          "offset_in_region": 26556,
+          "coordinates": [
+            40,
+            8,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e800",
+          "offset_in_region": 26560,
+          "coordinates": [
+            8,
+            8,
+            5
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e804",
+          "offset_in_region": 26564,
+          "coordinates": [
+            8,
+            5,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e808",
+          "offset_in_region": 26568,
+          "coordinates": [
+            5,
+            6,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e80c",
+          "offset_in_region": 26572,
+          "coordinates": [
+            6,
+            8,
+            5
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e810",
+          "offset_in_region": 26576,
+          "coordinates": [
+            8,
+            5,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e814",
+          "offset_in_region": 26580,
+          "coordinates": [
+            5,
+            6,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e818",
+          "offset_in_region": 26584,
+          "coordinates": [
+            6,
+            6,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e81c",
+          "offset_in_region": 26588,
+          "coordinates": [
+            6,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e820",
+          "offset_in_region": 26592,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e824",
+          "offset_in_region": 26596,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e828",
+          "offset_in_region": 26600,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e82c",
+          "offset_in_region": 26604,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e830",
+          "offset_in_region": 26608,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e840",
+          "offset_in_region": 26624,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e844",
+          "offset_in_region": 26628,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e848",
+          "offset_in_region": 26632,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e84c",
+          "offset_in_region": 26636,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e850",
+          "offset_in_region": 26640,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e854",
+          "offset_in_region": 26644,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e858",
+          "offset_in_region": 26648,
+          "coordinates": [
+            39,
+            39,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e85c",
+          "offset_in_region": 26652,
+          "coordinates": [
+            39,
+            0,
+            6
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e860",
+          "offset_in_region": 26656,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e864",
+          "offset_in_region": 26660,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e868",
+          "offset_in_region": 26664,
+          "coordinates": [
+            7,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e86c",
+          "offset_in_region": 26668,
+          "coordinates": [
+            39,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e870",
+          "offset_in_region": 26672,
+          "coordinates": [
+            40,
+            8,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e874",
+          "offset_in_region": 26676,
+          "coordinates": [
+            8,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e878",
+          "offset_in_region": 26680,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e87c",
+          "offset_in_region": 26684,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e880",
+          "offset_in_region": 26688,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e884",
+          "offset_in_region": 26692,
+          "coordinates": [
+            39,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e888",
+          "offset_in_region": 26696,
+          "coordinates": [
+            40,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e88c",
+          "offset_in_region": 26700,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e890",
+          "offset_in_region": 26704,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e894",
+          "offset_in_region": 26708,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e898",
+          "offset_in_region": 26712,
+          "coordinates": [
+            39,
+            39,
+            6
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e89c",
+          "offset_in_region": 26716,
+          "coordinates": [
+            39,
+            6,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8a0",
+          "offset_in_region": 26720,
+          "coordinates": [
+            6,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8a4",
+          "offset_in_region": 26724,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8a8",
+          "offset_in_region": 26728,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8ac",
+          "offset_in_region": 26732,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8b0",
+          "offset_in_region": 26736,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8b4",
+          "offset_in_region": 26740,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8b8",
+          "offset_in_region": 26744,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8bc",
+          "offset_in_region": 26748,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8c0",
+          "offset_in_region": 26752,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8c4",
+          "offset_in_region": 26756,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8c8",
+          "offset_in_region": 26760,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8cc",
+          "offset_in_region": 26764,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8d0",
+          "offset_in_region": 26768,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8d4",
+          "offset_in_region": 26772,
+          "coordinates": [
+            40,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8d8",
+          "offset_in_region": 26776,
+          "coordinates": [
+            40,
+            7,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8dc",
+          "offset_in_region": 26780,
+          "coordinates": [
+            7,
+            7,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8e0",
+          "offset_in_region": 26784,
+          "coordinates": [
+            7,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8e4",
+          "offset_in_region": 26788,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8e8",
+          "offset_in_region": 26792,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8ec",
+          "offset_in_region": 26796,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8f0",
+          "offset_in_region": 26800,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8f4",
+          "offset_in_region": 26804,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8f8",
+          "offset_in_region": 26808,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e8fc",
+          "offset_in_region": 26812,
+          "coordinates": [
+            40,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e900",
+          "offset_in_region": 26816,
+          "coordinates": [
+            8,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e904",
+          "offset_in_region": 26820,
+          "coordinates": [
+            40,
+            8,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e908",
+          "offset_in_region": 26824,
+          "coordinates": [
+            8,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e90c",
+          "offset_in_region": 26828,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e910",
+          "offset_in_region": 26832,
+          "coordinates": [
+            40,
+            40,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e914",
+          "offset_in_region": 26836,
+          "coordinates": [
+            40,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e918",
+          "offset_in_region": 26840,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e91c",
+          "offset_in_region": 26844,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e920",
+          "offset_in_region": 26848,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e924",
+          "offset_in_region": 26852,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e928",
+          "offset_in_region": 26856,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e92c",
+          "offset_in_region": 26860,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e930",
+          "offset_in_region": 26864,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e934",
+          "offset_in_region": 26868,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e938",
+          "offset_in_region": 26872,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e93c",
+          "offset_in_region": 26876,
+          "coordinates": [
+            39,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e940",
+          "offset_in_region": 26880,
+          "coordinates": [
+            40,
+            5,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e944",
+          "offset_in_region": 26884,
+          "coordinates": [
+            5,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e948",
+          "offset_in_region": 26888,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e94c",
+          "offset_in_region": 26892,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e950",
+          "offset_in_region": 26896,
+          "coordinates": [
+            40,
+            5,
+            7
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e954",
+          "offset_in_region": 26900,
+          "coordinates": [
+            5,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e958",
+          "offset_in_region": 26904,
+          "coordinates": [
+            7,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e95c",
+          "offset_in_region": 26908,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e960",
+          "offset_in_region": 26912,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e964",
+          "offset_in_region": 26916,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e968",
+          "offset_in_region": 26920,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e96c",
+          "offset_in_region": 26924,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e970",
+          "offset_in_region": 26928,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e974",
+          "offset_in_region": 26932,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e978",
+          "offset_in_region": 26936,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e97c",
+          "offset_in_region": 26940,
+          "coordinates": [
+            39,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e980",
+          "offset_in_region": 26944,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e984",
+          "offset_in_region": 26948,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e988",
+          "offset_in_region": 26952,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e98c",
+          "offset_in_region": 26956,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e990",
+          "offset_in_region": 26960,
+          "coordinates": [
+            5,
+            3,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e994",
+          "offset_in_region": 26964,
+          "coordinates": [
+            3,
+            8,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e998",
+          "offset_in_region": 26968,
+          "coordinates": [
+            8,
+            7,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e99c",
+          "offset_in_region": 26972,
+          "coordinates": [
+            7,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9a0",
+          "offset_in_region": 26976,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9a4",
+          "offset_in_region": 26980,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9a8",
+          "offset_in_region": 26984,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9ac",
+          "offset_in_region": 26988,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9b0",
+          "offset_in_region": 26992,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9b4",
+          "offset_in_region": 26996,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9b8",
+          "offset_in_region": 27000,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9bc",
+          "offset_in_region": 27004,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9c0",
+          "offset_in_region": 27008,
+          "coordinates": [
+            8,
+            8,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9c4",
+          "offset_in_region": 27012,
+          "coordinates": [
+            8,
+            8,
+            5
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9c8",
+          "offset_in_region": 27016,
+          "coordinates": [
+            8,
+            5,
+            3
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9cc",
+          "offset_in_region": 27020,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9d0",
+          "offset_in_region": 27024,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9d4",
+          "offset_in_region": 27028,
+          "coordinates": [
+            0,
+            0,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9d8",
+          "offset_in_region": 27032,
+          "coordinates": [
+            0,
+            8,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47e9dc",
+          "offset_in_region": 27036,
+          "coordinates": [
+            8,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47efd8",
+          "offset_in_region": 28568,
+          "coordinates": [
+            0,
+            0,
+            6
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47efdc",
+          "offset_in_region": 28572,
+          "coordinates": [
+            0,
+            6,
+            7
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47efe0",
+          "offset_in_region": 28576,
+          "coordinates": [
+            6,
+            7,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47efe4",
+          "offset_in_region": 28580,
+          "coordinates": [
+            7,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47efe8",
+          "offset_in_region": 28584,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47efec",
+          "offset_in_region": 28588,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47eff0",
+          "offset_in_region": 28592,
+          "coordinates": [
+            40,
+            39,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47eff4",
+          "offset_in_region": 28596,
+          "coordinates": [
+            39,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47eff8",
+          "offset_in_region": 28600,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47effc",
+          "offset_in_region": 28604,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f000",
+          "offset_in_region": 28608,
+          "coordinates": [
+            40,
+            8,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f004",
+          "offset_in_region": 28612,
+          "coordinates": [
+            8,
+            5,
+            3
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f008",
+          "offset_in_region": 28616,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f00c",
+          "offset_in_region": 28620,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f018",
+          "offset_in_region": 28632,
+          "coordinates": [
+            0,
+            0,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f01c",
+          "offset_in_region": 28636,
+          "coordinates": [
+            0,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f020",
+          "offset_in_region": 28640,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f024",
+          "offset_in_region": 28644,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f028",
+          "offset_in_region": 28648,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f02c",
+          "offset_in_region": 28652,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f030",
+          "offset_in_region": 28656,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f040",
+          "offset_in_region": 28672,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f044",
+          "offset_in_region": 28676,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f058",
+          "offset_in_region": 28696,
+          "coordinates": [
+            0,
+            0,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f05c",
+          "offset_in_region": 28700,
+          "coordinates": [
+            0,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f060",
+          "offset_in_region": 28704,
+          "coordinates": [
+            39,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f064",
+          "offset_in_region": 28708,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f068",
+          "offset_in_region": 28712,
+          "coordinates": [
+            40,
+            40,
+            8
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f06c",
+          "offset_in_region": 28716,
+          "coordinates": [
+            40,
+            8,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f070",
+          "offset_in_region": 28720,
+          "coordinates": [
+            8,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f074",
+          "offset_in_region": 28724,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f078",
+          "offset_in_region": 28728,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f07c",
+          "offset_in_region": 28732,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f098",
+          "offset_in_region": 28760,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f09c",
+          "offset_in_region": 28764,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0a0",
+          "offset_in_region": 28768,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0a4",
+          "offset_in_region": 28772,
+          "coordinates": [
+            40,
+            40,
+            39
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0a8",
+          "offset_in_region": 28776,
+          "coordinates": [
+            40,
+            39,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0ac",
+          "offset_in_region": 28780,
+          "coordinates": [
+            39,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0b0",
+          "offset_in_region": 28784,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0b4",
+          "offset_in_region": 28788,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0b8",
+          "offset_in_region": 28792,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0d8",
+          "offset_in_region": 28824,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0dc",
+          "offset_in_region": 28828,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0e0",
+          "offset_in_region": 28832,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0e4",
+          "offset_in_region": 28836,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0e8",
+          "offset_in_region": 28840,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0ec",
+          "offset_in_region": 28844,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0f0",
+          "offset_in_region": 28848,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f0f4",
+          "offset_in_region": 28852,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f118",
+          "offset_in_region": 28888,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f11c",
+          "offset_in_region": 28892,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f120",
+          "offset_in_region": 28896,
+          "coordinates": [
+            40,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f124",
+          "offset_in_region": 28900,
+          "coordinates": [
+            40,
+            40,
+            5
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f128",
+          "offset_in_region": 28904,
+          "coordinates": [
+            40,
+            5,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f12c",
+          "offset_in_region": 28908,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f130",
+          "offset_in_region": 28912,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f158",
+          "offset_in_region": 28952,
+          "coordinates": [
+            0,
+            0,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f15c",
+          "offset_in_region": 28956,
+          "coordinates": [
+            0,
+            40,
+            40
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f160",
+          "offset_in_region": 28960,
+          "coordinates": [
+            40,
+            40,
+            37
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f164",
+          "offset_in_region": 28964,
+          "coordinates": [
+            40,
+            37,
+            3
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f168",
+          "offset_in_region": 28968,
+          "coordinates": [
+            37,
+            3,
+            0
+          ],
+          "type": "local_map_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f16c",
+          "offset_in_region": 28972,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f198",
+          "offset_in_region": 29016,
+          "coordinates": [
+            0,
+            0,
+            8
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f19c",
+          "offset_in_region": 29020,
+          "coordinates": [
+            0,
+            8,
+            5
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f1a0",
+          "offset_in_region": 29024,
+          "coordinates": [
+            8,
+            5,
+            5
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f1a4",
+          "offset_in_region": 29028,
+          "coordinates": [
+            5,
+            5,
+            3
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f1a8",
+          "offset_in_region": 29032,
+          "coordinates": [
+            5,
+            3,
+            0
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb47f1ac",
+          "offset_in_region": 29036,
+          "coordinates": [
+            3,
+            0,
+            0
+          ],
+          "type": "region_coordinates"
+        }
+      ],
+      "grid_patterns": [],
+      "coordinate_ranges": {
+        "x_range": {
+          "min": 0,
+          "max": 40,
+          "unique": 10
+        },
+        "y_range": {
+          "min": 0,
+          "max": 40,
+          "unique": 10
+        },
+        "z_range": {
+          "min": 0,
+          "max": 40,
+          "unique": 10
+        }
+      },
+      "statistics": {
+        "total_arrays": 685,
+        "types_found": {
+          "region_coordinates": 161,
+          "local_map_coordinates": 524
+        },
+        "address_range": {
+          "first": "0x1d8cb478914",
+          "last": "0x1d8cb47f1ac"
+        }
+      }
+    },
+    "geology_maps": {
+      "arrays_found": [],
+      "grid_patterns": [],
+      "coordinate_ranges": {},
+      "statistics": {}
+    },
+    "world_features": {
+      "arrays_found": [
+        {
+          "address": "0x1d8cb4a03d8",
+          "offset_in_region": 33688,
+          "coordinates": [
+            0,
+            0,
+            1
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4a03dc",
+          "offset_in_region": 33692,
+          "coordinates": [
+            0,
+            1,
+            1
+          ],
+          "type": "region_coordinates"
+        },
+        {
+          "address": "0x1d8cb4a03e0",
+          "offset_in_region": 33696,
+          "coordinates": [
+            1,
+            1,
+            257
+          ],
+          "type": "large_scale_data"
+        },
+        {
+          "address": "0x1d8cb4a03e4",
+          "offset_in_region": 33700,
+          "coordinates": [
+            1,
+            257,
+            0
+          ],
+          "type": "large_scale_data"
+        },
+        {
+          "address": "0x1d8cb4a0494",
+          "offset_in_region": 33876,
+          "coordinates": [
+            0,
+            80,
+            0
+          ],
+          "type": "elevation_data"
+        },
+        {
+          "address": "0x1d8cb4a0498",
+          "offset_in_region": 33880,
+          "coordinates": [
+            80,
+            0,
+            0
+          ],
+          "type": "elevation_data"
+        },
+        {
+          "address": "0x1d8cb4a1bbc",
+          "offset_in_region": 39804,
+          "coordinates": [
+            256,
+            142,
+            103
+          ],
+          "type": "large_scale_data"
+        },
+        {
+          "address": "0x1d8cb4a1be0",
+          "offset_in_region": 39840,
+          "coordinates": [
+            130,
+            102,
+            0
+          ],
+          "type": "world_coordinates"
+        },
+        {
+          "address": "0x1d8cb4a1be4",
+          "offset_in_region": 39844,
+          "coordinates": [
+            102,
+            0,
+            0
+          ],
+          "type": "world_coordinates"
+        }
+      ],
+      "grid_patterns": [],
+      "coordinate_ranges": {
+        "x_range": {
+          "min": 0,
+          "max": 256,
+          "unique": 6
+        },
+        "y_range": {
+          "min": 0,
+          "max": 257,
+          "unique": 6
+        },
+        "z_range": {
+          "min": 0,
+          "max": 257,
+          "unique": 4
+        }
+      },
+      "statistics": {
+        "total_arrays": 9,
+        "types_found": {
+          "region_coordinates": 2,
+          "large_scale_data": 3,
+          "elevation_data": 2,
+          "world_coordinates": 2
+        },
+        "address_range": {
+          "first": "0x1d8cb4a03d8",
+          "last": "0x1d8cb4a1be4"
+        }
+      }
+    },
+    "biome_data": {
+      "arrays_found": [],
+      "grid_patterns": [],
+      "coordinate_ranges": {},
+      "statistics": {}
+    }
+  },
+  "pattern_analysis": {
+    "total_regions_analyzed": 5,
+    "total_arrays_found": 694,
+    "most_promising_regions": [
+      {
+        "region": "climate_data",
+        "score": 685,
+        "arrays": 685,
+        "grids": 0
+      },
+      {
+        "region": "world_features",
+        "score": 9,
+        "arrays": 9,
+        "grids": 0
+      },
+      {
+        "region": "elevation_maps",
+        "score": 0,
+        "arrays": 0,
+        "grids": 0
+      }
+    ],
+    "coordinate_type_distribution": {
+      "region_coordinates": 163,
+      "local_map_coordinates": 524,
+      "large_scale_data": 3,
+      "elevation_data": 2,
+      "world_coordinates": 2
+    }
+  },
+  "geographic_structures": {
+    "world_map": null,
+    "elevation_map": null,
+    "region_grid": null,
+    "biome_map": null
+  },
+  "discovered_maps": {},
+  "metadata": {
+    "timestamp": "2025-10-28T07:20:34.952935",
+    "analyzer_version": "1.0",
+    "df_pid": 3068,
+    "world_data_ptr": "0x1d8cb458040",
+    "analysis_focus": "coordinate_arrays"
+  }
+}

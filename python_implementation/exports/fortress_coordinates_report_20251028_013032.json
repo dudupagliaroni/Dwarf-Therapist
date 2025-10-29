@@ -1,0 +1,204 @@
+{
+  "fortress_analysis": {
+    "address": "0x1d8cfedece0",
+    "coordinates": {
+      "key_offset_0x18": {
+        "unsigned": 15,
+        "signed": 15,
+        "hex": "0xf",
+        "analysis": {
+          "world_coord_range": true,
+          "region_coord_range": true,
+          "local_coord_range": true,
+          "is_fortress_size": true,
+          "binary_representation": "0b1111",
+          "possible_meanings": [
+            "Tamanho padrão de embark (15x15 não é comum, mas próximo)",
+            "Coordenada de região (0-15 para região 16x16)",
+            "Offset dentro de uma estrutura de mapa",
+            "ID de bioma ou tipo de terreno"
+          ]
+        }
+      },
+      "key_offset_0x38": {
+        "unsigned": 15,
+        "signed": 15,
+        "hex": "0xf",
+        "analysis": {
+          "world_coord_range": true,
+          "region_coord_range": true,
+          "local_coord_range": true,
+          "is_fortress_size": true,
+          "binary_representation": "0b1111",
+          "possible_meanings": [
+            "Tamanho padrão de embark (15x15 não é comum, mas próximo)",
+            "Coordenada de região (0-15 para região 16x16)",
+            "Offset dentro de uma estrutura de mapa",
+            "ID de bioma ou tipo de terreno"
+          ]
+        }
+      }
+    },
+    "raw_bytes": {
+      "offset_0x00": 0,
+      "offset_0x04": 0,
+      "offset_0x08": 0,
+      "offset_0x0c": 0,
+      "offset_0x10": 0,
+      "offset_0x14": 0,
+      "offset_0x18": 15,
+      "offset_0x1c": 0,
+      "offset_0x20": 0,
+      "offset_0x24": 0,
+      "offset_0x28": 0,
+      "offset_0x2c": 0,
+      "offset_0x30": 0,
+      "offset_0x34": 0,
+      "offset_0x38": 15,
+      "offset_0x3c": 0,
+      "offset_0x40": 4294967295,
+      "offset_0x44": 4294967295,
+      "offset_0x48": 4294967295,
+      "offset_0x4c": 4294967295,
+      "offset_0x50": 4294967295,
+      "offset_0x54": 1951,
+      "offset_0x58": 4294967295,
+      "offset_0x5c": 0,
+      "offset_0x60": 0,
+      "offset_0x64": 0,
+      "offset_0x68": 0,
+      "offset_0x6c": 0,
+      "offset_0x70": 65540,
+      "offset_0x74": 0,
+      "offset_0x78": 4294967295,
+      "offset_0x7c": 4294967295,
+      "offset_0x80": 7340032,
+      "offset_0x84": 24,
+      "offset_0x88": 1260,
+      "offset_0x8c": 0,
+      "offset_0x90": 0,
+      "offset_0x94": 0,
+      "offset_0x98": 0,
+      "offset_0x9c": 0,
+      "offset_0xa0": 0,
+      "offset_0xa4": 0,
+      "offset_0xa8": 0,
+      "offset_0xac": 0,
+      "offset_0xb0": 0,
+      "offset_0xb4": 0,
+      "offset_0xb8": 0,
+      "offset_0xbc": 0,
+      "offset_0xc0": 0,
+      "offset_0xc4": 0,
+      "offset_0xc8": 0,
+      "offset_0xcc": 0,
+      "offset_0xd0": 0,
+      "offset_0xd4": 0,
+      "offset_0xd8": 0,
+      "offset_0xdc": 0,
+      "offset_0xe0": 0,
+      "offset_0xe4": 0,
+      "offset_0xe8": 0,
+      "offset_0xec": 0,
+      "offset_0xf0": 0,
+      "offset_0xf4": 0,
+      "offset_0xf8": 0,
+      "offset_0xfc": 0
+    },
+    "potential_coords": {
+      "offset_0x18": {
+        "value": 15,
+        "as_signed": 15,
+        "likelihood": "MUITO_ALTA"
+      },
+      "offset_0x38": {
+        "value": 15,
+        "as_signed": 15,
+        "likelihood": "MUITO_ALTA"
+      },
+      "offset_0x84": {
+        "value": 24,
+        "as_signed": 24,
+        "likelihood": "ALTA"
+      }
+    },
+    "structure_analysis": {
+      "xyz_triplets": [
+        {
+          "offset": "0x10",
+          "x": 0,
+          "y": 0,
+          "z": 15,
+          "likelihood": "BAIXA"
+        },
+        {
+          "offset": "0x14",
+          "x": 0,
+          "y": 15,
+          "z": 0,
+          "likelihood": "BAIXA"
+        },
+        {
+          "offset": "0x18",
+          "x": 15,
+          "y": 0,
+          "z": 0,
+          "likelihood": "BAIXA"
+        },
+        {
+          "offset": "0x30",
+          "x": 0,
+          "y": 0,
+          "z": 15,
+          "likelihood": "BAIXA"
+        },
+        {
+          "offset": "0x34",
+          "x": 0,
+          "y": 15,
+          "z": 0,
+          "likelihood": "BAIXA"
+        }
+      ],
+      "coordinate_pairs": [
+        {
+          "offset": "0x14",
+          "x": 0,
+          "y": 15
+        },
+        {
+          "offset": "0x18",
+          "x": 15,
+          "y": 0
+        },
+        {
+          "offset": "0x34",
+          "x": 0,
+          "y": 15
+        },
+        {
+          "offset": "0x38",
+          "x": 15,
+          "y": 0
+        }
+      ],
+      "repeated_values": {
+        "15": [
+          "0x18",
+          "0x38"
+        ]
+      },
+      "sequential_values": []
+    }
+  },
+  "coordinate_validation": {},
+  "structure_mapping": {},
+  "patterns_found": [],
+  "metadata": {
+    "timestamp": "2025-10-28T01:30:32.399402",
+    "analyzer_version": "1.0",
+    "df_pid": 3068,
+    "world_data_ptr": "0x1d8cb458040",
+    "analysis_focus": "fortress_coordinates"
+  }
+}
