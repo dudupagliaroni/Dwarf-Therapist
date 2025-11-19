@@ -1,0 +1,782 @@
+{
+  "timestamp": "2025-11-18T21:45:04.265469",
+  "file_analyzed": "../../exports/complete_dwarves_data_20251118_214050.json",
+  "file_size_mb": 6.062982559204102,
+  "structure_analysis": {
+    "top_level": {
+      "keys": [
+        "metadata",
+        "dwarves"
+      ],
+      "key_count": 2
+    },
+    "metadata": {
+      "keys": [
+        "version",
+        "timestamp",
+        "dwarf_count",
+        "base_address",
+        "pointer_size",
+        "layout_info",
+        "decoded",
+        "statistics",
+        "decoder_version"
+      ],
+      "values": {
+        "version": "2.0-COMPLETE",
+        "timestamp": "2025-10-25T02:00:00Z",
+        "dwarf_count": 243,
+        "base_address": "0x7ff692450000",
+        "pointer_size": 8,
+        "layout_info": {
+          "checksum": "0x68d64ce7",
+          "version_name": "v0.52.05 win64 STEAM",
+          "complete": "true"
+        },
+        "decoded": true,
+        "statistics": {
+          "total_skills_read": 6082,
+          "total_wounds_read": 151,
+          "total_equipment_read": 1799,
+          "dwarves_with_skills": 201,
+          "dwarves_with_wounds": 46,
+          "dwarves_with_equipment": 189
+        },
+        "decoder_version": "1.0"
+      }
+    },
+    "dwarf_fields": {
+      "total_fields": 43,
+      "simple_fields": {
+        "count": 26,
+        "fields": {
+          "id": {
+            "type": "int",
+            "sample_value": "904"
+          },
+          "name": {
+            "type": "str",
+            "sample_value": "sodel"
+          },
+          "custom_profession": {
+            "type": "str",
+            "sample_value": ""
+          },
+          "profession": {
+            "type": "int",
+            "sample_value": "115"
+          },
+          "race": {
+            "type": "int",
+            "sample_value": "572"
+          },
+          "caste": {
+            "type": "int",
+            "sample_value": "0"
+          },
+          "sex": {
+            "type": "int",
+            "sample_value": "0"
+          },
+          "age": {
+            "type": "int",
+            "sample_value": "55"
+          },
+          "birth_year": {
+            "type": "int",
+            "sample_value": "70"
+          },
+          "birth_time": {
+            "type": "int",
+            "sample_value": "402135"
+          },
+          "mood": {
+            "type": "int",
+            "sample_value": "-1"
+          },
+          "temp_mood": {
+            "type": "int",
+            "sample_value": "-1"
+          },
+          "happiness": {
+            "type": "int",
+            "sample_value": "0"
+          },
+          "flags1": {
+            "type": "int",
+            "sample_value": "2147500033"
+          },
+          "flags2": {
+            "type": "int",
+            "sample_value": "301989952"
+          },
+          "flags3": {
+            "type": "int",
+            "sample_value": "258"
+          },
+          "body_size": {
+            "type": "int",
+            "sample_value": "6923"
+          },
+          "blood_level": {
+            "type": "int",
+            "sample_value": "5760"
+          },
+          "hist_id": {
+            "type": "int",
+            "sample_value": "6897"
+          },
+          "civ_id": {
+            "type": "int",
+            "sample_value": "287"
+          },
+          "squad_id": {
+            "type": "int",
+            "sample_value": "4294967295"
+          },
+          "squad_position": {
+            "type": "int",
+            "sample_value": "4294967295"
+          },
+          "pet_owner_id": {
+            "type": "int",
+            "sample_value": "4294967295"
+          },
+          "turn_count": {
+            "type": "int",
+            "sample_value": "888099"
+          },
+          "address": {
+            "type": "int",
+            "sample_value": "1888841080896"
+          },
+          "soul_address": {
+            "type": "int",
+            "sample_value": "1888747860784"
+          }
+        }
+      },
+      "dict_fields": {
+        "count": 4,
+        "fields": {
+          "personality": {
+            "subkey_count": 3,
+            "subkeys": [
+              "traits",
+              "stress_level",
+              "focus_level"
+            ],
+            "traits_keys": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24"
+            ]
+          },
+          "counters": {
+            "subkey_count": 3,
+            "subkeys": [
+              "counter1",
+              "counter2",
+              "counter3"
+            ]
+          },
+          "decoded_info": {
+            "subkey_count": 7,
+            "subkeys": [
+              "profession_name",
+              "race_name",
+              "caste_name",
+              "gender",
+              "mood_name",
+              "happiness_level",
+              "stress_level"
+            ]
+          },
+          "personality_decoded": {
+            "subkey_count": 6,
+            "subkeys": [
+              "traits",
+              "stress_level",
+              "focus_level",
+              "stress_description",
+              "focus_description",
+              "main_traits"
+            ],
+            "traits_keys": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24"
+            ],
+            "main_traits_sample": {
+              "name": "Gluttony",
+              "value": 3504480248,
+              "tendency": "High"
+            }
+          }
+        }
+      },
+      "list_fields": {
+        "count": 13,
+        "fields": {
+          "skills": {
+            "element_count": 31,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "id",
+                "level",
+                "experience",
+                "name"
+              ],
+              "key_count": 4
+            },
+            "value_types": {
+              "id": "int",
+              "level": "int",
+              "experience": "int",
+              "name": "str"
+            }
+          },
+          "physical_attributes": {
+            "element_count": 6,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "id",
+                "value",
+                "max_value",
+                "name"
+              ],
+              "key_count": 4
+            },
+            "value_types": {
+              "id": "int",
+              "value": "int",
+              "max_value": "int",
+              "name": "str"
+            }
+          },
+          "mental_attributes": {
+            "element_count": 7,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "id",
+                "value",
+                "max_value",
+                "name"
+              ],
+              "key_count": 4
+            },
+            "value_types": {
+              "id": "int",
+              "value": "int",
+              "max_value": "int",
+              "name": "str"
+            }
+          },
+          "labors": {
+            "element_count": 12,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "id",
+                "enabled",
+                "name"
+              ],
+              "key_count": 3
+            },
+            "value_types": {
+              "id": "int",
+              "enabled": "bool",
+              "name": "str"
+            }
+          },
+          "wounds": {
+            "element_count": 0,
+            "element_type": "empty"
+          },
+          "equipment": {
+            "element_count": 10,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "item_id",
+                "item_type",
+                "material_type",
+                "material_index",
+                "quality",
+                "wear"
+              ],
+              "key_count": 6
+            },
+            "value_types": {
+              "item_id": "int",
+              "item_type": "int",
+              "material_type": "int",
+              "material_index": "int",
+              "quality": "int",
+              "wear": "int"
+            }
+          },
+          "syndromes": {
+            "element_count": 0,
+            "element_type": "empty"
+          },
+          "skills_decoded": {
+            "element_count": 31,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "id",
+                "level",
+                "experience",
+                "name",
+                "skill_name",
+                "level_name",
+                "experience_percentage"
+              ],
+              "key_count": 7
+            },
+            "value_types": {
+              "id": "int",
+              "level": "int",
+              "experience": "int",
+              "name": "str",
+              "skill_name": "str",
+              "level_name": "str",
+              "experience_percentage": "int"
+            }
+          },
+          "physical_attributes_decoded": {
+            "element_count": 6,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "id",
+                "value",
+                "max_value",
+                "name",
+                "attribute_name",
+                "percentage",
+                "description"
+              ],
+              "key_count": 7
+            },
+            "value_types": {
+              "id": "int",
+              "value": "int",
+              "max_value": "int",
+              "name": "str",
+              "attribute_name": "str",
+              "percentage": "float",
+              "description": "str"
+            }
+          },
+          "mental_attributes_decoded": {
+            "element_count": 7,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "id",
+                "value",
+                "max_value",
+                "name",
+                "attribute_name",
+                "percentage",
+                "description"
+              ],
+              "key_count": 7
+            },
+            "value_types": {
+              "id": "int",
+              "value": "int",
+              "max_value": "int",
+              "name": "str",
+              "attribute_name": "str",
+              "percentage": "float",
+              "description": "str"
+            }
+          },
+          "labors_decoded": {
+            "element_count": 12,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "id",
+                "enabled",
+                "name",
+                "labor_name",
+                "status"
+              ],
+              "key_count": 5
+            },
+            "value_types": {
+              "id": "int",
+              "enabled": "bool",
+              "name": "str",
+              "labor_name": "str",
+              "status": "str"
+            }
+          },
+          "wounds_decoded": {
+            "element_count": 0,
+            "element_type": "empty"
+          },
+          "equipment_decoded": {
+            "element_count": 10,
+            "element_type": "dict",
+            "element_structure": {
+              "keys": [
+                "item_id",
+                "item_type",
+                "material_type",
+                "material_index",
+                "quality",
+                "wear",
+                "material_name",
+                "item_type_name",
+                "quality_name",
+                "wear_description"
+              ],
+              "key_count": 10
+            },
+            "value_types": {
+              "item_id": "int",
+              "item_type": "int",
+              "material_type": "int",
+              "material_index": "int",
+              "quality": "int",
+              "wear": "int",
+              "material_name": "str",
+              "item_type_name": "str",
+              "quality_name": "str",
+              "wear_description": "str"
+            }
+          }
+        }
+      }
+    }
+  },
+  "relationships": {
+    "decoded_mappings": {
+      "pairs_found": 7,
+      "pairs": [
+        {
+          "original": "skills",
+          "decoded": "skills_decoded"
+        },
+        {
+          "original": "physical_attributes",
+          "decoded": "physical_attributes_decoded"
+        },
+        {
+          "original": "mental_attributes",
+          "decoded": "mental_attributes_decoded"
+        },
+        {
+          "original": "labors",
+          "decoded": "labors_decoded"
+        },
+        {
+          "original": "wounds",
+          "decoded": "wounds_decoded"
+        },
+        {
+          "original": "equipment",
+          "decoded": "equipment_decoded"
+        },
+        {
+          "original": "personality",
+          "decoded": "personality_decoded"
+        }
+      ]
+    },
+    "id_references": {
+      "id_fields": [
+        "id",
+        "hist_id",
+        "civ_id",
+        "squad_id",
+        "pet_owner_id"
+      ],
+      "count": 5
+    },
+    "hierarchical_structures": {
+      "personality": {
+        "subkeys": [
+          "traits",
+          "stress_level",
+          "focus_level"
+        ],
+        "depth": 1,
+        "has_nested_structure": true
+      },
+      "counters": {
+        "subkeys": [
+          "counter1",
+          "counter2",
+          "counter3"
+        ],
+        "depth": 1
+      },
+      "decoded_info": {
+        "subkeys": [
+          "profession_name",
+          "race_name",
+          "caste_name",
+          "gender",
+          "mood_name",
+          "happiness_level",
+          "stress_level"
+        ],
+        "depth": 1
+      },
+      "personality_decoded": {
+        "subkeys": [
+          "traits",
+          "stress_level",
+          "focus_level",
+          "stress_description",
+          "focus_description",
+          "main_traits"
+        ],
+        "depth": 1,
+        "has_nested_structure": true
+      }
+    }
+  },
+  "statistics": {
+    "dwarf_count": 243,
+    "array_statistics": {
+      "skills": {
+        "min_length": 0,
+        "max_length": 50,
+        "avg_length": 25.02880658436214,
+        "total_elements": 6082
+      },
+      "physical_attributes": {
+        "min_length": 6,
+        "max_length": 6,
+        "avg_length": 6.0,
+        "total_elements": 1458
+      },
+      "mental_attributes": {
+        "min_length": 7,
+        "max_length": 7,
+        "avg_length": 7.0,
+        "total_elements": 1701
+      },
+      "labors": {
+        "min_length": 12,
+        "max_length": 12,
+        "avg_length": 12.0,
+        "total_elements": 2916
+      },
+      "wounds": {
+        "min_length": 0,
+        "max_length": 18,
+        "avg_length": 0.6213991769547325,
+        "total_elements": 151
+      },
+      "equipment": {
+        "min_length": 0,
+        "max_length": 19,
+        "avg_length": 7.403292181069959,
+        "total_elements": 1799
+      },
+      "syndromes": {
+        "min_length": 0,
+        "max_length": 1,
+        "avg_length": 0.06172839506172839,
+        "total_elements": 15
+      },
+      "skills_decoded": {
+        "min_length": 0,
+        "max_length": 50,
+        "avg_length": 25.02880658436214,
+        "total_elements": 6082
+      },
+      "physical_attributes_decoded": {
+        "min_length": 6,
+        "max_length": 6,
+        "avg_length": 6.0,
+        "total_elements": 1458
+      },
+      "mental_attributes_decoded": {
+        "min_length": 7,
+        "max_length": 7,
+        "avg_length": 7.0,
+        "total_elements": 1701
+      },
+      "labors_decoded": {
+        "min_length": 12,
+        "max_length": 12,
+        "avg_length": 12.0,
+        "total_elements": 2916
+      },
+      "wounds_decoded": {
+        "min_length": 0,
+        "max_length": 18,
+        "avg_length": 0.6213991769547325,
+        "total_elements": 151
+      },
+      "equipment_decoded": {
+        "min_length": 0,
+        "max_length": 19,
+        "avg_length": 7.403292181069959,
+        "total_elements": 1799
+      }
+    },
+    "field_coverage": {
+      "id": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "name": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "custom_profession": {
+        "non_null_count": 0,
+        "percentage": 0.0
+      },
+      "profession": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "race": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "caste": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "sex": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "age": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "birth_year": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "birth_time": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "mood": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "temp_mood": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "happiness": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "flags1": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "flags2": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "flags3": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "body_size": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "blood_level": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "hist_id": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "civ_id": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "squad_id": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "squad_position": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "pet_owner_id": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "turn_count": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "address": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      },
+      "soul_address": {
+        "non_null_count": 243,
+        "percentage": 100.0
+      }
+    }
+  }
+}

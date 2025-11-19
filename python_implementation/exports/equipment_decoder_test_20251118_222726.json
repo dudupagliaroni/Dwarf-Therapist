@@ -1,0 +1,174 @@
+[
+  {
+    "original": {
+      "item_id": 12345,
+      "item_type": 25,
+      "material_type": 1,
+      "material_index": 0,
+      "quality": 5,
+      "wear": 0
+    },
+    "decoded": {
+      "item_type": {
+        "valid": true,
+        "type_id": 25,
+        "type_name": "ARMOR",
+        "display_text": "Armor"
+      },
+      "quality": {
+        "valid": true,
+        "level": 5,
+        "name": "masterwork",
+        "symbol": "☼",
+        "description": "Masterwork",
+        "display_text": "☼masterwork☼"
+      },
+      "wear": {
+        "valid": true,
+        "level": 0,
+        "name": "new",
+        "symbol": "",
+        "description": "New condition",
+        "condition_percentage": 100,
+        "display_text": "new (100%)"
+      },
+      "raw_values": {
+        "item_id": 12345,
+        "item_type": 25,
+        "material_type": 1,
+        "material_index": 0,
+        "quality": 5,
+        "wear": 0
+      }
+    }
+  },
+  {
+    "original": {
+      "item_id": 67890,
+      "item_type": 24,
+      "material_type": 0,
+      "material_index": 0,
+      "quality": 3,
+      "wear": 1
+    },
+    "decoded": {
+      "item_type": {
+        "valid": true,
+        "type_id": 24,
+        "type_name": "WEAPON",
+        "display_text": "Weapon"
+      },
+      "quality": {
+        "valid": true,
+        "level": 3,
+        "name": "superior",
+        "symbol": "*",
+        "description": "Superior quality",
+        "display_text": "*superior*"
+      },
+      "wear": {
+        "valid": true,
+        "level": 1,
+        "name": "worn",
+        "symbol": "x",
+        "description": "Worn",
+        "condition_percentage": 66,
+        "display_text": "x worn (66%)"
+      },
+      "raw_values": {
+        "item_id": 67890,
+        "item_type": 24,
+        "material_type": 0,
+        "material_index": 0,
+        "quality": 3,
+        "wear": 1
+      }
+    }
+  },
+  {
+    "original": {
+      "item_id": 11111,
+      "item_type": 28,
+      "material_type": 1,
+      "material_index": 2,
+      "quality": 4294967295,
+      "wear": 2
+    },
+    "decoded": {
+      "item_type": {
+        "valid": true,
+        "type_id": 28,
+        "type_name": "HELM",
+        "display_text": "Helm"
+      },
+      "quality": {
+        "valid": true,
+        "level": -1,
+        "name": "none",
+        "symbol": "",
+        "description": "No quality",
+        "display_text": "none"
+      },
+      "wear": {
+        "valid": true,
+        "level": 2,
+        "name": "threadbare",
+        "symbol": "X",
+        "description": "Threadbare",
+        "condition_percentage": 33,
+        "display_text": "X threadbare (33%)"
+      },
+      "raw_values": {
+        "item_id": 11111,
+        "item_type": 28,
+        "material_type": 1,
+        "material_index": 2,
+        "quality": 4294967295,
+        "wear": 2
+      }
+    }
+  },
+  {
+    "original": {
+      "item_id": 22222,
+      "item_type": 60,
+      "material_type": 2,
+      "material_index": 1,
+      "quality": 0,
+      "wear": 3
+    },
+    "decoded": {
+      "item_type": {
+        "valid": true,
+        "type_id": 60,
+        "type_name": "PANTS",
+        "display_text": "Pants"
+      },
+      "quality": {
+        "valid": true,
+        "level": 0,
+        "name": "normal",
+        "symbol": "",
+        "description": "Normal quality",
+        "display_text": "normal"
+      },
+      "wear": {
+        "valid": true,
+        "level": 3,
+        "name": "tattered",
+        "symbol": "XX",
+        "description": "Tattered (nearly destroyed)",
+        "condition_percentage": 10,
+        "display_text": "XX tattered (10%)"
+      },
+      "raw_values": {
+        "item_id": 22222,
+        "item_type": 60,
+        "material_type": 2,
+        "material_index": 1,
+        "quality": 0,
+        "wear": 3
+      }
+    }
+  }
+]
