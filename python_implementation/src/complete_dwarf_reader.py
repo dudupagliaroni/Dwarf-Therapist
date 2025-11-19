@@ -182,7 +182,8 @@ class CompletelyDwarfData:
                 'blood': HumanReadableDecoder.analyze_blood_level(self.blood_level),
                 'history': HumanReadableDecoder.validate_hist_id(self.hist_id),
                 'squad': HumanReadableDecoder.decode_squad_info(self.squad_id, self.squad_position),
-                'pet': HumanReadableDecoder.decode_pet_owner(self.pet_owner_id)
+                'pet': HumanReadableDecoder.decode_pet_owner(self.pet_owner_id),
+                'equipment': [EquipmentDecoder.decode_equipment_item(item) for item in result.get('equipment', [])]
             }
         
         return result
@@ -646,6 +647,160 @@ class HumanReadableDecoder:
             "owner_id": pet_owner_id,
             "display_text": f"Pet owned by unit #{pet_owner_id}"
         }
+
+
+class EquipmentDecoder:
+    """Decodes equipment-related numeric fields into human-readable information"""
+    
+    # ITEM_TYPE enum from src/global_enums.h (lines 60-170)
+    ITEM_TYPES = {
+        -1: "NONE",
+        0: "BAR", 1: "SMALLGEM", 2: "BLOCKS", 3: "ROUGH", 4: "BOULDER",
+        5: "WOOD", 6: "DOOR", 7: "FLOODGATE", 8: "BED", 9: "CHAIR",
+        10: "CHAIN", 11: "FLASK", 12: "GOBLET", 13: "INSTRUMENT", 14: "TOY",
+        15: "WINDOW", 16: "CAGE", 17: "BARREL", 18: "BUCKET", 19: "ANIMALTRAP",
+        20: "TABLE", 21: "COFFIN", 22: "STATUE", 23: "CORPSE", 24: "WEAPON",
+        25: "ARMOR", 26: "SHOES", 27: "SHIELD", 28: "HELM", 29: "GLOVES",
+        30: "BOX", 31: "BAG", 32: "BIN", 33: "ARMORSTAND", 34: "WEAPONRACK",
+        35: "CABINET", 36: "FIGURINE", 37: "AMULET", 38: "SCEPTER", 39: "AMMO",
+        40: "CROWN", 41: "RING", 42: "EARRING", 43: "BRACELET", 44: "GEM",
+        45: "ANVIL", 46: "CORPSEPIECE", 47: "REMAINS", 48: "MEAT", 49: "FISH",
+        50: "FISH_RAW", 51: "VERMIN", 52: "IS_PET", 53: "SEEDS", 54: "PLANT",
+        55: "SKIN_TANNED", 56: "LEAVES_FRUIT", 57: "THREAD", 58: "CLOTH", 59: "TOTEM",
+        60: "PANTS", 61: "BACKPACK", 62: "QUIVER", 63: "CATAPULTPARTS", 64: "BALLISTAPARTS",
+        65: "SIEGEAMMO", 66: "BALLISTAARROWHEAD", 67: "TRAPPARTS", 68: "TRAPCOMP", 69: "DRINK",
+        70: "POWDER_MISC", 71: "CHEESE", 72: "FOOD", 73: "LIQUID_MISC", 74: "COIN",
+        75: "GLOB", 76: "ROCK", 77: "PIPE_SECTION", 78: "HATCH_COVER", 79: "GRATE",
+        80: "QUERN", 81: "MILLSTONE", 82: "SPLINT", 83: "CRUTCH", 84: "TRACTION_BENCH",
+        85: "ORTHOPEDIC_CAST", 86: "TOOL", 87: "SLAB", 88: "EGG", 89: "BOOK",
+        90: "SHEET"
+    }
+    
+    # Quality levels from src/item.cpp get_quality_symbol() (lines 200-300)
+    QUALITY_LEVELS = {
+        -1: {"name": "none", "symbol": "", "description": "No quality"},
+        0: {"name": "normal", "symbol": "", "description": "Normal quality"},
+        1: {"name": "well-crafted", "symbol": "-", "description": "Well-crafted"},
+        2: {"name": "finely-crafted", "symbol": "+", "description": "Finely-crafted"},
+        3: {"name": "superior", "symbol": "*", "description": "Superior quality"},
+        4: {"name": "exceptional", "symbol": "≡", "description": "Exceptional quality"},
+        5: {"name": "masterwork", "symbol": "☼", "description": "Masterwork"},
+        6: {"name": "artifact", "symbol": "!", "description": "Artifact (unique legendary item)"}
+    }
+    
+    # Wear levels from src/item.cpp build_display_name()
+    WEAR_LEVELS = {
+        0: {"name": "new", "symbol": "", "description": "New condition", "percentage": 100},
+        1: {"name": "worn", "symbol": "x", "description": "Worn", "percentage": 66},
+        2: {"name": "threadbare", "symbol": "X", "description": "Threadbare", "percentage": 33},
+        3: {"name": "tattered", "symbol": "XX", "description": "Tattered (nearly destroyed)", "percentage": 10}
+    }
+    
+    @staticmethod
+    def decode_item_type(item_type: int) -> Dict[str, Any]:
+        """Decodes item type from ITEM_TYPE enum"""
+        if item_type in EquipmentDecoder.ITEM_TYPES:
+            type_name = EquipmentDecoder.ITEM_TYPES[item_type]
+            return {
+                "valid": True,
+                "type_id": item_type,
+                "type_name": type_name,
+                "display_text": type_name.replace("_", " ").title()
+            }
+        
+        # Unknown or invalid item type
+        return {
+            "valid": False,
+            "type_id": item_type,
+            "type_name": "UNKNOWN",
+            "display_text": f"Unknown Type ({item_type})"
+        }
+    
+    @staticmethod
+    def decode_quality(quality: int) -> Dict[str, Any]:
+        """Decodes quality level (0-6 scale with -1 for none)"""
+        # Check for sentinel value (might appear as 4294967295 or similar large number)
+        if quality == 4294967295 or quality > 100:
+            quality = -1
+        
+        if quality in EquipmentDecoder.QUALITY_LEVELS:
+            q_info = EquipmentDecoder.QUALITY_LEVELS[quality]
+            return {
+                "valid": True,
+                "level": quality,
+                "name": q_info["name"],
+                "symbol": q_info["symbol"],
+                "description": q_info["description"],
+                "display_text": f"{q_info['symbol']}{q_info['name']}{q_info['symbol']}" if q_info["symbol"] else q_info["name"]
+            }
+        
+        return {
+            "valid": False,
+            "level": quality,
+            "name": "invalid",
+            "symbol": "?",
+            "description": f"Invalid quality level: {quality}",
+            "display_text": f"Invalid Quality ({quality})"
+        }
+    
+    @staticmethod
+    def decode_wear(wear: int) -> Dict[str, Any]:
+        """Decodes wear level (0-3 scale)"""
+        # Check for sentinel value
+        if wear == 4294967295 or wear > 100:
+            wear = 0  # Default to new condition
+        
+        if wear in EquipmentDecoder.WEAR_LEVELS:
+            w_info = EquipmentDecoder.WEAR_LEVELS[wear]
+            return {
+                "valid": True,
+                "level": wear,
+                "name": w_info["name"],
+                "symbol": w_info["symbol"],
+                "description": w_info["description"],
+                "condition_percentage": w_info["percentage"],
+                "display_text": f"{w_info['symbol']} {w_info['name']} ({w_info['percentage']}%)" if w_info["symbol"] else f"{w_info['name']} ({w_info['percentage']}%)"
+            }
+        
+        return {
+            "valid": False,
+            "level": wear,
+            "name": "invalid",
+            "symbol": "?",
+            "description": f"Invalid wear level: {wear}",
+            "condition_percentage": 0,
+            "display_text": f"Invalid Wear ({wear})"
+        }
+    
+    @staticmethod
+    def decode_equipment_item(item: Dict[str, Any]) -> Dict[str, Any]:
+        """Decodes all equipment fields for a single item"""
+        decoded = {}
+        
+        # Decode item type
+        if "item_type" in item:
+            decoded["item_type"] = EquipmentDecoder.decode_item_type(item["item_type"])
+        
+        # Decode quality
+        if "quality" in item:
+            decoded["quality"] = EquipmentDecoder.decode_quality(item["quality"])
+        
+        # Decode wear
+        if "wear" in item:
+            decoded["wear"] = EquipmentDecoder.decode_wear(item["wear"])
+        
+        # Keep original values for reference
+        decoded["raw_values"] = {
+            "item_id": item.get("item_id", -1),
+            "item_type": item.get("item_type", -1),
+            "material_type": item.get("material_type", -1),
+            "material_index": item.get("material_index", -1),
+            "quality": item.get("quality", -1),
+            "wear": item.get("wear", 0)
+        }
+        
+        return decoded
+
 
 class CompleteDFInstance:
     """Instância completa que lê TODOS os dados possíveis"""
