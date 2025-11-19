@@ -163,7 +163,7 @@ class CompletelyDwarfData:
     address: int = 0
     soul_address: int = 0
     
-    def to_dict(self):
+    def to_dict(self, human_readable: bool = False):
         """Convert to dictionary for JSON serialization"""
         result = {}
         for key, value in asdict(self).items():
@@ -173,6 +173,18 @@ class CompletelyDwarfData:
                 result[key] = value.__dict__
             else:
                 result[key] = value
+        
+        # Adicionar campos decodificados se solicitado
+        if human_readable:
+            result['_decoded'] = {
+                'flags': HumanReadableDecoder.decode_flags(self.flags1, self.flags2, self.flags3),
+                'body': HumanReadableDecoder.interpret_body_size(self.body_size),
+                'blood': HumanReadableDecoder.analyze_blood_level(self.blood_level),
+                'history': HumanReadableDecoder.validate_hist_id(self.hist_id),
+                'squad': HumanReadableDecoder.decode_squad_info(self.squad_id, self.squad_position),
+                'pet': HumanReadableDecoder.decode_pet_owner(self.pet_owner_id)
+            }
+        
         return result
 
 class MemoryReader:
@@ -401,6 +413,239 @@ class MemoryLayout:
     def get_offset(self, section: str, key: str) -> int:
         """Get offset for a specific section and key"""
         return self.offsets.get(section, {}).get(key, 0)
+
+class HumanReadableDecoder:
+    """Decodifica dados numéricos em informações legíveis para humanos"""
+    
+    # Flags1 inválidas conhecidas
+    INVALID_FLAGS1 = {
+        0x00000002: "inactive",
+        0x00000010: "marauder",
+        0x00000040: "merchant",
+        0x00000080: "part_of_caravan",
+        0x00000800: "diplomat_or_liaison",
+        0x00020000: "invader_hostile_1",
+        0x00080000: "invader_hostile_2",
+        0x00600000: "resident_invader_ambusher"
+    }
+    
+    # Invalid Flags2 (based on C++ unithealth.cpp checks)
+    INVALID_FLAGS2 = {
+        0x00000080: "killed",
+        0x00004000: "gutted",
+        0x00040000: "underworld_creature",
+        0x00080000: "resident",
+        0x00400000: "uninvited_visitor",
+        0x00800000: "visitor"
+    }
+    
+    # Vision flags - these require INVERTED logic (based on C++ code)
+    # In C++: !(flags2 & 0x02000000) means blind
+    # So if bit is SET = has vision, if bit is CLEAR = blind
+    VISION_FLAGS2 = {
+        0x02000000: "has_vision",  # If CLEAR = completely_blind
+        0x04000000: "vision_damaged",  # If SET = vision impaired
+        0x08000000: "vision_slightly_damaged"  # If SET = vision slightly impaired
+    }
+    
+    # Flags3 inválidas conhecidas
+    INVALID_FLAGS3 = {
+        0x00001000: "ghost"
+    }
+    
+    @staticmethod
+    def decode_flags(flags1: int, flags2: int, flags3: int) -> Dict[str, Any]:
+        """Decodifica as flags em um dicionário legível"""
+        result = {
+            "flags1_raw": flags1,
+            "flags2_raw": flags2,
+            "flags3_raw": flags3,
+            "flags1_hex": f"0x{flags1:08X}",
+            "flags2_hex": f"0x{flags2:08X}",
+            "flags3_hex": f"0x{flags3:08X}",
+            "flags1_active": [],
+            "flags2_active": [],
+            "flags3_active": [],
+            "is_valid_unit": True,
+            "health_issues": [],
+            "status_flags": []
+        }
+        
+        # Verifica flags1
+        for mask, name in HumanReadableDecoder.INVALID_FLAGS1.items():
+            if flags1 & mask:
+                result["flags1_active"].append(name)
+                result["status_flags"].append(name)
+                result["is_valid_unit"] = False
+        
+        # Check flags2 (invalid status flags)
+        for mask, name in HumanReadableDecoder.INVALID_FLAGS2.items():
+            if flags2 & mask:
+                result["flags2_active"].append(name)
+                # Separate health issues from invalid status
+                if mask == 0x00004000:  # gutted
+                    result["health_issues"].append(name)
+                else:
+                    result["status_flags"].append(name)
+                    
+                if mask in [0x00000080, 0x00040000, 0x00080000, 0x00400000, 0x00800000]:
+                    result["is_valid_unit"] = False
+        
+        # Check vision flags (INVERTED logic - based on C++ unithealth.cpp)
+        # In C++: add_info(eHealth::HI_VISION, !(m_dwarf->get_flag2() & 0x02000000), ...)
+        # If bit 0x02000000 is CLEAR (NOT set) = completely blind
+        if not (flags2 & 0x02000000):
+            result["health_issues"].append("completely_blind")
+            result["flags2_active"].append("completely_blind")
+        
+        # If bit 0x04000000 is SET = vision impaired
+        if flags2 & 0x04000000:
+            result["health_issues"].append("vision_impaired")
+            result["flags2_active"].append("vision_impaired")
+        
+        # If bit 0x08000000 is SET = vision slightly impaired  
+        if flags2 & 0x08000000:
+            result["health_issues"].append("vision_slightly_impaired")
+            result["flags2_active"].append("vision_slightly_impaired")
+        
+        # Verifica flags3
+        for mask, name in HumanReadableDecoder.INVALID_FLAGS3.items():
+            if flags3 & mask:
+                result["flags3_active"].append(name)
+                result["status_flags"].append(name)
+                result["is_valid_unit"] = False
+        
+        return result
+    
+    @staticmethod
+    def interpret_body_size(body_size: int) -> Dict[str, Any]:
+        """Interpreta o tamanho do corpo"""
+        # Multiplica por 10 para volume real
+        volume_cm3 = body_size * 10
+        volume_liters = volume_cm3 / 1000.0
+        
+        # Age categories
+        if body_size < 3500:
+            category = "baby"
+            age_group = "baby"
+        elif body_size < 5000:
+            category = "child"
+            age_group = "child"
+        elif body_size < 6500:
+            category = "adolescent"
+            age_group = "adolescent"
+        else:
+            category = "adult"
+            age_group = "adult"
+        
+        return {
+            "raw_value": body_size,
+            "volume_cm3": volume_cm3,
+            "volume_liters": round(volume_liters, 3),
+            "category": category,
+            "age_group": age_group,
+            "display_text": f"{volume_cm3:,} cm³ ({volume_liters:.2f} L) - {age_group}"
+        }
+    
+    @staticmethod
+    def analyze_blood_level(blood_level: int, blood_max: int = 6000) -> Dict[str, Any]:
+        """Analisa o nível de sangue"""
+        if blood_max == 0:
+            blood_max = 6000  # fallback para valor padrão
+            
+        percentage = (blood_level / blood_max) * 100
+        
+        if percentage >= 75:
+            status = "normal"
+            severity = 0
+            severity_name = "none"
+        elif percentage >= 50:
+            status = "mild_loss"
+            severity = 1
+            severity_name = "mild"
+        elif percentage >= 25:
+            status = "severe_loss"
+            severity = 2
+            severity_name = "severe"
+        else:
+            status = "critical_loss"
+            severity = 3
+            severity_name = "critical"
+        
+        return {
+            "current": blood_level,
+            "max": blood_max,
+            "percentage": round(percentage, 1),
+            "status": status,
+            "severity": severity,
+            "severity_name": severity_name,
+            "critical": percentage <= 50,
+            "display_text": f"{blood_level}/{blood_max} ({percentage:.1f}%) - {status}"
+        }
+    
+    @staticmethod
+    def validate_hist_id(hist_id: int) -> Dict[str, Any]:
+        """Valida e interpreta o hist_id"""
+        if hist_id < 0:
+            return {
+                "valid": False,
+                "has_history": False,
+                "id": hist_id,
+                "description": "Creature without historical importance",
+                "display_text": "N/A (no history)"
+            }
+        
+        return {
+            "valid": True,
+            "has_history": True,
+            "id": hist_id,
+            "description": f"Figura histórica #{hist_id}",
+            "display_text": f"Historical Figure #{hist_id:,}"
+        }
+    
+    @staticmethod
+    def decode_squad_info(squad_id: int, squad_position: int) -> Dict[str, Any]:
+        """Decodifica informações de esquadrão"""
+        if squad_id == -1:
+            return {
+                "has_squad": False,
+                "squad_id": -1,
+                "position": -1,
+                "status": "civilian",
+                "display_text": "Civilian (no squad)"
+            }
+        
+        position_names = [
+            "Leader", "Second", "Third", "Fourth", "Fifth",
+            "Sixth", "Seventh", "Eighth", "Ninth", "Tenth"
+        ]
+        
+        position_name = position_names[squad_position] if 0 <= squad_position < len(position_names) else f"Position {squad_position}"
+        
+        return {
+            "has_squad": True,
+            "squad_id": squad_id,
+            "position": squad_position,
+            "position_name": position_name,
+            "status": "military",
+            "display_text": f"Squad #{squad_id} - {position_name}"
+        }
+    
+    @staticmethod
+    def decode_pet_owner(pet_owner_id: int) -> Dict[str, Any]:
+        """Decodifica informação de dono de pet"""
+        if pet_owner_id == -1:
+            return {
+                "is_pet": False,
+                "owner_id": -1,
+                "display_text": "Not a pet"
+            }
+        
+        return {
+            "is_pet": True,
+            "owner_id": pet_owner_id,
+            "display_text": f"Pet owned by unit #{pet_owner_id}"
+        }
 
 class CompleteDFInstance:
     """Instância completa que lê TODOS os dados possíveis"""
@@ -976,35 +1221,44 @@ class CompleteDFInstance:
                         'dwarves_with_equipment': len([d for d in self.dwarves if d.equipment])
                     }
                 },
-                'dwarves': [dwarf.to_dict() for dwarf in self.dwarves]
+                'dwarves': [dwarf.to_dict(human_readable=decode_data) for dwarf in self.dwarves]
             }
             
-            # Aplicar decodificação se solicitado
+            # Aplicar decodificação adicional se solicitado
             if decode_data:
-                logger.info("Aplicando decodificação aos dados...")
+                logger.info("Aplicando decodificação adicional aos dados...")
                 try:
-                    # Importar decodificador
+                    # Importar decodificador externo se disponível
                     tools_path = Path(__file__).parent.parent / "tools"
                     sys.path.insert(0, str(tools_path))
                     from complete_decoder import DwarfDataDecoder
                     
                     decoder = DwarfDataDecoder()
-                    decoded_dwarves = []
                     
                     for i, dwarf_dict in enumerate(data['dwarves']):
                         if i % 50 == 0:
                             logger.info(f"Decodificando dwarf {i+1}/{len(data['dwarves'])}")
-                        decoded_dwarf = decoder.decode_dwarf(dwarf_dict)
-                        decoded_dwarves.append(decoded_dwarf)
+                        # Mesclar decodificação externa com a interna (evitar referências circulares)
+                        try:
+                            external_decoded = decoder.decode_dwarf(dict(dwarf_dict))
+                            if '_decoded' in dwarf_dict and '_decoded' in external_decoded:
+                                # Copiar apenas campos específicos para evitar circular reference
+                                for key in ['profession_decoded', 'race_decoded', 'caste_decoded']:
+                                    if key in external_decoded['_decoded']:
+                                        dwarf_dict['_decoded'][key] = external_decoded['_decoded'][key]
+                        except Exception as e:
+                            logger.debug(f"Erro ao decodificar dwarf {i}: {e}")
                     
-                    data['dwarves'] = decoded_dwarves
-                    data['metadata']['decoder_version'] = '1.0'
-                    logger.info("Decodificação aplicada com sucesso")
+                    data['metadata']['decoder_version'] = '2.0-human-readable'
+                    logger.info("Decodificação completa aplicada com sucesso")
                     
+                except ImportError:
+                    logger.info("Decodificador externo não encontrado, usando apenas decodificação interna")
+                    data['metadata']['decoder_version'] = '2.0-internal-only'
                 except Exception as e:
-                    logger.warning(f"Erro na decodificação, salvando dados brutos: {e}")
-                    data['metadata']['decoded'] = False
-                    data['metadata']['decode_error'] = str(e)
+                    logger.warning(f"Erro na decodificação externa: {e}")
+                    data['metadata']['decode_warning'] = str(e)
+                    data['metadata']['decoder_version'] = '2.0-internal-only'
             
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
