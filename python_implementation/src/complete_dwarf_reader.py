@@ -1286,25 +1286,93 @@ class CompleteDFInstance:
             logger.debug(f"Erro ao ler síndromes: {e}")
             return []
             
-    def _read_equipment(self, inventory_addr: int) -> List[Equipment]:
-        """Lê equipamentos/inventário"""
+    def _read_item_type(self, item_addr: int) -> int:
+        """
+        Read item type from vtable (C++ polymorphism)
+        Based on src/item.cpp line 119:
+            VIRTADDR item_vtable = m_df->read_addr(m_addr);
+            m_iType = static_cast<ITEM_TYPE>(m_df->read_int(
+                m_df->read_addr(item_vtable) + m_df->VM_TYPE_OFFSET()));
+        
+        VM_TYPE_OFFSET values from dfinstance.h:
+        - Windows default: 0x1
+        - Linux: 0x5
+        - OSX: varies
+        """
         try:
-            equipment_pointers = self.memory_reader.read_vector(inventory_addr, self.pointer_size)
+            # Step 1: Read vtable pointer at item address
+            vtable_addr = self.memory_reader.read_pointer(item_addr, self.pointer_size)
+            
+            if vtable_addr == 0 or vtable_addr < 0x1000:  # Invalid pointer
+                return -1  # NONE
+            
+            # Step 2: Read type info pointer from vtable + VM_TYPE_OFFSET
+            # Try Windows default: 0x1 (from dfinstance.h)
+            vm_type_offset = 0x1
+            type_info_addr = self.memory_reader.read_pointer(vtable_addr, self.pointer_size)
+            
+            if type_info_addr == 0 or type_info_addr < 0x1000:
+                return -1
+            
+            # Step 3: Read actual type ID (int32) at type_info_addr + offset
+            item_type = self.memory_reader.read_int32(type_info_addr + vm_type_offset)
+            
+            # Validate range (ITEM_TYPE enum is 0-90 approximately)
+            if item_type < -1 or item_type > 100:
+                # Try alternative: read directly from vtable structure
+                # Some DF versions may store type differently
+                for test_offset in [0, 4, 8, 12, 16, 20]:
+                    test_type = self.memory_reader.read_int32(item_addr + test_offset)
+                    if 0 <= test_type <= 90:
+                        logger.debug(f"Found item_type {test_type} at offset {test_offset:x} for addr {item_addr:x}")
+                        return test_type
+                return -1
+                
+            return item_type
+        except Exception as e:
+            logger.debug(f"Failed to read item type at {item_addr:x}: {e}")
+            return -1  # NONE
+    
+    def _read_equipment(self, inventory_addr: int) -> List[Equipment]:
+        """
+        Lê equipamentos/inventário
+        Baseado em src/dwarf.cpp read_inventory() linha 1622:
+            foreach(VIRTADDR inventory_item_addr, m_df->enumerate_vector(..., "inventory")){
+                VIRTADDR item_ptr = m_df->read_addr(inventory_item_addr);
+                Item *i = new Item(m_df,item_ptr,this);
+        
+        O vetor inventory contém inventory_item structures, não items diretos!
+        """
+        try:
+            # Read inventory_item vector (NOT direct item pointers!)
+            inventory_items = self.memory_reader.read_vector(inventory_addr, self.pointer_size)
             item_offsets = self.layout.offsets.get('item', {})
-            UINT32_MAX = 4294967295
+            SHORT_MAX = 65535  # 0xFFFF - sentinel value for 16-bit fields
             
             equipment = []
-            for item_addr in equipment_pointers[:50]:  # Limite de 50 itens
-                # Ler valores brutos
-                quality_raw = self.memory_reader.read_int32(item_addr + item_offsets.get('quality', 0))
-                wear_raw = self.memory_reader.read_int32(item_addr + item_offsets.get('wear', 0))
+            for inventory_item_addr in inventory_items[:50]:  # Limite de 50 itens
+                # CRITICAL FIX: Read item pointer from inventory_item structure
+                # The inventory_item is a wrapper, actual item is at offset 0x0000
+                item_addr = self.memory_reader.read_pointer(inventory_item_addr, self.pointer_size)
+                
+                if item_addr == 0 or item_addr < 0x1000:  # Invalid pointer
+                    continue
+                
+                # Now read from the ACTUAL item address
+                quality_raw = self.memory_reader.read_int16(item_addr + item_offsets.get('quality', 0))
+                wear_raw = self.memory_reader.read_int16(item_addr + item_offsets.get('wear', 0))
+                mat_type_raw = self.memory_reader.read_int16(item_addr + item_offsets.get('mat_type', 0))
+                
+                # Read item type via vtable (now should work correctly!)
+                item_type = self._read_item_type(item_addr)
                 
                 item = Equipment(
                     item_id=self.memory_reader.read_int32(item_addr + item_offsets.get('id', 0)),
-                    material_type=self.memory_reader.read_int32(item_addr + item_offsets.get('mat_type', 0)),
+                    item_type=item_type,
+                    material_type=mat_type_raw,
                     material_index=self.memory_reader.read_int32(item_addr + item_offsets.get('mat_index', 0)),
-                    quality=-1 if quality_raw == UINT32_MAX else quality_raw,
-                    wear=-1 if wear_raw == UINT32_MAX else wear_raw
+                    quality=-1 if quality_raw == SHORT_MAX else quality_raw,
+                    wear=-1 if wear_raw == SHORT_MAX else wear_raw
                 )
                 equipment.append(item)
                 
