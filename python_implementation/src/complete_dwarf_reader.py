@@ -2,6 +2,18 @@
 """
 Dwarf Therapist Python Edition - VERSÃO COMPLETA
 Lê TODOS os dados possíveis da memória do Dwarf Fortress
+
+NOTA SOBRE VALORES SENTINELA:
+    O valor 4294967295 (0xFFFFFFFF) é automaticamente convertido para -1
+    Este valor representa "NULL" ou "não aplicável" no Dwarf Fortress
+    
+    Campos afetados:
+    - squad_id: -1 = sem squad militar
+    - squad_position: -1 = sem posição em squad  
+    - pet_owner_id: -1 = não é pet de ninguém
+    - equipment.quality: -1 = qualidade não definida
+    - equipment.wear: -1 = desgaste não aplicável
+    - wound.pain: -1 = sem dados de dor
 """
 
 import ctypes
@@ -637,9 +649,17 @@ class CompleteDFInstance:
             # 4. IDS E REFERÊNCIAS
             dwarf.hist_id = self.memory_reader.read_int32(address + offsets.get('hist_id', 0))
             dwarf.civ_id = self.memory_reader.read_int32(address + offsets.get('civ', 0))
-            dwarf.squad_id = self.memory_reader.read_int32(address + offsets.get('squad_id', 0))
-            dwarf.squad_position = self.memory_reader.read_int32(address + offsets.get('squad_position', 0))
-            dwarf.pet_owner_id = self.memory_reader.read_int32(address + offsets.get('pet_owner_id', 0))
+            
+            # Converter valores sentinela (4294967295 = 0xFFFFFFFF) para -1 (mais legível)
+            UINT32_MAX = 4294967295
+            squad_id_raw = self.memory_reader.read_int32(address + offsets.get('squad_id', 0))
+            dwarf.squad_id = -1 if squad_id_raw == UINT32_MAX else squad_id_raw
+            
+            squad_position_raw = self.memory_reader.read_int32(address + offsets.get('squad_position', 0))
+            dwarf.squad_position = -1 if squad_position_raw == UINT32_MAX else squad_position_raw
+            
+            pet_owner_id_raw = self.memory_reader.read_int32(address + offsets.get('pet_owner_id', 0))
+            dwarf.pet_owner_id = -1 if pet_owner_id_raw == UINT32_MAX else pet_owner_id_raw
             
             # 5. CONTADORES
             dwarf.turn_count = self.memory_reader.read_int32(address + offsets.get('turn_count', 0))
@@ -826,15 +846,18 @@ class CompleteDFInstance:
         try:
             wound_pointers = self.memory_reader.read_vector(wounds_vector_addr, self.pointer_size)
             wound_offsets = self.layout.offsets.get('unit_wound', {})
+            UINT32_MAX = 4294967295
             
             wounds = []
             for wound_addr in wound_pointers[:20]:  # Limite de 20 ferimentos
+                pain_raw = self.memory_reader.read_int32(wound_addr + wound_offsets.get('pain', 0))
+                
                 wound = Wound(
                     id=self.memory_reader.read_int32(wound_addr + wound_offsets.get('id', 0)),
                     body_part=self.memory_reader.read_int32(wound_addr + wound_offsets.get('parts', 0)),
                     layer=self.memory_reader.read_int32(wound_addr + wound_offsets.get('layer', 0)),
                     bleeding=self.memory_reader.read_int32(wound_addr + wound_offsets.get('bleeding', 0)),
-                    pain=self.memory_reader.read_int32(wound_addr + wound_offsets.get('pain', 0)),
+                    pain=-1 if pain_raw == UINT32_MAX else pain_raw,
                     flags=self.memory_reader.read_int32(wound_addr + wound_offsets.get('flags1', 0))
                 )
                 wounds.append(wound)
@@ -868,15 +891,20 @@ class CompleteDFInstance:
         try:
             equipment_pointers = self.memory_reader.read_vector(inventory_addr, self.pointer_size)
             item_offsets = self.layout.offsets.get('item', {})
+            UINT32_MAX = 4294967295
             
             equipment = []
             for item_addr in equipment_pointers[:50]:  # Limite de 50 itens
+                # Ler valores brutos
+                quality_raw = self.memory_reader.read_int32(item_addr + item_offsets.get('quality', 0))
+                wear_raw = self.memory_reader.read_int32(item_addr + item_offsets.get('wear', 0))
+                
                 item = Equipment(
                     item_id=self.memory_reader.read_int32(item_addr + item_offsets.get('id', 0)),
                     material_type=self.memory_reader.read_int32(item_addr + item_offsets.get('mat_type', 0)),
                     material_index=self.memory_reader.read_int32(item_addr + item_offsets.get('mat_index', 0)),
-                    quality=self.memory_reader.read_int32(item_addr + item_offsets.get('quality', 0)),
-                    wear=self.memory_reader.read_int32(item_addr + item_offsets.get('wear', 0))
+                    quality=-1 if quality_raw == UINT32_MAX else quality_raw,
+                    wear=-1 if wear_raw == UINT32_MAX else wear_raw
                 )
                 equipment.append(item)
                 
